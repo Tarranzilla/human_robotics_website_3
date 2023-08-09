@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Human Robotics</title>
+        <meta name="description" content="Robôs Inteligentes e Autônomos." />
+        <meta name="keywords" content="robo, robotica, inteligencia artificial, atendimento, automação, inspeção" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+        <script>
+            function fnBrowserDetect() {
+                let userAgent = navigator.userAgent;
+                let browserName;
+
+                if (userAgent.match(/chrome|chromium|crios/i)) {
+                    browserName = "chrome";
+                } else if (userAgent.match(/firefox|fxios/i)) {
+                    browserName = "firefox";
+                } else if (userAgent.match(/safari/i)) {
+                    browserName = "safari";
+                } else if (userAgent.match(/opr\//i)) {
+                    browserName = "opera";
+                } else if (userAgent.match(/edg/i)) {
+                    browserName = "edge";
+                } else {
+                    browserName = "No browser detection";
+                }
+
+                console.log("You are using " + browserName + " browser");
+            }
+
+            fnBrowserDetect();
+        </script>
+    </body>
+</html>
