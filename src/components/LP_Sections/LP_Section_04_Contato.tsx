@@ -74,7 +74,7 @@ const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, r
             <div className="Conteudo_Chamada">
                 <h3 className="Chamada_Contato">Sinta-se a vontade para entrar em contato!</h3>
                 <h3 className="Chamada_Contato">
-                    Estamos de prontidão para responder suas dúvidas, atender pedidos e encomendar chocolates especiais e personalizados!
+                    Estamos de prontidão para responder suas dúvidas, realizar suporte técnico e encomendar robôs personalizados.
                 </h3>
             </div>
 
@@ -86,7 +86,7 @@ const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, r
                     </div>
 
                     <div className="Info_Contato_Item">
-                        <h3>Email:</h3> <p className="Info_Contato_Item_Detail">contato@tropicalcacau.com.br</p>
+                        <h3>Email:</h3> <p className="Info_Contato_Item_Detail">contato@humanrobotics.com.br</p>
                     </div>
 
                     <div className="Info_Contato_Item">
@@ -100,7 +100,7 @@ const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, r
                     </div>
 
                     <div className="Info_Contato_Item">
-                        <h3>Chocolateria:</h3>
+                        <h3>Laboratório:</h3>
                         <p className="Info_Contato_Item_Detail">
                             Curitiba, Paraná, Brasil.{" "}
                             <button className="Contato_Location_Button" onClick={toggleMap2}>

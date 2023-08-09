@@ -35,10 +35,10 @@ const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props,
             <img src={backgroundImg} alt="background" className="Section_03_Background" />
             <div className="Type_Header">
                 {activeChocoClass === null && <h3 className="Type_Viewer_Title">Nenhum Produto Selecionado</h3>}
-                {activeChocoClass === "classico" && <h3 className="Type_Viewer_Title">Clássicos</h3>}
-                {activeChocoClass === "especial" && <h3 className="Type_Viewer_Title">Especiais</h3>}
-                {activeChocoClass === "kit" && <h3 className="Type_Viewer_Title">Combinações</h3>}
-                {activeChocoClass === "assinatura" && <h3 className="Type_Viewer_Title">Assinaturas</h3>}
+                {activeChocoClass === "classico" && <h3 className="Type_Viewer_Title">Robôs</h3>}
+                {activeChocoClass === "especial" && <h3 className="Type_Viewer_Title">Softwares</h3>}
+                {activeChocoClass === "kit" && <h3 className="Type_Viewer_Title">Assinaturas</h3>}
+                {activeChocoClass === "assinatura" && <h3 className="Type_Viewer_Title">Experiências</h3>}
             </div>
             <div className="Type_Viewer">
                 {activeChocoClass === 0 && (
@@ -88,28 +88,28 @@ const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props,
                     className={activeChocoClass === "classico" ? "Product_Type active" : "Product_Type"}
                     onClick={() => handleSetActiveChocoClass("classico")}
                 >
-                    <h3 className="Product_Type_Title">Clássicos</h3>
+                    <h3 className="Product_Type_Title">Robôs</h3>
                 </button>
                 <button
                     key="ChocoClass_2"
                     className={activeChocoClass === "especial" ? "Product_Type active" : "Product_Type"}
                     onClick={() => handleSetActiveChocoClass("especial")}
                 >
-                    <h3 className="Product_Type_Title">Especiais</h3>
+                    <h3 className="Product_Type_Title">Softwares</h3>
                 </button>
                 <button
                     key="ChocoClass_3"
                     className={activeChocoClass === "kit" ? "Product_Type active" : "Product_Type"}
                     onClick={() => handleSetActiveChocoClass("kit")}
                 >
-                    <h3 className="Product_Type_Title">Combinações</h3>
+                    <h3 className="Product_Type_Title">Assinaturas</h3>
                 </button>
                 <button
                     key="ChocoClass_4"
                     className={activeChocoClass === "assinatura" ? "Product_Type active" : "Product_Type"}
                     onClick={() => handleSetActiveChocoClass("assinatura")}
                 >
-                    <h3 className="Product_Type_Title">Assinaturas</h3>
+                    <h3 className="Product_Type_Title">Experiências</h3>
                 </button>
             </div>
         </div>

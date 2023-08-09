@@ -16,7 +16,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">A Fundadora</h2>
+                        <h2 className="Sobre_Card_Title">A Fundação</h2>
                     </div>
                     <div className="Card_Content Sobre_Card_Content">
                         <div className="Sobre_Img_Container_Desktop Desktop_Only">
@@ -26,9 +26,10 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                         <div className="Sobre_Text_Container">
                             <p className="Kakaw_Header">
                                 <strong>
-                                    A Tropical Cacau é uma chocolateria Brasileira criada pela confeiteira e nutricionista{" "}
+                                    A Human Robotics é uma Startup Brasileira de Robótica e Inteligência Artificial criada pelo Engenheiro e
+                                    Programador{" "}
                                     <a className="Link_Leticia" href="#Leticia_Guedes">
-                                        Letícia Guedes
+                                        Olivier Smadja
                                     </a>
                                     .
                                 </strong>
@@ -37,17 +38,18 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 <img className="Sobre_Img" src={fotoLeticia}></img>
                             </div>
                             <p className="Kakaw_Description">
-                                "Inspirada na tropicalidade que a nossa cultura tem a oferecer, busco confecionar sabores e experiências de forma
-                                consciente por meio do uso de ingredientes sustentáveis, orgânicos e saborosos."
+                                "Inspirados na Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
+                                buscamos confecionar robôs e experiências de forma pragmática por meio do uso de componentes sofisticados e
+                                pesquisadores de campo habilitados."
                             </p>
                             <p className="Kakaw_Header">
-                                Letícia é formada em nutrição pela Universidade Federal do Paraná e confeiteira pela Escola de Confeitaria Diego
-                                Lozano.
+                                Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e
+                                robótica pela USP.
                             </p>
                             <p className="Kakaw_Description">
-                                Após anos de experiência em confeitaria, Letícia decidiu fundar a Tropical Cacau, uma chocolateria que tem como
-                                objetivo oferecer uma experiência única e deliciosa para seus clientes, ao mesmo tempo que promove a responsabilidade
-                                social e ambiental em cada etapa da produção.
+                                Após anos de experiência em engenharia e automação rodoviária, Olivier decidiu fundar a Human Robotics, uma empresa
+                                que tem como objetivo oferecer as melhores experiências para seus clientes, ao mesmo tempo que promove a
+                                responsabilidade social e ambiental em cada etapa da produção.
                             </p>
                         </div>
                     </div>
@@ -63,35 +65,73 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">A Tropical Cacau</h2>
+                        <h2 className="Sobre_Card_Title">A Human Robotics</h2>
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
                             <strong>
-                                Na Tropical Cacau, estamos empenhados em trazer para você um chocolate de qualidade excepcional, enquanto protegemos o
-                                meio ambiente e promovemos o comércio justo.
+                                Na Human Robotics, estamos empenhados em trazer para você robôs de qualidade excepcional, enquanto protegemos o meio
+                                ambiente e promovemos o comércio justo.
                             </strong>
                         </p>
                         <p className="Kakaw_Description">
-                            Como uma empresa com valores éticos e sustentáveis, estamos comprometidos em fornecer a nossos clientes uma experiência
-                            única e deliciosa. Desde o cacau cuidadosamente selecionado, até a produção artesanal em nossa própria fábrica em
-                            Curitiba, cada etapa do processo é feita com paixão e responsabilidade.
+                            A história da Human Robotics começa em março de 2017, quando Olivier teve a ideia de criar um robô para cuidar de pessoas
+                            idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha de
+                            robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo, Otoniel ,
+                            Leandro, Larissa e muitas outras pessoas* a equipe da Human Robotics cresceu e trabalhou incansavelmente para criar
+                            assistentes virtuais que pudessem auxiliar pessoas em diversas áreas, desde a educação infantil até a assistência médica
+                            remota.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Como uma empresa com valores criativos, éticos e sustentáveis, estamos comprometidos em fornecer a nossos clientes uma
+                            experiência única e intuitiva. Desde os componentes cuidadosamente selecionados, até a produção quase artesanal em nossa
+                            própria fábrica em Curitiba, cada etapa do processo é feita com paixão e responsabilidade.
                         </p>
                         <p className="Kakaw_Header">
-                            Nossa missão é ser uma referência em chocolate de qualidade, inovação e responsabilidade social e ambiental. Nossa visão é
-                            oferecer ao mundo o melhor chocolate brasileiro, baseado em uma cadeia produtiva justa e sustentável, que valorize o
-                            trabalho humano e promova o desenvolvimento econômico e social.
+                            A Human Robotics tem uma visão clara e ambiciosa para o futuro. Nossa meta é liderar a transformação tecnológica no
+                            Brasil, sendo a vanguarda das tecnologias de atendimento, educação, interação, inspeção e transporte em bases robóticas.
                         </p>
-                        <p className="Kakaw_Description">
-                            Nosso compromisso com o comércio justo e sustentabilidade ambiental é refletido em nosso portfólio de produtos. Desde os
-                            nossos Kits personalizados, passando por nossa linha de barras tradicionais até nossas assinaturas mensais de chocolates,
-                            nós oferecemos uma variedade de opções que atendem as necessidades e expectativas dos nossos clientes.
+                        <p className="Kakaw_Header">
+                            A missão da Human Robotics é simples e ao mesmo tempo revolucionária: tornar a robótica mais humana, mais acessível e mais
+                            presente na vida das pessoas. Com soluções inovadoras e uma equipe comprometida com a excelência, a empresa está mudando a
+                            forma como interagimos com a tecnologia, tornando-a uma aliada poderosa em todas as áreas da vida.
                         </p>
-                        <p className="Kakaw_Description">
-                            Na Tropical Cacau, nosso objetivo é levar uma experiência única e deliciosa para nossos clientes, ao mesmo tempo que
-                            promovemos a responsabilidade social e ambiental em cada etapa da produção.
+                        <p className="Kakaw_Header">
+                            Acreditamos que a tecnologia deve ser usada para servir as pessoas, os animais e o meio ambiente.
                         </p>
-                        <p className="Kakaw_Header">Junte-se a nós nesta jornada pelo chocolate brasileiro de qualidade, justo e sustentável.</p>
+
+                        <p className="Kakaw_Header">
+                            Valorizamos a diversidade e o respeito às diferenças entre as pessoas, promovendo a inclusão e a igualdade em todas as
+                            nossas atividades.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Acreditamos na transparência e na ética em todas as nossas relações, sejam elas com clientes, colaboradores ou parceiros.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Encorajamos a criatividade e a inovação, estimulando a liberdade e a subjetividade dos pensamentos de todos os envolvidos
+                            em nossas atividades.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Valorizamos o trabalho em equipe e a colaboração, acreditando que juntos podemos alcançar grandes feitos.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Comprometemo-nos com a excelência em todas as nossas atividades, sempre buscando aperfeiçoamento contínuo e a satisfação
+                            dos clientes.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Somos movidos pelos desafios e pela busca por soluções inovadoras, sempre com foco na qualidade e eficiência.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Acreditamos que a tecnologia deve ser acessível a todos, e nos esforçamos para tornar a robótica cada vez mais disponível
+                            e útil para a maioria dos brasileiros.
+                        </p>
+
+                        <p className="Kakaw_Header">
+                            <strong>Junte-se a nós nesta jornada por uma transformação tecnológica mais humana!</strong>
+                        </p>
                     </div>
                 </div>
 
@@ -105,60 +145,130 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">Histórias do Cacau</h2>
+                        <h2 className="Sobre_Card_Title">História da Robótica</h2>
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
-                            <strong>O Cacau, uma planta nativa da região amazônica, é uma das culturas mais importantes e populares no mundo</strong>,
-                            tendo uma história antiga e fascinante que inclui diversas lendas e mitos. Eis algumas de suas lendas na América do Norte,
-                            Central e do Sul ...
+                            <strong>
+                                Aristóteles, em sua obra Política de 322 a.C, especulou que autômatos poderiam, um dia, trazer a igualdade humana
+                                tornando possível a abolição da escravidão:
+                            </strong>
                         </p>
                         <p className="Kakaw_Description">
-                            <strong>América do Norte:</strong> Segundo a mitologia maia, Coração do Céu, a principal divindade, criou os seres humanos
-                            utilizando vários materiais da natureza, incluindo o cacau, como um dos ingredientes essenciais.
+                            “Há apenas uma condição em que podemos imaginar gerentes não precisando de subordinados e mestres não precisando de
+                            escravos. Esta condição seria que cada instrumento pudesse fazer seu próprio trabalho, à palavra de comando ou por
+                            antecipação inteligente, como as estátuas de Dédalo ou os tripés feitos por Hefesto, dos quais Homero relata que "Por
+                            movimento próprio, eles entraram na assembléia dos Deuses no Olimpo", como se um pente de tear pudesse tecer sozinho e um
+                            plectro pudesse tocar harpa sozinho.”
                         </p>
                         <p className="Kakaw_Description">
-                            <strong>América Central:</strong> De acordo com a lenda asteca, Quetzalcoatl, a serpente emplumada, foi a primeira a
-                            trazer as sementes de cacau para a Terra do Jardim do Éden. Quetzalcoatl ensinou os humanos a arte da agricultura,
-                            medicina e cultivo do cacau. Esta divindade não gostava de rituais de sacrifício humano e era amada pelas pessoas.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>América do Sul (Peru):</strong> O deus das tempestades, Khuno, destruiu uma aldeia com chuva torrencial e granizo
-                            porque seus habitantes derrubaram as árvores e atearam fogo na floresta para clarear a terra e cultivar alimentos. Quando
-                            a tempestade acabou, os sobreviventes encontraram uma árvore de cacau, que se tornou um alimento essencial para eles e os
-                            ajudou a viver em harmonia com a natureza.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>América do Sul:</strong> Uma lenda dos Andes fala sobre um deus onipotente chamado Sibu que transferiu seus
-                            poderes para outro deus, Sura, mas suas sementes foram comidas por uma terceira divindade, Jabaru. Jabaru foi morto por
-                            Sura, que enterrou seu corpo no local onde estavam as sementes. Quando Sura voltou, encontrou um cacaueiro e um pé de
-                            cabaça crescendo no local. Sibu ordenou que Jabaru preparasse uma bebida com as sementes do cacau, mas a bebida fez a
-                            barriga de Jabaru inchar e explodir, deixando cair as sementes no chão. Sibu restaurou a vida de Sura e devolveu as
-                            sementes, permitindo que humanos e animais nascessem e crescessem.
+                            No século IV a.C. , o matemático Arquitas de Tarento postulou um dos primei ros registros que temos sobre um autômato,
+                            neste ele apresenta um pássaro mecânico que ele chamou de "O Pombo" , impulsionado a vapor.
                         </p>
                         <p className="Kakaw_Header">
-                            A história do cacau na América do Sul ainda inclui outros mitos e lendas, como a história de como os deuses teriam dado o
-                            cacau como presente para os humanos, para que eles pudessem ter acesso à imortalidade. De acordo com essa história, o deus
-                            Viracocha teria criado a primeira árvore de cacau e dado seus frutos aos homens, que aprenderam a prepará-los como bebida.
-                            Ao consumir essa bebida, os humanos teriam adquirido poderes divinos e se tornado imortais.
+                            Quando os gregos controlaram o Egito, uma sucessão de engenheiros que podiam construir autômatos se estabeleceram em
+                            Alexandria. A partir do polímata Ctesibius (285-222 a.C. ) , os engenheiros alexandrinos deixaram textos detalhando
+                            autômatos viáveis alimentados por hidráulica ou vapor. Ctesibius construiu autômatos semelhantes a humanos, frequentemente
+                            usados em cerimônias religiosas e no culto a deuses.
                         </p>
                         <p className="Kakaw_Description">
-                            Ao longo dos séculos, o cacau se tornou um ingrediente essencial na culinária e cultura de muitos países da América
-                            Latina. Os Astecas e Maias usavam o cacau para fazer uma bebida quente e espumosa, chamada de "xocoatl", que era misturada
-                            com especiarias e mel. Essa bebida era considerada sagrada e utilizada em rituais religiosos, e também era consumida como
-                            um tônico energético.
+                            Um dos últimos grandes engenheiros alexandrinos, Heron de Alexandria (10-70 d.C. ) construiu um teatro de marionetes
+                            autômatos, onde as figuras e os cenários se moviam por meios mecânicos. Ele descreveu a construção de tais autômatos em
+                            seu tratado sobre pneumática. Os engenheiros de Alexandria construíram autômatos em reverência ao aparente domínio dos
+                            humanos sobre a natureza e como ferramentas para os sacerdotes, mas também iniciaram uma tradição em que autômatos eram
+                            construídos para o entretenimento de quem fosse rico o suficiente.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Entre as primeiras automações verificáveis está um humanoide desenhado por Leonardo da Vinci (1452-1519) em torno de 1495.
+                            Os cadernos de Leonardo, redescobertos na década de 1950, contêm desenhos detalhados de um cavaleiro mecânico em armadura
+                            que era capaz de sentar, acenar com os braços e mover a cabeça e a mandíbula.
                         </p>
                         <p className="Kakaw_Description">
-                            Com a chegada dos europeus na América, o cacau foi introduzido na Europa e se tornou um produto de luxo e prestígio. Os
-                            europeus descobriram que misturando açúcar com cacau, era possível fazer uma bebida ainda mais saborosa, e assim nasceu o
-                            chocolate. A partir do século XVIII, o cultivo do cacau se espalhou por outras partes do mundo, como a África e a Ásia, e
-                            o chocolate se tornou um produto popular e consumido em todo o mundo.
+                            O desenvolvimento inicial dos robôs baseou-se no esforço de automatizar as operações industriais. Este esforço foi
+                            bastante exarcebado no começou no século XVIII , dentro da indústria têxtil, com o aparecimento dos primeiros teares
+                            mecânicos. Com o contínuo progresso da revolução industrial, as fábricas procuraram equipar-se com máquinas capazes de
+                            realizar e reproduzir, automaticamente, determinadas tarefas.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Nos anos 1770, o suíço Pier re Jaquet-Droz criou autômatos móveis que pareciam crianças, o que encantou Mary Shelley, que
+                            mais tarde escreveu Frankenstein: O Moderno Prometeu.
                         </p>
                         <p className="Kakaw_Description">
-                            Hoje em dia, o cacau é um dos principais produtos agrícolas do mundo, e é cultivado em países como Gana, Costa do Marfim,
-                            Indonésia e Brasil. O chocolate é um produto amplamente consumido em todo o mundo, em diferentes formas e variedades, e
-                            continua a ser um símbolo de luxo, prazer e indulgência. A história do cacau é rica em mitos e lendas, e é uma prova da
-                            importância que essa planta teve e ainda tem na cultura e na gastronomia de muitos países ao redor do mundo.
+                            A tentativa final de automação foi O Turco de Wolfgang von Kempelen, uma máquina sofisticada que podia jogar xadrez contra
+                            um oponente humano e percorreu a Europa. Quando a máquina foi levada para o Novo Mundo, ela levou Edgar Allan Poe a
+                            escrever um ensaio, no qual ele concluiu que era impossível para dispositivos mecânicos raciocinar ou pensar.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Em 1898, Nikola Tesla demonstrou um submarino controlado remotamente no Madison Square Garden como "um autômato que,
+                            deixado a si mesmo, agirá como se possuísse razão e sem nenhum controle voluntário do exterior".
+                        </p>
+                        <p className="Kakaw_Description">
+                            Ele defendeu sua invenção cont ra repór teres críticos, argumentando que seus autômatos não eram "torpedos sem fio", mas
+                            sim "homens mecânicos que farão o trabalho laborioso da raça humana".
+                        </p>
+                        <p className="Kakaw_Header">
+                            O termo "robô" foi usado pela primeira vez em uma peça publicada pelo checo Karel Čapek em 1921. R.U.R. (Robôs Universais
+                            de Rossum) era uma sátira, os robôs eram seres biológicos fabricados que realizavam todo o trabalho manual desagradável.
+                            Segundo Čapek, a palavra foi criada por seu irmão Josef a partir da palavra checa robota 'corvée', ou em eslovaco '
+                            trabalho' ou 'trabalho braçal '. (Karel Čapek trabalhava em sua peça durante sua estadia em Trenčianske Teplice, na
+                            Eslováquia, onde seu pai trabalhava como médico. ) A peça R.U.R. substituiu o uso popular da palavra "autômato".
+                        </p>
+                        <p className="Kakaw_Description">
+                            Em 1939, Konrad Zuse const ruiu o primeiro computador eletromecânico programável, lançando as bases para a construção de
+                            uma máquina humanoide e interativa que hoje consideramos ser um robô.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Em 1941 e 1942, Isaac Asimov formulou as Três Leis da Robótica e, no processo, cunhou a palavra " robótica". Em 1945,
+                            Vannevar Bush publicou Como Podemos Pensar, um ensaio que investigou o potencial do processamento eletrônico de dados. Ele
+                            previu o surgimento de computadores, processadores de texto digital, reconhecimento de voz e tradução automática.
+                        </p>
+                        <p className="Kakaw_Description">
+                            O primeiro robô móvel capaz de raciocinar sobre seu ambiente, Shakey, foi const ruído em 1970 pelo Stanford Research
+                            Institute (agora SRI International ). Shakey combinava várias entradas de sensores, incluindo câmeras de TV, medidores de
+                            distância a laser e "sensores de impacto" para navegar.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Em 1986, a Honda iniciou seu programa de pesquisa e desenvolvimento para criar robôs capazes de interagir com sucesso com
+                            humanos. Um robô hexapodal chamado Genghis foi revelado pelo MIT em 1989. Genghis era famoso por ser feito rapidamente e
+                            de forma barata devido a métodos de construção; Genghis usava 4 microprocessadores, 22 sensores e 12 motores servo.
+                        </p>
+                        <p className="Kakaw_Description">
+                            O popular Roomba, um aspirador de pó robótico, foi lançado pela primeira vez em 2002 pela empresa iRobot. Robôs comerciais
+                            e industriais estão agora em uso generalizado, executando trabalhos mais baratos ou com maior precisão e confiabilidade do
+                            que os humanos. Eles também são empregados para tarefas que são muito sujas, perigosas ou monótonas para serem adequadas
+                            para os humanos.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Nos últimos anos, houve um aumento no interesse pelo desenvolvimento de robôs com capacidades mais avançadas, como
+                            inteligência artificial ( IA), aprendizado de máquina e processamento de linguagem natural.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Esses robôs são projetados para real izar tarefas que exigem habilidades cognitivas de nível mais elevado, como tomada de
+                            decisão, resolução de problemas e adaptação a novas situações.
+                        </p>
+                        <p className="Kakaw_Description">
+                            À medida que a tecnologia continua a evoluir, é certo que os robôs se tornarão cada vez mais sofisticados e capazes de
+                            executar uma ampla gama de tarefas complexas. No entanto, também há preocupações sobre o impacto que os robôs terão na
+                            força de trabalho e na economia.
+                        </p>
+                        <p className="Kakaw_Description">
+                            Conforme os robôs se tornam mais avançados, eles podem substituir trabalhadores humanos em certas indústrias, o que poder
+                            ia levar a perdas de emprego e agitação social . Será importante gerenciar cuidadosamente a integração de robôs na
+                            sociedade para garantir que os benefícios sejam maximizados enquanto as consequências negativas sejam minimizadas.
+                        </p>
+                        <p className="Kakaw_Header">Mas como podemos definir usos éticos e humanos da tecnologia?</p>
+                        <p className="Kakaw_Description">
+                            Uma das idealizações para a Quinta Revolução Industrial, ou 5RI, abrange a noção de colaborações harmoniosas entre humanos
+                            e máquinas, com um foco específico no bem-estar dos múltiplos atores de um ecossistema (ou seja, sociedade, empresas,
+                            pessoas, animais, vegetais, minerais, etc… ).
+                        </p>
+                        <p className="Kakaw_Header">
+                            Essa aceitação harmoniosa de colaborações entre humanos e máquinas distingue a 5IR da Quarta Revolução Industrial (4IR),
+                            que se concentrou predominantemente em alcançar apenas eficiência, e por consequência lucro, usando tecnologia.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Dessa forma, a 5RI abre caminho para uma (r)evolução no pensamento e na alavancagem de colaborações entre humanos e
+                            máquinas para um maior bem-estar da sociedade.
                         </p>
                     </div>
                 </div>
@@ -173,39 +283,41 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">O Cacau no Brasil</h2>
+                        <h2 className="Sobre_Card_Title">A Robótica no Brasil</h2>
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
                             <strong>
-                                O cacau tem uma longa história no Brasil, remontando a milhares de anos, quando as civilizações indígenas já o
-                                consumiam.
-                            </strong>{" "}
-                            No entanto, foi somente durante o século XVIII que a cultura do cacau ganhou impulso significativo no país. Em meados do
-                            século XIX, a Bahia se tornou o principal estado produtor de cacau, graças às condições climáticas favoráveis e ao solo
-                            rico da região cacaueira.
+                                A robótica poder ser uma força transformadora para a sociedade brasileira, ajudando a criar empregos de alta
+                                qualidade, aumentando a eficiência e a produtividade, e melhorando a qualidade de vida das pessoas em todo o país.
+                            </strong>
+                        </p>
+                        <p className="Kakaw_Header">
+                            Para falar em robótica no Brasil é impossível não falar do setor onde essa pesquisa e seu desenvolvimento aconteceram de
+                            forma intensa e pioneira, que é a pesquisa de robótica para águas profundas e ultra profundas, na prospecção e exploração
+                            de petróleo na costa brasileira.
                         </p>
                         <p className="Kakaw_Description">
-                            Com a crescente demanda mundial por chocolate na virada do século XX, a produção de cacau no Brasil aumentou
-                            substancialmente. A partir da década de 1930, o país se consolidou como o maior produtor mundial de cacau, impulsionado
-                            principalmente pela produção de chocolate em grande escala por empresas brasileiras e internacionais.
+                            Quando, na década de 1980, a Petróleo Brasileiro S.A. - PETROBRAS, além de iniciar suas buscas por hidrocarbonetos na
+                            Amazônia, passou a intensificar pesquisas e realizações positivas de descobertas de novas fontes de óleo na plataforma
+                            cont inental brasileira, foi preciso entender, desenvolver pesquisas e dominar tecnologias relacionadas a águas profundas.
                         </p>
                         <p className="Kakaw_Description">
-                            No entanto, a década de 1980 trouxe desafios significativos para a indústria do cacau no Brasil. A propagação de uma
-                            doença devastadora chamada vassoura-de-bruxa causou grandes perdas nas plantações de cacau e teve um impacto significativo
-                            na produção. Além disso, a concorrência com outros países produtores e mudanças nos hábitos de consumo também afetaram o
-                            setor.
+                            Dentro deste esforço foi criado o Laboratório de Robótica do Centro de Pesquisas Leopoldo Miguez de Mello - CENPES, da
+                            PETROBRAS, onde realmente começou-se do início, trabalhando com manipuladores hidráulicos submarinos, depois com o
+                            desenvolvimento de várias ferramentas, algumas tele operadas, e outros sistemas para intervenções especiais.
                         </p>
                         <p className="Kakaw_Description">
-                            A partir dos anos 2000, o Brasil começou a se recuperar dessa crise através de esforços de pesquisa e desenvolvimento de
-                            variedades resistentes da planta. Novas áreas de cultivo foram exploradas em outros estados além da Bahia, como Pará e
-                            Espírito Santo, diversificando a produção do país.
+                            O robô G.I.R.I.N.O. 3 (Gabarito Interno Robotizado de Incidência Normal ao Oleoduto) é um robô desenvolvido pelo
+                            Laboratório de Robótica da área de Tecnologia Submarina do Centro de Pesquisa da Petrobras, que visa procurar vias menos
+                            arriscadas no processo de inspeção interna de dutos, cujos movimentos de deslocamento são gerados por energia hidráulica.
+                            (PANTA, 2005).
                         </p>
                         <p className="Kakaw_Description">
-                            Atualmente, o Brasil continua sendo um dos principais produtores de cacau no mundo, embora a liderança tenha sido
-                            compartilhada com outros países. O cultivo sustentável e a busca por práticas agrícolas responsáveis estão se tornando
-                            cada vez mais relevantes para garantir a preservação do cacau brasileiro e o crescimento sustentável da indústria do
-                            chocolate no país.
+                            O robô Chico Mendes 4 é um novo conceito de veículo híbrido, tele-operado, desenvolvido prioritariamente para atender as
+                            demandas de pesquisa e monitoramento socioambientais na Amazônia, também pode ser considerado como uma alternativa de
+                            locomoção para a região amazônica. Versátil, pouco invasivo, reconhece e se adapta aos diferentes tipos de cenários e
+                            obstáculos ao longo de seus trajetos e missões – características fundamentais para mobilidade e acessibilidade na região.
                         </p>
                     </div>
                 </div>
@@ -220,48 +332,27 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">Propriedades do Cacau</h2>
+                        <h2 className="Sobre_Card_Title">O Grande Desafio</h2>
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
                             <strong>
-                                O cacau, especialmente em sua forma não processada, oferece várias propriedades benéficas para o corpo humano, graças
-                                à presença de compostos naturais.
+                                A Human Robotics acredita que a robótica é uma das mais importantes tecnologias para o futuro da humanidade. Através
+                                da automação de tarefas repetitivas, onerosas e complexas, a robótica tem o poder de melhorar a qualidade de vida das
+                                pessoas e liberá-las para realizar atividades mais criativas e significativas.
                             </strong>
                         </p>
-                        <p className="Kakaw_Description">Abaixo estão as principais propriedades e efeitos do cacau no corpo:</p>
-                        <p className="Kakaw_Description">
-                            <strong>Antioxidantes:</strong> O cacau é uma rica fonte de antioxidantes, incluindo flavonoides e polifenóis. Esses
-                            antioxidantes ajudam a combater os radicais livres no corpo, reduzindo o estresse oxidativo e protegendo as células contra
-                            danos, o que pode contribuir para a prevenção de doenças crônicas e o envelhecimento celular.
+
+                        <p className="Kakaw_Header">
+                            No entanto, a robótica ainda é vista por muitos como uma tecnologia inacessível e cara, destinada apenas a experts de
+                            grandes empresas e organizações governamentais. A Human Robotics está empenhada em mudar essa percepção, tornando a
+                            robótica tão comum quanto os computadores pessoais e os smartphones a todas as pessoas no Brasil, independentemente de sua
+                            posição econômica ou nível de conhecimento técnico.
                         </p>
-                        <p className="Kakaw_Description">
-                            <strong>Efeitos cardiovasculares:</strong>O cacau tem propriedades que podem melhorar a saúde do coração. Os flavonoides
-                            encontrados no cacau podem promover a dilatação dos vasos sanguíneos, melhorar a circulação e reduzir a pressão arterial.
-                            Além disso, estudos sugerem que o consumo regular de cacau pode contribuir para a redução do colesterol LDL (colesterol
-                            ruim) e aumentar o colesterol HDL (colesterol bom).
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Estimulante e bem-estar: </strong>O cacau contém teobromina e cafeína em quantidades moderadas, substâncias
-                            estimulantes que podem promover um aumento temporário de energia e melhorar o humor. Além disso, o cacau é associado à
-                            liberação de endorfinas, neurotransmissores que podem gerar uma sensação de prazer e bem-estar.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Cognição e humor:</strong>
-                            Algumas pesquisas sugerem que o cacau pode ter efeitos positivos na cognição e no humor. Os flavonoides presentes no cacau
-                            podem melhorar o fluxo sanguíneo cerebral, o que pode aumentar a função cognitiva e a concentração. Além disso, o cacau
-                            pode reduzir os sintomas de estresse e ansiedade, melhorando o humor.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Efeitos anti-inflamatórios:</strong>
-                            Os antioxidantes encontrados no cacau também podem ter propriedades anti-inflamatórias. Eles podem ajudar a reduzir a
-                            inflamação no corpo, contribuindo para a prevenção de doenças inflamatórias crônicas, como a artrite reumatoide e algumas
-                            doenças cardiovasculares.
-                        </p>
-                        <p className="Kakaw_Description">
-                            É importante lembrar que esses efeitos benéficos estão associados ao consumo moderado de cacau e preferencialmente em sua
-                            forma menos processada, como o chocolate amargo com alto teor de cacau ou o cacau em pó natural. O consumo excessivo de
-                            produtos de chocolate altamente açucarados e processados pode anular esses benefícios e até mesmo ser prejudicial à saúde.
+
+                        <p className="Kakaw_Header">
+                            Para alcançar esse objetivo, estamos desenvolvendo robôs acessíveis e fáceis de usar, que podem ser utilizados em uma
+                            ampla variedade de aplicações e setores.
                         </p>
                     </div>
                 </div>
@@ -276,68 +367,14 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">Produção do Cacau</h2>
+                        <h2 className="Sobre_Card_Title">Nossa Equipe</h2>
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
                             <strong>
-                                O ciclo sazonal da plantação e do crescimento do cacau segue um padrão bem definido, com quatro principais etapas:
+                                Nossa Equipe é Multidisciplinar e conta com profissionais de diversas áreas, como Engenharia, Design, Administração e
+                                Marketing. Sinta-se à vontade para entrar em contato com qualquer um de nós.
                             </strong>
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Florada:</strong> O ciclo começa com a florada, que geralmente ocorre entre novembro e janeiro, período em que as
-                            árvores de cacau florescem. As pequenas flores são de coloração branca e nascem diretamente no tronco e nos galhos mais
-                            velhos das árvores.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Frutificação:</strong> Após a polinização cruzada, as flores dão lugar às frutas do cacau, conhecidas como
-                            "cápsulas" ou "cabruca". Essas cápsulas têm formato oval e contêm diversas sementes envolvidas por uma polpa adocicada. O
-                            processo de frutificação começa cerca de 5 a 7 meses após a florada, geralmente a partir de maio ou junho.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Colheita:</strong>A colheita das cápsulas de cacau acontece de forma manual e é um processo trabalhoso. Ela é
-                            realizada ao longo de vários meses, uma vez que as cápsulas não amadurecem todas ao mesmo tempo. Os agricultores colhem as
-                            cápsulas maduras e, ao mesmo tempo, fazem a poda das árvores para garantir um melhor crescimento futuro.
-                        </p>
-                        <p className="Kakaw_Description">
-                            <strong>Pós-colheita e secagem:</strong>
-                            Após a colheita, as cápsulas são abertas e as sementes de cacau (amêndoas) são retiradas. As amêndoas, ainda envoltas em
-                            uma polpa mucilaginosa, são deixadas para fermentar por alguns dias em caixotes ou cestos cobertos. Em seguida, as
-                            amêndoas são espalhadas para secar ao sol, processo que pode levar de uma a duas semanas. A secagem é uma etapa essencial
-                            para evitar a formação de fungos e garantir a qualidade do cacau.
-                        </p>
-
-                        <p className="Kakaw_Description">
-                            Completado o ciclo sazonal, o cacau está pronto para ser comercializado e processado. As amêndoas de cacau serão
-                            transformadas em produtos como o cacau em pó, a manteiga de cacau e, é claro, o tão apreciado chocolate. Esse ciclo se
-                            repete anualmente, com as árvores de cacau produzindo frutos por várias décadas, desde que cuidadas adequadamente pelos
-                            agricultores.
-                        </p>
-
-                        <p className="Kakaw_Header">
-                            Os produtos da Tropical Cacau são produzidos com base em práticas sustentáveis, desde a plantação do cacau até a
-                            fabricação do chocolate. O ciclo de vida desses produtos é dividido em três fases: produção, uso e descarte.
-                        </p>
-                        <p className="Kakaw_Description">
-                            Produção: Durante a fase de produção, a Tropical Cacau se preocupa em utilizar técnicas que minimizem o impacto ambiental,
-                            como o uso de insumos orgânicos e o respeito às leis trabalhistas. Além disso, a empresa promove a preservação das
-                            florestas e do habitat natural dos animais, realizando um manejo florestal responsável em suas fazendas produtoras de
-                            cacau..
-                        </p>
-                        <p className="Kakaw_Description">
-                            Uso: Durante a fase de uso, a Tropical Cacau incentiva o consumo consciente, promovendo a educação sobre a importância da
-                            sustentabilidade e do respeito ao meio ambiente. Os produtos são embalados de forma a minimizar a utilização de plástico e
-                            outros materiais que causem danos ambientais, além de serem oferecidos em embalagens reutilizáveis e/ou recicláveis.
-                        </p>
-                        <p className="Kakaw_Description">
-                            Descarte: Durante a fase de descarte, a Tropical Cacau promove a reciclagem e o correto descarte das embalagens, além de
-                            buscar formas de reutilização dos resíduos gerados na produção do chocolate, como a utilização de cascas de cacau na
-                            fabricação de adubo orgânico. A empresa também se preocupa em apoiar projetos de recuperação ambiental e social em suas
-                            comunidades.
-                        </p>
-                        <p className="Kakaw_Description">
-                            Em resumo, a Tropical Cacau busca seguir práticas sustentáveis em todas as fases do ciclo de vida de seus produtos, desde
-                            a produção até o descarte, visando a preservação do meio ambiente e o desenvolvimento sustentável.
                         </p>
                     </div>
                 </div>
@@ -353,24 +390,28 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </div>
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
-                            <strong>Contamos com uma rede de parceiros que nos ajudam a levar o melhor do cacau para você.</strong> Conheça um pouco
-                            mais sobre eles:
+                            <strong>
+                                Contamos com uma rede de parceiros que nos ajudam a levar tecnologia de ponta para você. Conheça um pouco mais sobre
+                                eles:
+                            </strong>
                         </p>
                         <p className="Kakaw_Description">
-                            <strong>Parceiros de produção:</strong> Nossos parceiros de produção são fazendas de cacau localizadas na região sul da
-                            Bahia que seguem práticas sustentáveis e respeitam as leis trabalhistas. Essas fazendas são certificadas pelo Instituto de
-                            Manejo e Certificação Florestal e Agrícola (IMAFLORA) e pelo Conselho de Manejo Florestal (FSC), que garantem a
-                            sustentabilidade da produção de cacau.
+                            <strong>Parceiros de produção:</strong> Nossos parceiros de produção são laboratórios de eletrônica e robótica localizadas
+                            nas cidades de Curitiba e São Paulo. Esses laboratórios são certificados pelo Instituto de Robótica do Brasil (IRB) e pelo
+                            Conselho de Manejo Industrial (CMI), que garantem a sustentabilidade e qualidade da produção de hardwares.
                         </p>
                         <p className="Kakaw_Description">
                             <strong>Parceiros de distribuição:</strong> Nossos parceiros de distribuição são empresas que nos ajudam a levar nossos
-                            produtos para todo o Brasil. Eles são responsáveis pela logística de entrega e pela comercialização dos produtos da
-                            Tropical Cacau em suas lojas físicas e virtuais.
+                            produtos para todo o Brasil. Eles são responsáveis pela logística de entrega e pela comercialização dos produtos da Human
+                            Robotics em suas lojas físicas e virtuais.
                         </p>
                         <p className="Kakaw_Description">
-                            <strong>Parceiros de reciclagem:</strong> Nossos parceiros de reciclagem são empresas que nos ajudam a reciclar as
-                            embalagens dos nossos produtos. Eles são responsáveis pela coleta e reciclagem das embalagens, garantindo que elas não
-                            causem danos ao meio ambiente.
+                            <strong>Parceiros de Assistência Técnica:</strong> Nossos parceiros de assistência técnica são capazes de oferecer
+                            serviços de reparo, configuração e treinamento para o uso dos robôs.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Parceiros de reciclagem:</strong> Nossos parceiros de reciclagem são empresas que nos ajudam a reciclar as partes
+                            eletrônicas e estruturais de nossos robôs, garantindo que nossos produtos causem menos danos ao meio ambiente.
                         </p>
                     </div>
                 </div>

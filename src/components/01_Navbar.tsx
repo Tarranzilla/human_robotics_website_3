@@ -74,8 +74,8 @@ export default function Navbar() {
             <div className="Navbar_Logo_Container">
                 <TropicalIcon />
                 <a href="#LP_Section_1" className="Navbar_LogoType_Container">
-                    <h1 className="Navbar_LogoType">tropical</h1>
-                    <h1 className="Navbar_LogoType">cacau</h1>
+                    <h1 className="Navbar_LogoType">Human</h1>
+                    <h1 className="Navbar_LogoType">Robotics</h1>
                 </a>
             </div>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Navbar_Main">
@@ -178,7 +178,7 @@ export default function Navbar() {
 
                 {menuIsOpen && (
                     <m.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Mobile_Navbar_Title">
-                        tropical cacau
+                        Human Robotics
                     </m.h1>
                 )}
             </div>

@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
             <div className="Footer_Copyright">
                 <p>© 2023</p>
-                <p>Tropical Cacau</p>
+                <p>Human Robotics</p>
             </div>
             <div className="Social_Media_Container">
                 <Icon_Whatsapp />
