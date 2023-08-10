@@ -79,6 +79,33 @@
     font-style: normal;
 }
 
+/* Researcher 300 */
+@font-face {
+    font-family: "Researcher_WOFF2";
+    src: url("./assets/fonts/Researcher_Thin_WOFF2.woff2") format("woff2");
+    /* Add additional src lines for different font file formats if necessary */
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Researcher 400 */
+@font-face {
+    font-family: "Researcher_WOFF2";
+    src: url("./assets/fonts/Researcher_Regular_WOFF2.woff2") format("woff2");
+    /* Add additional src lines for different font file formats if necessary */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Researcher 600 */
+@font-face {
+    font-family: "Researcher_WOFF2";
+    src: url("./assets/fonts/Researcher_Bold_WOFF2.woff2") format("woff2");
+    /* Add additional src lines for different font file formats if necessary */
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* GLOBAL STYLES */
 
 :root {
@@ -104,9 +131,9 @@
     --larger_gap: 10rem;
 
     font-size: 18px;
-    font-family: "ProfilePro_WOFF2", sans-serif;
+    font-family: "Roboto", sans-serif;
 
-    /* Main Brand Colors */
+    /* Legacy Colors */
     --cinza_escuro: #333;
     --cinza_neutro: #b3b3b3;
     --fundo_claro: #fcf0be;
@@ -115,21 +142,34 @@
     --vermelho_primario: #e32528;
     --verde_primario: #67b22f;
 
+    /* Main Brand Colors */
+    --hr_cinza_escuro: #333;
+    --hr_cinza_neutro: #b3b3b3;
+    --hr_fundo_claro: #ffffff;
+
+    --hr_azul_claro: #00aaff;
+    --hr_azul_escuro: #4400ff;
+    --hr_roxo: #ae00ff;
+
+    --hr_perigo: #ff5520;
+    --hr_alerta: #ffae2d;
+    --hr_sucesso: #00ffd6;
+
     /* Main Light Mode Colors */
-    --bg_color: #fcf0be;
-    --bg_color_faded_1: #fcf0beb9;
-    --bg_color_faded_2: #fcf0be5d;
+    --bg_color: #ffffff;
+    --bg_color_faded_1: #ffffffb9;
+    --bg_color_faded_2: #ffffff5d;
 
-    --text_color: #6f2f11;
-    --text_color_faded_1: #6f2f11b9;
-    --text_color_faded_2: #6f2f115d;
+    --text_color: #4400ff;
+    --text_color_faded_1: #4400ffb9;
+    --text_color_faded_2: #4400ff5d;
 
-    --anchor_color: #6f2f11;
-    --anchor_hover_color: #ffd800;
+    --anchor_color: #4400ff;
+    --anchor_hover_color: #00aaff;
 
-    --primary_color: #6f2f11;
-    --primary_color_faded_1: #6f2f11b9;
-    --primary_color_faded_2: #6f2f115d;
+    --primary_color: #4400ff;
+    --primary_color_faded_1: #4400ffb9;
+    --primary_color_faded_2: #4400ff5d;
 
     --secondary_color: #333;
     --secondary_color_faded_1: #333;
@@ -139,33 +179,33 @@
     --info_color_faded_1: #333;
     --info_color_faded_2: #333;
 
-    --success_color: #67b22f;
-    --warning_color: #ffd800;
-    --danger_color: #e32528;
+    --success_color: #00ffd6;
+    --warning_color: #ffae2d;
+    --danger_color: #ff5520;
 
     --shopping_cart_color: var(--cinza_neutro);
     --searchbar_color: var(--cinza_neutro);
     --menu_color: var(--cinza_neutro);
-    --cardText_color: #ffd800;
-    --mobile_menu_text_color: #6f2f11;
+    --cardText_color: #ffae2d;
+    --mobile_menu_text_color: #4400ff;
 }
 
 .darkmode {
     /* Main Dark Mode Colors */
-    --bg_color: #6f2f11;
-    --bg_color_faded_1: #6f2f11b9;
-    --bg_color_faded_2: #6f2f115d;
+    --bg_color: #4400ff;
+    --bg_color_faded_1: #4400ffb9;
+    --bg_color_faded_2: #4400ff5d;
 
-    --text_color: #fcf0be;
-    --text_color_faded_1: #fcf0beb9;
-    --text_color_faded_2: #f5f5f55d;
+    --text_color: #ffffff;
+    --text_color_faded_1: #ffffffb9;
+    --text_color_faded_2: #ffffff5d;
 
-    --anchor_color: #fcf0be;
-    --anchor_hover_color: #ffd800;
+    --anchor_color: #00aaff;
+    --anchor_hover_color: #ae00ff;
 
-    --primary_color: #ffd800;
-    --primary_color_faded_1: #ffd800b9;
-    --primary_color_faded_2: #ffd8005d;
+    --primary_color: #00aaff;
+    --primary_color_faded_1: #00aaffb9;
+    --primary_color_faded_2: #00aaff5d;
 
     --secondary_color: #333;
     --secondary_color_faded_1: #333;
@@ -175,16 +215,15 @@
     --info_color_faded_1: #333;
     --info_color_faded_2: #333;
 
-    --success_color: #67b22f;
-    --warning_color: #ffd800;
-    --danger_color: #e34545;
+    --success_color: #00ffd6;
+    --warning_color: #ffae2d;
+    --danger_color: #ff5520;
 
     --shopping_cart_color: var(--cinza_neutro);
     --searchbar_color: var(--cinza_neutro);
-    --menu_color: var(--cinza_escuro);
-
-    --cardText_color: #ffd800;
-    --mobile_menu_text_color: #ffd800;
+    --menu_color: var(--cinza_neutro);
+    --cardText_color: #ffae2d;
+    --mobile_menu_text_color: #4400ff;
 }
 
 * {
@@ -308,7 +347,7 @@ h1 {
 
     text-decoration: none;
     color: var(--primary_color);
-    font-family: "Cooper_TrueType";
+    font-family: "Researcher_WOFF2";
     font-weight: normal !important;
 }
 
@@ -326,7 +365,7 @@ h1 {
 }
 
 .Mobile_Navbar_Title {
-    font-family: "Cooper_TrueType";
+    font-family: "Researcher_WOFF2";
     font-weight: normal !important;
     color: var(--primary_color);
     font-size: 1.5rem;
@@ -340,7 +379,7 @@ h1 {
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Cooper_TrueType";
+    font-family: "Researcher_WOFF2";
     font-weight: normal !important;
     transition: all 0.2s ease-in-out;
     font-size: clamp(1rem, 2vw, 1.2rem);
@@ -2218,7 +2257,7 @@ h1 {
 }
 
 .Type_Viewer_Title {
-    font-family: "Cooper_TrueType";
+    font-family: "Researcher_WOFF2";
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -2246,7 +2285,7 @@ h1 {
     background-color: var(--text_color);
     color: var(--bg_color);
     cursor: pointer;
-    font-family: "Cooper_TrueType";
+    font-family: "Researcher_WOFF2";
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);

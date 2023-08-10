@@ -10,6 +10,7 @@ import { motion as m } from "framer-motion";
 
 // Tropical Icon Component Import
 import TropicalIcon from "./Icons/Icon_TropicalCacau";
+import HumanRoboticsIcon from "./Icons/Icon_HumanRobotics";
 
 export default function Navbar() {
     const dispatch = useDispatch();
@@ -72,10 +73,10 @@ export default function Navbar() {
     return (
         <div className="Navbar" key={"Navbar"}>
             <div className="Navbar_Logo_Container">
-                <TropicalIcon />
+                <HumanRoboticsIcon />
                 <a href="#LP_Section_1" className="Navbar_LogoType_Container">
-                    <h1 className="Navbar_LogoType">Human</h1>
-                    <h1 className="Navbar_LogoType">Robotics</h1>
+                    <h1 className="Navbar_LogoType">HUMAN</h1>
+                    <h1 className="Navbar_LogoType">ROBOTICS</h1>
                 </a>
             </div>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Navbar_Main">
