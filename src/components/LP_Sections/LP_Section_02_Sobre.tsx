@@ -2,12 +2,152 @@
 import { forwardRef } from "react";
 
 import backgroundImg from "../../assets/cacau_textures/dalle3.png";
+
 import fotoOlivier from "../../assets/sobre/olivier.jpeg";
-//import fotoRodrigo from "../../assets/sobre/rodrigo.jpg";
-//import fotoOtoniel from "../../assets/sobre/otoniel.jpg";
-//import fotoLeandro from "../../assets/sobre/leandro.jpg";
-//import fotoLarissa from "../../assets/sobre/larissa.jpg";
+import fotoFranklin from "../../assets/sobre/franklin_link.jpeg";
+import fotoGustavo from "../../assets/sobre/gustavo_da_paz.jpeg";
+import fotoGustavo2 from "../../assets/sobre/gustavo_raposo.jpeg";
+import fotoHelen from "../../assets/sobre/helen_almeida.jpeg";
+import fotoIeda from "../../assets/sobre/ieda_ikuta.jpeg";
+import fotoJean from "../../assets/sobre/jean_soares.jpeg";
+import fotoKarla from "../../assets/sobre/karla_gomes.jpeg";
+import fotoLarissa from "../../assets/sobre/larissa_felix.jpeg";
+import fotoLeticia from "../../assets/sobre/leticia_rodrigues.jpeg";
+import fotoLucas from "../../assets/sobre/lucas_costa.jpeg";
+import fotoMarcos from "../../assets/sobre/marcos_graebin.jpeg";
+import fotoMaria from "../../assets/sobre/maria_oliveira.jpeg";
+import fotoOtoniel from "../../assets/sobre/otoniel_da_rocha.jpeg";
+import fotoRenan from "../../assets/sobre/renan_felipe.jpeg";
+import fotoRodrigo from "../../assets/sobre/rodrigo_zan.jpeg";
+import fotoRonald from "../../assets/sobre/ronald_landaeta.jpeg";
+import fotoSamuel from "../../assets/sobre/samuel_pizzato.jpeg";
+import fotoVitor from "../../assets/sobre/vitor_hirozawa.jpeg";
+
+const todasAsFotos = [
+    fotoOlivier,
+    fotoFranklin,
+    fotoGustavo,
+    fotoGustavo2,
+    fotoHelen,
+    fotoIeda,
+    fotoJean,
+    fotoKarla,
+    fotoLarissa,
+    fotoLeticia,
+    fotoLucas,
+    fotoMarcos,
+    fotoMaria,
+    fotoOtoniel,
+    fotoRenan,
+    fotoRodrigo,
+    fotoRonald,
+    fotoSamuel,
+    fotoVitor,
+];
+
+const membrosDaEquipe = [
+    {
+        nome: "Olivier Smadja",
+        cargo: "CEO",
+        foto: fotoOlivier,
+    },
+    {
+        nome: "Franklin Link",
+        cargo: "Técnico em Mecatrônica",
+        foto: fotoFranklin,
+    },
+    {
+        nome: "Gustavo da Paz",
+        cargo: "Design 3D e Gestão de Projetos",
+        foto: fotoGustavo,
+    },
+    {
+        nome: "Gustavo Raposo",
+        cargo: "Desenvolvedor Mobile",
+        foto: fotoGustavo2,
+    },
+    {
+        nome: "Helen Almeida",
+        cargo: "Assistente Administrativa",
+        foto: fotoHelen,
+    },
+    {
+        nome: "Ieda Ikuta",
+        cargo: "Técnica em Eletrônica",
+        foto: fotoIeda,
+    },
+    {
+        nome: "Jean Soares",
+        cargo: "Analista e Marketing Digital",
+        foto: fotoJean,
+    },
+    {
+        nome: "Karla Gomes",
+        cargo: "Especialista em Tecnologia para Varejo",
+        foto: fotoKarla,
+    },
+    {
+        nome: "Larissa Felix",
+        cargo: "Diretora de Marketing e Comunicação",
+        foto: fotoLarissa,
+    },
+    {
+        nome: "Leticia Rodrigues",
+        cargo: "Estagiária de Garantia de Qualidade de Software",
+        foto: fotoLeticia,
+    },
+    {
+        nome: "Lucas Costa",
+        cargo: "Desenvolvedor de Software",
+        foto: fotoLucas,
+    },
+    {
+        nome: "Marcos Graebin",
+        cargo: "Desenvolvedor de Hardware",
+        foto: fotoMarcos,
+    },
+    {
+        nome: "Maria Oliveira",
+        cargo: "Marketing",
+        foto: fotoMaria,
+    },
+    {
+        nome: "Otoniel da Rocha",
+        cargo: "Diretor de Engenharia de Hardware e Operações",
+        foto: fotoOtoniel,
+    },
+    {
+        nome: "Renan Felipe",
+        cargo: "Desenvolvedor de Software",
+        foto: fotoRenan,
+    },
+    {
+        nome: "Rodrigo Zan",
+        cargo: "UX, UI e Designer de Produto",
+        foto: fotoRodrigo,
+    },
+    {
+        nome: "Ronald Landaeta",
+        cargo: "Técnico Eletrônico",
+        foto: fotoRonald,
+    },
+    {
+        nome: "Samuel Pizzato",
+        cargo: "Desenvolvedor de Software em Visão Computacional",
+        foto: fotoSamuel,
+    },
+    {
+        nome: "Vitor Hirozawa",
+        cargo: "Desenvolvedor IoT",
+        foto: fotoVitor,
+    },
+];
+
 import fotoEquipe from "../../assets/sobre/Equipe_HR.png";
+
+import fotoAlexandria from "../../assets/sobre/alexandria.webp";
+import fotoAlexandria2 from "../../assets/sobre/alexandria_02.jpg";
+import fotoDaVinci from "../../assets/sobre/davinci.jpg";
 
 const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: any) {
     return (
@@ -21,55 +161,6 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
-                        <h2 className="Sobre_Card_Title">A Fundação</h2>
-                    </div>
-                    <div className="Card_Content Sobre_Card_Content">
-                        <div className="Sobre_Img_Container_Desktop Desktop_Only">
-                            <img className="Sobre_Img" src={fotoOlivier}></img>
-                        </div>
-
-                        <div className="Sobre_Text_Container">
-                            <p className="Kakaw_Header">
-                                <strong>
-                                    A Human Robotics é uma Startup Brasileira de Robótica e Inteligência Artificial criada pelo Engenheiro e
-                                    Programador{" "}
-                                    <a className="Link_Leticia" href="#Leticia_Guedes">
-                                        Olivier Smadja
-                                    </a>
-                                    .
-                                </strong>
-                            </p>
-                            <div className="Sobre_Img_Container Sobre_Mobile_Only">
-                                <img className="Sobre_Img" src={fotoOlivier}></img>
-                            </div>
-                            <p className="Kakaw_Description">
-                                "Inspirados na Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
-                                buscamos confecionar robôs e experiências de forma pragmática por meio do uso de componentes sofisticados e
-                                pesquisadores de campo habilitados."
-                            </p>
-                            <p className="Kakaw_Header">
-                                Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e
-                                robótica pela USP.
-                            </p>
-                            <p className="Kakaw_Description">
-                                Após anos de experiência em engenharia e automação rodoviária, Olivier decidiu fundar a Human Robotics, uma empresa
-                                que tem como objetivo oferecer as melhores experiências para seus clientes, ao mesmo tempo que promove a
-                                responsabilidade social e ambiental em cada etapa da produção.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Sobre a Tropical Cacau */}
-                <div className="Sobre_Card" id="sobre_card_02">
-                    <a href="#sobre_card_01" className="Sobre_Card_Previous_Btn">
-                        <span className="material-icons">west</span>
-                    </a>
-                    <a href="#sobre_card_03" className="Sobre_Card_Next_Btn">
-                        <span className="material-icons">east</span>
-                    </a>
-                    <div className="Sobre_Card_Header">
-                        <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">A Human Robotics</h2>
                     </div>
                     <div className="Sobre_Text_Container">
@@ -79,11 +170,11 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 ambiente e promovemos o comércio justo.
                             </strong>
                         </p>
-                        <img className="Sobre_Img" src={fotoEquipe}></img>
+                        <img className="Sobre_Img WideImg" src={fotoEquipe}></img>
                         <p className="Kakaw_Description">
-                            A história da Human Robotics começa em março de 2017, quando Olivier teve a ideia de criar um robô para cuidar de pessoas
-                            idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha de
-                            robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
+                            A história da Human Robotics começa em março de 2017, quando Olivier Smadja teve a ideia de criar um robô para cuidar de
+                            pessoas idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha
+                            de robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
                         </p>
                         <p className="Kakaw_Description">
                             Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo, Otoniel ,
@@ -141,6 +232,56 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </div>
                 </div>
 
+                {/* Sobre a Tropical Cacau */}
+                <div className="Sobre_Card" id="sobre_card_02">
+                    <a href="#sobre_card_01" className="Sobre_Card_Previous_Btn">
+                        <span className="material-icons">west</span>
+                    </a>
+                    <a href="#sobre_card_03" className="Sobre_Card_Next_Btn">
+                        <span className="material-icons">east</span>
+                    </a>
+
+                    <div className="Sobre_Card_Header">
+                        <h3 className="Sobre_Card_SubTitle">Sobre</h3>
+                        <h2 className="Sobre_Card_Title">A Fundação</h2>
+                    </div>
+                    <div className="Card_Content Sobre_Card_Content">
+                        <div className="Sobre_Img_Container_Desktop Desktop_Only">
+                            <img className="Sobre_Img" src={fotoOlivier}></img>
+                        </div>
+
+                        <div className="Sobre_Text_Container">
+                            <p className="Kakaw_Header">
+                                <strong>
+                                    A Human Robotics é uma Startup Brasileira de Robótica e Inteligência Artificial criada pelo Engenheiro e
+                                    Programador{" "}
+                                    <a className="Link_Leticia" href="#Leticia_Guedes">
+                                        Olivier Smadja
+                                    </a>
+                                    .
+                                </strong>
+                            </p>
+                            <div className="Sobre_Img_Container Sobre_Mobile_Only">
+                                <img className="Sobre_Img" src={fotoOlivier}></img>
+                            </div>
+                            <p className="Kakaw_Description">
+                                "Inspirados na Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
+                                buscamos confecionar robôs e experiências de forma pragmática por meio do uso de componentes sofisticados e
+                                pesquisadores de campo habilitados."
+                            </p>
+                            <p className="Kakaw_Header">
+                                Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e
+                                robótica pela USP.
+                            </p>
+                            <p className="Kakaw_Description">
+                                Após anos de experiência em engenharia e automação rodoviária, Olivier decidiu fundar a Human Robotics, uma empresa
+                                que tem como objetivo oferecer as melhores experiências para seus clientes, ao mesmo tempo que promove a
+                                responsabilidade social e ambiental em cada etapa da produção.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Histórias do Cacau */}
                 <div className="Sobre_Card" id="sobre_card_03">
                     <a href="#sobre_card_02" className="Sobre_Card_Previous_Btn">
@@ -171,12 +312,14 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                             No século IV a.C. , o matemático Arquitas de Tarento postulou um dos primei ros registros que temos sobre um autômato,
                             neste ele apresenta um pássaro mecânico que ele chamou de "O Pombo" , impulsionado a vapor.
                         </p>
+                        <img className="Sobre_Img WideImg" src={fotoAlexandria}></img>
                         <p className="Kakaw_Header">
                             Quando os gregos controlaram o Egito, uma sucessão de engenheiros que podiam construir autômatos se estabeleceram em
                             Alexandria. A partir do polímata Ctesibius (285-222 a.C. ) , os engenheiros alexandrinos deixaram textos detalhando
                             autômatos viáveis alimentados por hidráulica ou vapor. Ctesibius construiu autômatos semelhantes a humanos, frequentemente
                             usados em cerimônias religiosas e no culto a deuses.
                         </p>
+                        <img className="Sobre_Img WideImg" src={fotoAlexandria2}></img>
                         <p className="Kakaw_Description">
                             Um dos últimos grandes engenheiros alexandrinos, Heron de Alexandria (10-70 d.C. ) construiu um teatro de marionetes
                             autômatos, onde as figuras e os cenários se moviam por meios mecânicos. Ele descreveu a construção de tais autômatos em
@@ -189,6 +332,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                             Os cadernos de Leonardo, redescobertos na década de 1950, contêm desenhos detalhados de um cavaleiro mecânico em armadura
                             que era capaz de sentar, acenar com os braços e mover a cabeça e a mandíbula.
                         </p>
+                        <img className="Sobre_Img WideImg" src={fotoDaVinci}></img>
                         <p className="Kakaw_Description">
                             O desenvolvimento inicial dos robôs baseou-se no esforço de automatizar as operações industriais. Este esforço foi
                             bastante exarcebado no começou no século XVIII , dentro da indústria têxtil, com o aparecimento dos primeiros teares
@@ -382,7 +526,21 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 Marketing. Sinta-se à vontade para entrar em contato com qualquer um de nós.
                             </strong>
                         </p>
-                        <img className="Sobre_Img" src={fotoEquipe}></img>
+                        <div className="Sobre_Member_Container">
+                            {membrosDaEquipe.map((membro: any) => {
+                                return (
+                                    <div className="Sobre_Member_Card" key={membro.nome}>
+                                        <div className="Sobre_Member_Image_Container">
+                                            <img src={membro.foto} alt={membro.nome} className="Sobre_Member_Image" />
+                                        </div>
+                                        <div className="Sobre_Member_Text_Container">
+                                            <h3 className="Sobre_Member_Name">{membro.nome}</h3>
+                                            <p className="Sobre_Member_Description">{membro.cargo}</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
 
