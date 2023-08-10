@@ -2,7 +2,12 @@
 import { forwardRef } from "react";
 
 import backgroundImg from "../../assets/cacau_textures/dalle3.png";
-import fotoLeticia from "../../assets/sobre/chocolateria_confeiteira.webp";
+import fotoOlivier from "../../assets/sobre/olivier.jpeg";
+//import fotoRodrigo from "../../assets/sobre/rodrigo.jpg";
+//import fotoOtoniel from "../../assets/sobre/otoniel.jpg";
+//import fotoLeandro from "../../assets/sobre/leandro.jpg";
+//import fotoLarissa from "../../assets/sobre/larissa.jpg";
+import fotoEquipe from "../../assets/sobre/Equipe_HR.png";
 
 const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: any) {
     return (
@@ -20,7 +25,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                     </div>
                     <div className="Card_Content Sobre_Card_Content">
                         <div className="Sobre_Img_Container_Desktop Desktop_Only">
-                            <img className="Sobre_Img" src={fotoLeticia}></img>
+                            <img className="Sobre_Img" src={fotoOlivier}></img>
                         </div>
 
                         <div className="Sobre_Text_Container">
@@ -35,7 +40,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 </strong>
                             </p>
                             <div className="Sobre_Img_Container Sobre_Mobile_Only">
-                                <img className="Sobre_Img" src={fotoLeticia}></img>
+                                <img className="Sobre_Img" src={fotoOlivier}></img>
                             </div>
                             <p className="Kakaw_Description">
                                 "Inspirados na Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
@@ -74,6 +79,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 ambiente e promovemos o comércio justo.
                             </strong>
                         </p>
+                        <img className="Sobre_Img" src={fotoEquipe}></img>
                         <p className="Kakaw_Description">
                             A história da Human Robotics começa em março de 2017, quando Olivier teve a ideia de criar um robô para cuidar de pessoas
                             idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha de
@@ -376,6 +382,7 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
                                 Marketing. Sinta-se à vontade para entrar em contato com qualquer um de nós.
                             </strong>
                         </p>
+                        <img className="Sobre_Img" src={fotoEquipe}></img>
                     </div>
                 </div>
 

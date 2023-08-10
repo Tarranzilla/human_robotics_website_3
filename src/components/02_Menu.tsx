@@ -93,7 +93,7 @@ export default function Menu() {
                             <div className="Product_Links_Container">
                                 <div className="Product_Links_Header">
                                     <a href="#LP_Section_3" className="Menu_Link" onClick={toggleMenuButton}>
-                                        Chocolates
+                                        Produtos
                                     </a>
                                 </div>
                                 <div className="LP_Links_Horizontal_Organizer">
@@ -108,7 +108,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("classico", 0);
                                             }}
                                         >
-                                            Tropical 35%
+                                            RobiOS GO
                                         </a>
                                         <a
                                             href="#chocolate-01"
@@ -117,7 +117,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("classico", 1);
                                             }}
                                         >
-                                            Tropical 60%
+                                            RobiOS Inspector
                                         </a>
                                         <a
                                             href="#chocolate-02"
@@ -126,7 +126,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("classico", 2);
                                             }}
                                         >
-                                            Tropical 80%
+                                            RobiOS Cargo
                                         </a>
                                         <a
                                             href="#chocolate-03"
@@ -135,7 +135,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("especial", 3);
                                             }}
                                         >
-                                            Tropical Branco
+                                            RobiOS
                                         </a>
                                         <a
                                             href="#chocolate-04"
@@ -144,7 +144,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("especial", 4);
                                             }}
                                         >
-                                            Tropical Frutas
+                                            RobiOS Studio
                                         </a>
                                         <a
                                             href="#chocolate-05"
@@ -153,7 +153,7 @@ export default function Menu() {
                                                 toggleProductDetailsButton("especial", 5);
                                             }}
                                         >
-                                            Tropical Nozes
+                                            RobiOS Avatar
                                         </a>
                                     </div>
                                 </div>

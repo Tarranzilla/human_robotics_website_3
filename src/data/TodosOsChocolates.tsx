@@ -3,7 +3,7 @@ import ChocolateType from "../types/Chocolate"; // Import the Chocolate interfac
 const TodosOsChocolates: ChocolateType[] = [
     {
         id: 0,
-        name: "Robios GO",
+        name: "RobiOS GO",
         type: "Robô Autônomo Móvel",
         chocoClass: "classico",
         description:
@@ -20,7 +20,7 @@ const TodosOsChocolates: ChocolateType[] = [
     },
     {
         id: 1,
-        name: "Robios Inspector",
+        name: "RobiOS Inspector",
         type: "Robô Autônomo Móvel",
         chocoClass: "classico",
         description:
@@ -37,7 +37,7 @@ const TodosOsChocolates: ChocolateType[] = [
     },
     {
         id: 2,
-        name: "Robios Cargo",
+        name: "RobiOS Cargo",
         type: "Robô Autônomo Móvel",
         chocoClass: "classico",
         description:
@@ -60,7 +60,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Sistema Operacional capaz de gerenciar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
         price: 1000,
-        imgSrc: "/robots_backgrounds/fundo_totem.png",
+        imgSrc: "/robots_backgrounds/fundo_avatar.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -70,13 +70,13 @@ const TodosOsChocolates: ChocolateType[] = [
     },
     {
         id: 4,
-        name: "Robios Studio",
-        type: "Software de Personalização Robótica",
+        name: "RobiOS Studio",
+        type: "Software de Personalização",
         chocoClass: "especial",
         description:
             "Um software capaz de personalizar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
         price: 3500,
-        imgSrc: "/robots_backgrounds/fundo_totem.png",
+        imgSrc: "/robots_backgrounds/fundo_avatar.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -86,12 +86,12 @@ const TodosOsChocolates: ChocolateType[] = [
     },
     {
         id: 5,
-        name: "Robios Avatar",
-        type: "Software de Inteligência Artificial",
+        name: "RobiOS Avatar",
+        type: "Assistente Virtual Inteligente",
         chocoClass: "especial",
         description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",
         price: 3500,
-        imgSrc: "/robots_backgrounds/fundo_totem.png",
+        imgSrc: "/robots_backgrounds/fundo_avatar.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
