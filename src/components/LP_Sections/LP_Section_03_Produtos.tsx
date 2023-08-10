@@ -67,17 +67,20 @@ const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props,
                 {activeChocoClass === "kit" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Kits"}>
                         <div className="Product_Card">
-                            <h3>Kit de Todos os Chocolates</h3>
+                            <h3>Assinatura Mensal Robios GO</h3>
                         </div>
                         <div className="Product_Card">
-                            <h3>Kit de Chocolates Experimentais</h3>
+                            <h3>Assinatura Mensal Robios Inspector</h3>
+                        </div>
+                        <div className="Product_Card">
+                            <h3>Assinatura Mensal Robios Cargo</h3>
                         </div>
                     </m.div>
                 )}
                 {activeChocoClass === "assinatura" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Assinaturas"}>
                         <div className="Product_Card">
-                            <h3>Assinaturas</h3>
+                            <h3>Experiências</h3>
                         </div>
                     </m.div>
                 )}

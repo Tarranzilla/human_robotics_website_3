@@ -9,7 +9,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         price: 25000,
-        imgSrc: "/imgs/chocolates/ChocolateClaro1.avif",
+        imgSrc: "/robots_backgrounds/fundo_go.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -26,7 +26,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         price: 35000,
-        imgSrc: "/imgs/chocolates/ChocolateCafé1.avif",
+        imgSrc: "/robots_backgrounds/fundo_inspector.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -43,7 +43,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         price: 25000,
-        imgSrc: "/imgs/chocolates/ChocolateEscuro1.avif",
+        imgSrc: "/robots_backgrounds/fundo_cargo.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -60,7 +60,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Sistema Operacional capaz de gerenciar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
         price: 1000,
-        imgSrc: "/imgs/chocolates/ChocolateEscuro2.avif",
+        imgSrc: "/robots_backgrounds/fundo_totem.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -76,7 +76,7 @@ const TodosOsChocolates: ChocolateType[] = [
         description:
             "Um software capaz de personalizar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
         price: 3500,
-        imgSrc: "/imgs/chocolates/ChocolateBranco1.avif",
+        imgSrc: "/robots_backgrounds/fundo_totem.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",
@@ -91,7 +91,7 @@ const TodosOsChocolates: ChocolateType[] = [
         chocoClass: "especial",
         description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",
         price: 3500,
-        imgSrc: "/imgs/chocolates/ChocolateComNozes.avif",
+        imgSrc: "/robots_backgrounds/fundo_totem.png",
         cartQuantity: 0,
         chocoOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         chocoOriginName: "Curitiba, Paraná, Brasil",

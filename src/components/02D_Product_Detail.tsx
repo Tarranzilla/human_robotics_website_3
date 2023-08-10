@@ -104,7 +104,7 @@ export default function ProductDetail() {
 
                     <div className="Product_Detail_Text_Item">
                         <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Origem do Cacau</h3>
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Origem das Peças</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
                             <p className="Product_Detail_Text_Content">{activeProduct.chocoOriginName}</p>
@@ -113,7 +113,7 @@ export default function ProductDetail() {
 
                     <div className="Product_Detail_Text_Item">
                         <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Produtor do Cacau</h3>
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Produtor do Robô</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
                             <p className="Product_Detail_Text_Content">{activeProduct.chocoProducerName}</p>
@@ -122,7 +122,7 @@ export default function ProductDetail() {
 
                     <div className="Product_Detail_Text_Item">
                         <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Ingredientes</h3>
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Componentes</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
                             <p className="Product_Detail_Text_Content">{activeProduct.ingredients}</p>
@@ -131,7 +131,7 @@ export default function ProductDetail() {
 
                     <div className="Product_Detail_Text_Item">
                         <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">ChocoTags</h3>
+                            <h3 className="Product_Detail_Text_Item_Header_Title">RoboTags</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
                             <p className="Product_Detail_Text_Content">{activeProduct.chocoClass}</p>
