@@ -2,8 +2,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // Data Imports
+//Legacy Imports
 import ChocolateType from "../types/Chocolate"; // Import the Chocolate interface
-import TodosOsChocolates from "../data/TodosOsChocolates";
+import TodosOsChocolates from "../data/TodosOsChocolates"; // Import the Chocolate data
+
+//New Imports
+import ProductType from "../types/00_Produto"; // import the product interface
+import TodosOsProdutos from "../data/00_TodosOsProdutos"; // import the product data
+
+import SolutionType from "../types/01A_Solucao"; // import the solution interface
+import TodasAsSolucoes from "../data/01_TodasAsSolucoes"; // import the solution data
 
 const initialState = {
     mode: "light",
@@ -26,6 +34,7 @@ const initialState = {
     activeChocoClass: "classico",
     activeProduct: null as ChocolateType | null,
     activeSolution: "atendimento",
+    solutionDetailsIsOpen: false,
     privacyPolicyIsOpen: false,
     termsIsOpen: false,
     siteMapIsOpen: false,
@@ -130,6 +139,10 @@ export const authSlice = createSlice({
             state.activeChocoClass = action.payload;
             console.log("Active Choco Class: " + state.activeChocoClass);
         },
+        toggleSolutionDetails: (state) => {
+            state.solutionDetailsIsOpen = !state.solutionDetailsIsOpen;
+            console.log("Solution Detail is toggled: " + (state.solutionDetailsIsOpen ? "open" : "closed"));
+        },
         togglePrivacyPolicy: (state) => {
             state.privacyPolicyIsOpen = !state.privacyPolicyIsOpen;
             console.log("Privacy Policy is toggled: " + (state.privacyPolicyIsOpen ? "open" : "closed"));
@@ -168,6 +181,7 @@ export const {
     decrementCartItem,
     removeFromCart,
     getCartTotal,
+    toggleSolutionDetails,
     toggleProductDetails,
     setActiveProduct,
     setActiveChocoClass,

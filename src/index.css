@@ -2624,6 +2624,10 @@ h1 {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+.Product_Card:hover .Card_Product_Description {
+    opacity: 1;
+}
+
 .Product_Card::after {
     content: "";
     position: absolute;
@@ -2701,9 +2705,12 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
-ddTo .Card_Product_Description {
+.Card_Product_Description {
+    opacity: 0;
+    margin-top: auto;
     color: var(--fundo_claro);
     font-size: clamp(1rem, 2vw, 1.2rem);
+    transition: all 0.2s ease-in-out;
 }
 
 .Product_Card_Footer {
@@ -2735,6 +2742,10 @@ ddTo .Card_Product_Description {
     transition: all 0.2s ease-in-out;
 }
 
+.Card_AddToCart_Button {
+    padding: 0;
+}
+
 .Card_Product_Detail_Button:focus,
 .Card_Product_Detail_Button:hover {
     background-color: var(--bg_color);
@@ -2747,6 +2758,25 @@ ddTo .Card_Product_Description {
 .Card_ScheduleDemo_Button:hover {
     background-color: var(--anchor_hover_color);
     color: var(--marrom_primario);
+}
+
+.AddToCartLeft,
+.AddToCartRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 50%;
+    height: 100%;
+    padding: var(--small_gap);
+}
+
+.AddToCartLeft {
+    border-right: 1px solid var(--bg_color);
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    border-radius: var(--small_gap);
 }
 
 /* SEÇÃO 4 - CONTATO */

@@ -15,6 +15,7 @@ import Cookies_Banner from "./components/02H_Cookies_Banner";
 import SearchBar from "./components/02B_Search_Bar";
 import Shopping_Cart from "./components/02C_Shopping_Cart";
 import Product_Detail from "./components/02D_Product_Detail";
+import Solution_Detail from "./components/02Db_Solution_Detail";
 import Checkout_Help from "./components/Shop/Checkout_Help";
 import Privacy from "./components/02E_Privacy";
 import Terms from "./components/02F_Terms";
@@ -28,6 +29,7 @@ function App() {
     const checkoutHelpIsOpen = useSelector((state: any) => state.checkoutHelpIsOpen);
     const searchIsOpen = useSelector((state: any) => state.searchIsOpen);
     const productDetailsIsOpen = useSelector((state: any) => state.productDetailsIsOpen);
+    const solutionDetailsIsOpen = useSelector((state: any) => state.solutionDetailsIsOpen);
     const privacyPolicyIsOpen = useSelector((state: any) => state.privacyPolicyIsOpen);
     const termsIsOpen = useSelector((state: any) => state.termsIsOpen);
     const siteMapIsOpen = useSelector((state: any) => state.siteMapIsOpen);
@@ -45,6 +47,7 @@ function App() {
                 {cartIsOpen && <Shopping_Cart key="Cart_key" />}
                 {checkoutHelpIsOpen && <Checkout_Help key="Checkout_Help_key" />}
                 {productDetailsIsOpen && <Product_Detail key="Product_Detail_key" />}
+                {solutionDetailsIsOpen && <Solution_Detail key="Solution_Detail_key" />}
                 <Loading key="Loading_Key" />
                 <div className="Content_Viewer" key="CV_Key">
                     <Outlet />

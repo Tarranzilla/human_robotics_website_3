@@ -6,7 +6,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveSolution } from "../../context/main_context";
+import { setActiveSolution, toggleSolutionDetails } from "../../context/main_context";
 
 // Video Imports
 import VideoEventos from "../../assets/videos/01_Robios_Eventos_Desktop_720p.mp4";
@@ -22,6 +22,11 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
 
     const handleSetActiveSolution = (activeSolution) => {
         dispatch(setActiveSolution(activeSolution));
+    };
+
+    const toggleActiveSolutionButton = () => {
+        dispatch(toggleSolutionDetails());
+        console.log("Toggling Solution Details");
     };
 
     return (
@@ -42,7 +47,7 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem interagir com os clientes, fornecendo informações sobre produtos e ajudando a localizar itens específicos
                             na loja. Ele pode até mesmo ajudar os clientes a fazer compras, oferecendo sugestões com base em suas preferências.
                         </p>
-                        <button className="Solution_KnowMore_Button">
+                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
                             <span className="material-icons">info</span>Mais Detalhes
                         </button>
                     </m.div>
@@ -56,7 +61,7 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem realizar atividades promocionais, como distribuir brindes e amostras de produtos, fornecer informações
                             sobre os produtos e serviços e até mesmo realizar vendas diretas.
                         </p>
-                        <button className="Solution_KnowMore_Button">
+                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
                             <span className="material-icons">info</span>Mais Detalhes
                         </button>
                     </m.div>
@@ -71,7 +76,7 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             leitor de RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise
                             posterior.
                         </p>
-                        <button className="Solution_KnowMore_Button">
+                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
                             <span className="material-icons">info</span>Mais Detalhes
                         </button>
                     </m.div>
@@ -85,7 +90,7 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem ser programados para entregar materiais e suprimentos em toda a fábrica, usando o leitor de RFID e código
                             de barras para identificar a localização e a quantidade dos materiais a serem entregues.
                         </p>
-                        <button className="Solution_KnowMore_Button">
+                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
                             <span className="material-icons">info</span>Mais Detalhes
                         </button>
                     </m.div>

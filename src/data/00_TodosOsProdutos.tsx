@@ -5,7 +5,8 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-00",
 
         id: 0,
-        name: "RobiOS GO",
+        prename: "RobiOS",
+        name: "GO",
         type: "Robô Autônomo Móvel",
         class: "robos",
         description:
@@ -33,7 +34,8 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-01",
 
         id: 1,
-        name: "RobiOS Inspector",
+        prename: "RobiOS",
+        name: "Inspector",
         type: "Robô Autônomo Móvel",
         class: "robos",
         description:
@@ -61,7 +63,8 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-02",
 
         id: 2,
-        name: "RobiOS Cargo",
+        prename: "RobiOS",
+        name: "Cargo",
         type: "Robô Autônomo Móvel",
         class: "robos",
         description:
@@ -88,6 +91,7 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-03",
 
         id: 3,
+        prename: "",
         name: "RobiOS",
         type: "Sistema Operacional Robótico",
         class: "sistemas",
@@ -115,7 +119,8 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-04",
 
         id: 4,
-        name: "RobiOS Studio",
+        prename: "RobiOS",
+        name: "Studio",
         type: "Software de Personalização",
         class: "sistemas",
         description:
@@ -142,7 +147,8 @@ const TodosOsProdutos: ProductType[] = [
         domId: "produto-05",
 
         id: 5,
-        name: "RobiOS Avatar",
+        prename: "RobiOS",
+        name: "Avatar",
         type: "Assistente Virtual Inteligente",
         class: "sistemas",
         description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",

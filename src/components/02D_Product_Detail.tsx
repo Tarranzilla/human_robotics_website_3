@@ -146,8 +146,10 @@ export default function ProductDetail() {
                         addToCartButton(activeProduct.id, 1);
                     }}
                 >
-                    À partir de<h3 className="Card_Product_Price">R$ {activeProduct.price},00</h3>Pedir uma Cotação{" "}
-                    {itemTotalQuantity > 0 && `(${itemTotalQuantity})`}
+                    <div className="AddToCartLeft">
+                        À partir de<h3 className="Card_Product_Price">R$ {activeProduct.price},00</h3>
+                    </div>
+                    <div className="AddToCartRight">Solicitar uma Cotação {itemTotalQuantity > 0 && `(${itemTotalQuantity})`}</div>
                 </button>
                 <button className="Card_ScheduleDemo_Button">Agendar Demonstração</button>
             </div>

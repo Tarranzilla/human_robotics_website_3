@@ -2,6 +2,7 @@ export default interface ProductType {
     domId: string;
 
     id: number;
+    prename: string;
     name: string;
     type: string;
     class: string;

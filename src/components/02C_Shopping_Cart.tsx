@@ -46,7 +46,9 @@ export default function Shopping_Cart() {
         const itemsString = itemsStringArray.join("\n");
 
         // Create the message
-        const message = `Olá, eu gostaria de fazer um pedido:\n\n${itemsString}\n\nTotal: R$ ${totalCartPrice.toFixed(2)}`;
+        const message = `Olá, eu gostaria de fazer uma solicitação de cotação para o seguinte pedido:\n\n${itemsString}\n\nTotal: R$ ${totalCartPrice.toFixed(
+            2
+        )}`;
 
         return message;
     };
@@ -99,12 +101,15 @@ export default function Shopping_Cart() {
                         </p>
                     </div>
                     <button className="Checkout_Button" onClick={toggleFinishOrderButton}>
-                        Finalizar Compra
+                        Enviar Solicitação
                     </button>
                 </div>
 
                 <a href="#processo_de_compra" className="Checkout_Help" onClick={toggleCheckoutHelpButton}>
-                    <span className="material-icons">info</span>Como a compra é finalizada ?
+                    <span className="material-icons">info</span>Como a solicitação é enviada?
+                </a>
+                <a href="#processo_de_compra" className="Checkout_Help" onClick={toggleCheckoutHelpButton}>
+                    <span className="material-icons">info</span>Como funciona a demonstação?
                 </a>
             </div>
         </m.div>
