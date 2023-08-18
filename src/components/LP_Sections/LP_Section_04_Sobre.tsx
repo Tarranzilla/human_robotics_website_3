@@ -149,9 +149,9 @@ import fotoAlexandria from "../../assets/sobre/alexandria.webp";
 import fotoAlexandria2 from "../../assets/sobre/alexandria_02.jpg";
 import fotoDaVinci from "../../assets/sobre/davinci.jpg";
 
-const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: any) {
+const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: any) {
     return (
-        <div className="LP_Section LP_Section_02_Sobre" id="LP_Section_2" ref={ref} key={"LP_Section_2"}>
+        <div className="LP_Section LP_Section_02_Sobre" id="LP_Section_4" ref={ref} key={"LP_Section_4"}>
             <img src={backgroundImg} alt="background" className="Section_02_Background" />
             <div className="Sobre_Card_Container">
                 {/* Sobre a Fundadora */}
@@ -585,4 +585,4 @@ const LP_Section_02_Sobre = forwardRef(function LP_Section_02_Sobre(props, ref: 
     );
 });
 
-export default LP_Section_02_Sobre;
+export default LP_Section_04_Sobre;

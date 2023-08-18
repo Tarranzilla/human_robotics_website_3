@@ -7,7 +7,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 //Bg Image Import
 import backgroundImg from "../../assets/cacau_textures/dalle4.png";
 
-const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, ref: any) {
+const LP_Section_05_Contato = forwardRef(function LP_Section_05_Contato(props, ref: any) {
     const [map1isOpen, setMap1isOpen] = useState(false);
     const [map2isOpen, setMap2isOpen] = useState(false);
 
@@ -20,7 +20,7 @@ const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, r
     };
 
     return (
-        <div className="LP_Section LP_Section_04_Contato" id="LP_Section_4" ref={ref} key={"LP_Section_4"}>
+        <div className="LP_Section LP_Section_04_Contato" id="LP_Section_5" ref={ref} key={"LP_Section_5"}>
             <img src={backgroundImg} alt="background" className="Section_04_Background" />
 
             <AnimatePresence>
@@ -124,4 +124,4 @@ const LP_Section_04_Contato = forwardRef(function LP_Section_04_Contato(props, r
     );
 });
 
-export default LP_Section_04_Contato;
+export default LP_Section_05_Contato;

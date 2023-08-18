@@ -75,8 +75,8 @@ export default function Navbar() {
             <div className="Navbar_Logo_Container">
                 <HumanRoboticsIcon />
                 <a href="#LP_Section_1" className="Navbar_LogoType_Container">
-                    <h1 className="Navbar_LogoType">HUMAN</h1>
-                    <h1 className="Navbar_LogoType">ROBOTICS</h1>
+                    <h1 className="Navbar_LogoType Human">HUMAN</h1>
+                    <h1 className="Navbar_LogoType Robotics">ROBOTICS</h1>
                 </a>
             </div>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Navbar_Main">
@@ -100,7 +100,7 @@ export default function Navbar() {
                             className={activeSection === 1 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                             onClick={handleLinkClick}
                         >
-                            Sobre
+                            Produtos
                         </m.a>
                         <m.a
                             initial={{ opacity: 0 }}
@@ -110,7 +110,7 @@ export default function Navbar() {
                             className={activeSection === 2 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                             onClick={handleLinkClick}
                         >
-                            Produtos
+                            Soluções
                         </m.a>
                         <m.a
                             initial={{ opacity: 0 }}
@@ -118,6 +118,17 @@ export default function Navbar() {
                             exit={{ opacity: 0 }}
                             href="#LP_Section_4"
                             className={activeSection === 3 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
+                            onClick={handleLinkClick}
+                        >
+                            Sobre
+                        </m.a>
+
+                        <m.a
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            href="#LP_Section_5"
+                            className={activeSection === 4 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                             onClick={handleLinkClick}
                         >
                             Contato

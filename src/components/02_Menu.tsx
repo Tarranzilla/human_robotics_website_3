@@ -87,12 +87,9 @@ export default function Menu() {
                             <div className="LP_Links_Line"></div>
                         </div>
                         <div className="LP_Links">
-                            <a href="#LP_Section_2" className="Menu_Link" onClick={toggleMenuButton}>
-                                Sobre
-                            </a>
                             <div className="Product_Links_Container">
                                 <div className="Product_Links_Header">
-                                    <a href="#LP_Section_3" className="Menu_Link" onClick={toggleMenuButton}>
+                                    <a href="#LP_Section_2" className="Menu_Link" onClick={toggleMenuButton}>
                                         Produtos
                                     </a>
                                 </div>
@@ -158,8 +155,14 @@ export default function Menu() {
                                     </div>
                                 </div>
                             </div>
-
+                            <a href="#LP_Section_3" className="Menu_Link" onClick={toggleMenuButton}>
+                                Soluções
+                            </a>
                             <a href="#LP_Section_4" className="Menu_Link" onClick={toggleMenuButton}>
+                                Sobre
+                            </a>
+
+                            <a href="#LP_Section_5" className="Menu_Link" onClick={toggleMenuButton}>
                                 Contato
                             </a>
                         </div>

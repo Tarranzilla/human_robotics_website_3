@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setActiveChocoClass } from "../../context/main_context";
 
 // Product Card Import
-import Product_Card from "../../components/Shop/Product_Card";
+import Product_Card from "../Shop/Product_Card";
 
 // Images Imports
 import backgroundImg from "../../assets/cacau_textures/dalle5.png";
@@ -20,7 +20,7 @@ import ChocolateImg4 from "../../assets/chocolates/ChocolateEscuro2.avif";
 import ChocolateImg5 from "../../assets/chocolates/ChocolateBranco1.avif";
 import ChocolateImg6 from "../../assets/chocolates/ChocolateComNozes.avif";
 
-const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props, ref: any) {
+const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props, ref: any) {
     const dispatch = useDispatch();
     const activeChocoClass = useSelector((state: any) => state.activeChocoClass);
 
@@ -31,7 +31,7 @@ const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props,
     const availableProducts = useSelector((state: any) => state.availableChocolates);
 
     return (
-        <div className="LP_Section LP_Section_03_Produtos" id="LP_Section_3" ref={ref} key={"LP_Section_3"}>
+        <div className="LP_Section LP_Section_03_Produtos" id="LP_Section_2" ref={ref} key={"LP_Section_2"}>
             <img src={backgroundImg} alt="background" className="Section_03_Background" />
             <div className="Type_Header">
                 {activeChocoClass === null && <h3 className="Type_Viewer_Title">Nenhum Produto Selecionado</h3>}
@@ -119,4 +119,4 @@ const LP_Section_03_Produtos = forwardRef(function LP_Section_03_Produtos(props,
     );
 });
 
-export default LP_Section_03_Produtos;
+export default LP_Section_02_Produtos;
