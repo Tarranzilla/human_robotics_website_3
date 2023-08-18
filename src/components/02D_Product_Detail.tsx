@@ -3,7 +3,7 @@ import ChocolateType from "../types/Chocolate";
 
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, toggleProductDetails, setActiveProduct } from "../context/main_context";
+import { addToCart, toggleProductDetails } from "../context/main_context";
 
 //Framer Motion Imports
 import { motion as m } from "framer-motion";
@@ -146,9 +146,10 @@ export default function ProductDetail() {
                         addToCartButton(activeProduct.id, 1);
                     }}
                 >
-                    <h3 className="Card_Product_Price">R$ {activeProduct.price},00</h3>Adicionar ao Carrinho{" "}
+                    À partir de<h3 className="Card_Product_Price">R$ {activeProduct.price},00</h3>Pedir uma Cotação{" "}
                     {itemTotalQuantity > 0 && `(${itemTotalQuantity})`}
                 </button>
+                <button className="Card_ScheduleDemo_Button">Agendar Demonstração</button>
             </div>
         </m.div>
     );

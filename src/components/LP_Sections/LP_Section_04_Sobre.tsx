@@ -23,6 +23,8 @@ import fotoRonald from "../../assets/sobre/ronald_landaeta.jpeg";
 import fotoSamuel from "../../assets/sobre/samuel_pizzato.jpeg";
 import fotoVitor from "../../assets/sobre/vitor_hirozawa.jpeg";
 
+import fotoFundacao1 from "../../assets/sobre/fotos_extras/FundaçãoPrototipo.png";
+
 const todasAsFotos = [
     fotoOlivier,
     fotoFranklin,
@@ -50,96 +52,172 @@ const membrosDaEquipe = [
         nome: "Olivier Smadja",
         cargo: "CEO",
         foto: fotoOlivier,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e robótica pela USP.",
     },
     {
         nome: "Franklin Link",
         cargo: "Técnico em Mecatrônica",
         foto: fotoFranklin,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Franklin é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e robótica pela USP.",
     },
     {
         nome: "Gustavo da Paz",
         cargo: "Design 3D e Gestão de Projetos",
         foto: fotoGustavo,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Gustavo é formado em Design pela PUC e possui especializações em modelagem 3D USP.",
     },
     {
         nome: "Gustavo Raposo",
         cargo: "Desenvolvedor Mobile",
         foto: fotoGustavo2,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Gustavo é formado em Desenvolvimento de Sofware pela PUC.",
     },
     {
         nome: "Helen Almeida",
         cargo: "Assistente Administrativa",
         foto: fotoHelen,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Helen é formada em Administração pela PUC.",
     },
     {
         nome: "Ieda Ikuta",
         cargo: "Técnica em Eletrônica",
         foto: fotoIeda,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Ieda é formada Eletrônica pela PUC.",
     },
     {
         nome: "Jean Soares",
         cargo: "Analista e Marketing Digital",
         foto: fotoJean,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Jean é formado em Marketing pela PUC.",
     },
     {
         nome: "Karla Gomes",
         cargo: "Especialista em Tecnologia para Varejo",
         foto: fotoKarla,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Karla é formada em Marketing pela PUC.",
     },
     {
         nome: "Larissa Felix",
         cargo: "Diretora de Marketing e Comunicação",
         foto: fotoLarissa,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Larissa é formada em Marketing pela PUC.",
     },
     {
         nome: "Leticia Rodrigues",
         cargo: "Estagiária de Garantia de Qualidade de Software",
         foto: fotoLeticia,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Leticia é formada em Computação pela PUC.",
     },
     {
         nome: "Lucas Costa",
         cargo: "Desenvolvedor de Software",
         foto: fotoLucas,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Lucas é formado em Computação pela PUC.",
     },
     {
         nome: "Marcos Graebin",
         cargo: "Desenvolvedor de Hardware",
         foto: fotoMarcos,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Marcos é formado em Engenharia Eletronica pela PUC.",
     },
     {
         nome: "Maria Oliveira",
         cargo: "Marketing",
         foto: fotoMaria,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Maria é formada em Marketing pela PUC.",
     },
     {
         nome: "Otoniel da Rocha",
         cargo: "Diretor de Engenharia de Hardware e Operações",
         foto: fotoOtoniel,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Otoniel é formado em Engenharia Eletronica pela PUC.",
     },
     {
         nome: "Renan Felipe",
         cargo: "Desenvolvedor de Software",
         foto: fotoRenan,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Renan é formado em Computação pela PUC.",
     },
     {
         nome: "Rodrigo Zan",
         cargo: "UX, UI e Designer de Produto",
         foto: fotoRodrigo,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Rodrigo é formado em Design pela PUC.",
     },
     {
         nome: "Ronald Landaeta",
         cargo: "Técnico Eletrônico",
         foto: fotoRonald,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Ronald é formado em Engenharia Eletronica pela PUC.",
     },
     {
         nome: "Samuel Pizzato",
         cargo: "Desenvolvedor de Software em Visão Computacional",
         foto: fotoSamuel,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Samuel é formado em Computação pela PUC.",
     },
     {
         nome: "Vitor Hirozawa",
         cargo: "Desenvolvedor IoT",
         foto: fotoVitor,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Vitor é formado em Computação pela PUC.",
     },
 ];
 
@@ -154,7 +232,7 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
         <div className="LP_Section LP_Section_02_Sobre" id="LP_Section_4" ref={ref} key={"LP_Section_4"}>
             <img src={backgroundImg} alt="background" className="Section_02_Background" />
             <div className="Sobre_Card_Container">
-                {/* Sobre a Fundadora */}
+                {/* Sobre a Empresa */}
                 <div className="Sobre_Card" id="sobre_card_01">
                     <a href="#sobre_card_02" className="Sobre_Card_Next_Btn">
                         <span className="material-icons">east</span>
@@ -232,7 +310,7 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                     </div>
                 </div>
 
-                {/* Sobre a Tropical Cacau */}
+                {/* Sobre a Fundação da Empresa */}
                 <div className="Sobre_Card" id="sobre_card_02">
                     <a href="#sobre_card_01" className="Sobre_Card_Previous_Btn">
                         <span className="material-icons">west</span>
@@ -247,7 +325,7 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                     </div>
                     <div className="Card_Content Sobre_Card_Content">
                         <div className="Sobre_Img_Container_Desktop Desktop_Only">
-                            <img className="Sobre_Img" src={fotoOlivier}></img>
+                            <img className="Sobre_Img" src={fotoFundacao1}></img>
                         </div>
 
                         <div className="Sobre_Text_Container">
@@ -536,6 +614,17 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                                         <div className="Sobre_Member_Text_Container">
                                             <h3 className="Sobre_Member_Name">{membro.nome}</h3>
                                             <p className="Sobre_Member_Description">{membro.cargo}</p>
+                                            <div className="Sobre_Member_Interactions">
+                                                <a className="Sobre_Interaction_Icon" href={membro.linkedin} target="_blank" rel="noreferrer">
+                                                    <span className="material-icons">share</span>
+                                                </a>
+                                                <a className="Sobre_Interaction_Icon" href={membro.telephone} target="_blank" rel="noreferrer">
+                                                    <span className="material-icons">perm_phone_msg</span>
+                                                </a>
+                                                <a className="Sobre_Interaction_Icon" href={membro.email} target="_blank" rel="noreferrer">
+                                                    <span className="material-icons">mail</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 );
@@ -548,6 +637,9 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                 <div className="Sobre_Card" id="sobre_card_07">
                     <a href="#sobre_card_06" className="Sobre_Card_Previous_Btn">
                         <span className="material-icons">west</span>
+                    </a>
+                    <a href="#sobre_card_08" className="Sobre_Card_Next_Btn">
+                        <span className="material-icons">east</span>
                     </a>
                     <div className="Sobre_Card_Header">
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
@@ -577,6 +669,93 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <p className="Kakaw_Description">
                             <strong>Parceiros de reciclagem:</strong> Nossos parceiros de reciclagem são empresas que nos ajudam a reciclar as partes
                             eletrônicas e estruturais de nossos robôs, garantindo que nossos produtos causem menos danos ao meio ambiente.
+                        </p>
+                    </div>
+                </div>
+
+                {/* FAQ */}
+                <div className="Sobre_Card" id="sobre_card_08">
+                    <a href="#sobre_card_07" className="Sobre_Card_Previous_Btn">
+                        <span className="material-icons">west</span>
+                    </a>
+                    <div className="Sobre_Card_Header">
+                        <h3 className="Sobre_Card_SubTitle">Sobre</h3>
+                        <h2 className="Sobre_Card_Title">Perguntas Frequentes</h2>
+                    </div>
+                    <div className="Sobre_Text_Container FAQ_Container">
+                        <p className="Kakaw_Header">
+                            <strong>Algumas informações relevantes sobre nossos Produtos, Serviços e Empresa.</strong>
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>É possível fazer integração com outros softwares?</strong> Sim! É possível integrar o software do Robios com
+                            qualquer outro software com abertura para integrações API.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O RobiOS pode reconhecer pessoas?</strong> O Robios identifica a presença e aproximação humana, podendo seguir ou
+                            abordar quem se aproxima, porém não consegue ainda reconhecer diferentes pessoas.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O RobiOS funciona por comando de voz ou touch screen?</strong> É possível interagir com o Robios das duas formas,
+                            bastando apenas alterar a configuração. A interação por touch screen é mais recomendada em locais com barulhos ou ruídos
+                            (como eventos), para não gerar confusão na identificação das informações
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Como o RobiOS consegue identificar os locais?</strong> Em um primeiro momento, é feito o mapeamento do local com
+                            um joystick, e a definição de onde ficará a dock station do Robios. Com isso, é gerado um mapa por onde o Robios poderá se
+                            locomover, e seu reconhecimento de localização é por meio da sua movimentação a partir da dock station.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O RobiOS desvia de obstáculos?</strong> Sim! O Robios possui sensores que permitem que ele reconheça a presença de
+                            pessoas e obstáculos e desvie deles, traçando novas rotas dentro do local para chegar ao destino, caso necessário.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Posso levar o RobiOS a outros locais?</strong> Você pode trocar o Robios de local, porém é necessário fazer o
+                            mapeamento a cada local novo. Não se preocupe, todos os mapas ficam salvos, e ao retorná-lo a algum local já mapeado,
+                            basta selecionar o respectivo mapa em suas configurações.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O RobiOS pode passar em desníveis?</strong> Não recomendamos locais com desníveis, como degraus e locais com
+                            buracos ou pisos com texturas, pois podem desequilibrar o Robios e danificar o robô.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>É possível personalizar o corpo do RobiOS?</strong> Conseguimos personalizar a plotagem do corpo com outras cores
+                            e logo, deixando com a carinha e identidade visual da sua empresa!
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Posso alterar o script após a primeira configuração?</strong> Sim, você pode alterar o script a qualquer momento!
+                            Basta acessar uma plataforma intuitiva e fácil de usar para fazer novas configurações, sem utilizar linguagem de
+                            programação!
+                        </p>
+                        <p className="Kakaw_Description">
+                            O RobiOS depende de conexão com a Internet? Para o Robios, apenas o mapeamento e a telepresença dependem da Internet, as
+                            demais interações funcionam de forma offline. Para o Totem e o Avatar, a Internet é necessária para suas funções.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Como funcionam as manutenções?</strong> Caso seja necessária alguma manutenção no software, conseguimos fazer a
+                            manutenção de forma remota.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Qual o sistema operacional do RobiOS?</strong> O RobiOS possui Android como sistema operacional.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Tem garantia?</strong> O RobiOS tem 1 ano de garantia, que pode ser extendida no contrato.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O contrato é por aluguel ou compra?</strong> Temos as 2 opções de contrato.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Como funciona a telepresença?</strong> É gerado um link por meio da nossa plataforma, que você pode enviar à
+                            pessoa que acessará o Robios. Por meio desse link, o usuário pode movimentar o Robô, e conversar por videochamada com quem
+                            estiver próximo a ele.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>O Robios possui braços?</strong> Não! É possível acoplar bandejas para que o Robios possa levar pequenos itens,
+                            como brindes e folders.
+                        </p>
+                        <p className="Kakaw_Description">
+                            <strong>Minha empresa recebe treinamento ao adquirir o Robios?</strong> Sua empresa receberá um treinamento sobre a
+                            utilização do Robios e configurações iniciais. Porém temos disponível para contratação treinamentos mais detalhados sobre
+                            configurações avançadas e integrações.
                         </p>
                     </div>
                 </div>

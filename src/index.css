@@ -1652,6 +1652,11 @@ h1 {
 
 .Product_Detail_Footer {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--small_gap);
 }
 
 /* HELP CONTAINERS */
@@ -2305,9 +2310,9 @@ h1 {
 
 .Sobre_Member_Container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     gap: var(--small_gap);
     width: 100%;
     height: 100%;
@@ -2316,6 +2321,9 @@ h1 {
 
 .Sobre_Member_Card {
     width: 100%;
+    max-width: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
     aspect-ratio: 1/1;
     border-radius: var(--small_gap);
     background-color: var(--bg_color);
@@ -2325,11 +2333,14 @@ h1 {
     align-items: center;
     gap: var(--small_gap);
     padding: var(--small_gap) 0 var(--small_gap) 0;
+    position: relative;
 }
 
 .Sobre_Member_Image_Container {
     width: 100%;
     aspect-ratio: 1/1;
+    max-height: 330px;
+    max-width: 330px;
     border-radius: var(--small_gap);
     overflow: hidden;
     display: flex;
@@ -2346,6 +2357,42 @@ h1 {
     aspect-ratio: 1/1;
     border-radius: var(--small_gap);
     object-fit: cover;
+}
+
+.Sobre_Member_Text_Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.3rem;
+    text-align: center;
+}
+
+.Sobre_Member_Interactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--small_gap);
+}
+
+.Sobre_Interaction_Icon {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--text_color);
+    color: var(--bg_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.Sobre_Interaction_Icon:hover {
+    scale: 1.1;
 }
 
 .Tropical_Description {
@@ -2408,8 +2455,13 @@ h1 {
     flex-direction: column;
     gap: 0.5rem;
     height: 100%;
+    width: 100%;
     overflow-y: auto;
     padding-right: 0.5rem;
+}
+
+.FAQ_Container {
+    gap: var(--small_gap);
 }
 
 .Sobre_Text_Container::-webkit-scrollbar-thumb {
@@ -2649,8 +2701,7 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
-
-.Card_Product_Description {
+ddTo .Card_Product_Description {
     color: var(--fundo_claro);
     font-size: clamp(1rem, 2vw, 1.2rem);
 }
@@ -2665,10 +2716,10 @@ h1 {
 }
 
 .Card_Product_Detail_Button,
-.Card_AddToCart_Button {
+.Card_AddToCart_Button,
+.Card_ScheduleDemo_Button {
     width: 100%;
     max-width: 500px;
-    margin-inline: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2691,7 +2742,9 @@ h1 {
 }
 
 .Card_AddToCart_Button:focus,
-.Card_AddToCart_Button:hover {
+.Card_AddToCart_Button:hover,
+.Card_ScheduleDemo_Button:focus,
+.Card_ScheduleDemo_Button:hover {
     background-color: var(--anchor_hover_color);
     color: var(--marrom_primario);
 }
@@ -2868,7 +2921,7 @@ h1 {
     position: absolute;
     z-index: -1;
     bottom: 0;
-    background-image: linear-gradient(to top, var(--bg_color), transparent);
+    background-image: linear-gradient(to top, var(--bg_color) 70%, transparent 100%);
     opacity: 1;
     border-radius: var(--small_gap);
 }

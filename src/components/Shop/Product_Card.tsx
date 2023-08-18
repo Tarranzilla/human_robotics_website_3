@@ -53,15 +53,7 @@ export default function Product_Card({ product: { id, imgSrc, name, type, descri
                     }}
                 >
                     <span className="material-icons">style</span>
-                    Detalhes
-                </button>
-                <button
-                    className="Card_AddToCart_Button"
-                    onClick={() => {
-                        addToCartButton(id, 1);
-                    }}
-                >
-                    <h4 className="Card_Product_Price">R$ {price},00</h4>Adicionar ao Carrinho {itemTotalQuantity > 0 && `(${itemTotalQuantity})`}
+                    Mais Detalhes
                 </button>
             </div>
         </div>

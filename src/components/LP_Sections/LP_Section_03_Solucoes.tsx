@@ -42,7 +42,9 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem interagir com os clientes, fornecendo informações sobre produtos e ajudando a localizar itens específicos
                             na loja. Ele pode até mesmo ajudar os clientes a fazer compras, oferecendo sugestões com base em suas preferências.
                         </p>
-                        <button className="Solution_KnowMore_Button">Mais Detalhes</button>
+                        <button className="Solution_KnowMore_Button">
+                            <span className="material-icons">info</span>Mais Detalhes
+                        </button>
                     </m.div>
                 )}
                 {activeSolution === "publicidade" && (
@@ -54,7 +56,9 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem realizar atividades promocionais, como distribuir brindes e amostras de produtos, fornecer informações
                             sobre os produtos e serviços e até mesmo realizar vendas diretas.
                         </p>
-                        <button className="Solution_KnowMore_Button">Mais Detalhes</button>
+                        <button className="Solution_KnowMore_Button">
+                            <span className="material-icons">info</span>Mais Detalhes
+                        </button>
                     </m.div>
                 )}
                 {activeSolution === "inspecao" && (
@@ -67,7 +71,9 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             leitor de RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise
                             posterior.
                         </p>
-                        <button className="Solution_KnowMore_Button">Mais Detalhes</button>
+                        <button className="Solution_KnowMore_Button">
+                            <span className="material-icons">info</span>Mais Detalhes
+                        </button>
                     </m.div>
                 )}
                 {activeSolution === "transporte" && (
@@ -79,7 +85,9 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                             Os robôs podem ser programados para entregar materiais e suprimentos em toda a fábrica, usando o leitor de RFID e código
                             de barras para identificar a localização e a quantidade dos materiais a serem entregues.
                         </p>
-                        <button className="Solution_KnowMore_Button">Mais Detalhes</button>
+                        <button className="Solution_KnowMore_Button">
+                            <span className="material-icons">info</span>Mais Detalhes
+                        </button>
                     </m.div>
                 )}
             </div>
