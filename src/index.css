@@ -171,7 +171,7 @@
     --text_color_faded_2: #0007c95d;
 
     --anchor_color: #0007c9;
-    --anchor_hover_color: #ae00ff;
+    --anchor_hover_color: #00aaff;
 
     --primary_color: #0007c9;
     --primary_color_faded_1: #0007c9b9;
@@ -206,8 +206,8 @@
     --text_color_faded_1: #ffffffb9;
     --text_color_faded_2: #ffffff5d;
 
-    --anchor_color: #00aaff;
-    --anchor_hover_color: #ffffff;
+    --anchor_color: #ffffff;
+    --anchor_hover_color: #00aaff;
 
     --primary_color: #00aaff;
     --primary_color_faded_1: #00aaffb9;
@@ -352,7 +352,7 @@ h1 {
     gap: 0;
 
     text-decoration: none;
-    color: var(--primary_color);
+    color: var(--text_color);
     font-family: "Researcher_WOFF2";
     font-weight: normal !important;
 }
@@ -2510,8 +2510,8 @@ h1 {
 .Product_Type.active,
 .Product_Type:focus,
 .Product_Type:hover {
-    background-color: var(--primary_color);
-    color: #ffffff;
+    background-color: var(--anchor_hover_color);
+    color: var(--text_color);
     scale: 1.05;
 }
 
@@ -2835,13 +2835,68 @@ h1 {
     align-items: center;
     gap: var(--small_gap);
     border-radius: var(--small_gap);
-    padding: var(--small_gap);
+    padding: var(--medium_gap);
+    position: relative;
 }
 
 .Solution_Title {
     font-family: "Researcher_WOFF2";
     text-transform: uppercase;
-    font-size: clamp(1.8rem, 2vw, 2.4rem);
+    font-size: clamp(1.8rem, 4vw, 5rem);
+    margin-bottom: auto;
+}
+
+.Solution_Description {
+    font-size: clamp(1.2rem, 1.6vw, 2.2rem);
+    font-weight: 600;
+    color: var(--text_color);
+}
+
+.Solution_Video {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--small_gap);
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+.Solution_Video_Fader {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-image: linear-gradient(to top, var(--bg_color), transparent);
+    opacity: 1;
+    border-radius: var(--small_gap);
+}
+
+.Solution_KnowMore_Button {
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: var(--small_gap);
+    border: none;
+    border-radius: var(--small_gap);
+    background-color: var(--text_color);
+    color: var(--bg_color);
+    cursor: pointer;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.Solution_KnowMore_Button:focus,
+.Solution_KnowMore_Button:hover {
+    background-color: var(--anchor_hover_color);
+    color: var(--text_color);
+    scale: 1.05;
 }
 
 .Secondary_Page {
