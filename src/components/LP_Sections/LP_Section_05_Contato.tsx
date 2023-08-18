@@ -21,8 +21,7 @@ const LP_Section_05_Contato = forwardRef(function LP_Section_05_Contato(props, r
 
     return (
         <div className="LP_Section LP_Section_04_Contato" id="LP_Section_5" ref={ref} key={"LP_Section_5"}>
-            <img src={backgroundImg} alt="background" className="Section_04_Background" />
-
+            <div className="Section_04_Background"></div>
             <AnimatePresence>
                 {map1isOpen && (
                     <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Mapa_Container Mapa_1">

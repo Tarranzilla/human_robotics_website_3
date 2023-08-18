@@ -154,6 +154,9 @@
     --hr_azul_escuro: #4400ff;
     --hr_roxo: #ae00ff;
 
+    --hr_azul_claro_2: #0007c9;
+    --hr_azul_escuro_2: #000343;
+
     --hr_perigo: #ff5520;
     --hr_alerta: #ffae2d;
     --hr_sucesso: #00ffd6;
@@ -163,16 +166,16 @@
     --bg_color_faded_1: #ffffffb9;
     --bg_color_faded_2: #ffffff5d;
 
-    --text_color: #4400ff;
-    --text_color_faded_1: #4400ffb9;
-    --text_color_faded_2: #4400ff5d;
+    --text_color: #0007c9;
+    --text_color_faded_1: #0007c9b9;
+    --text_color_faded_2: #0007c95d;
 
-    --anchor_color: #4400ff;
-    --anchor_hover_color: #00aaff;
+    --anchor_color: #0007c9;
+    --anchor_hover_color: #ae00ff;
 
-    --primary_color: #4400ff;
-    --primary_color_faded_1: #4400ffb9;
-    --primary_color_faded_2: #4400ff5d;
+    --primary_color: #0007c9;
+    --primary_color_faded_1: #0007c9b9;
+    --primary_color_faded_2: #0007c95d;
 
     --secondary_color: #333;
     --secondary_color_faded_1: #333;
@@ -190,14 +193,14 @@
     --searchbar_color: var(--cinza_neutro);
     --menu_color: var(--cinza_neutro);
     --cardText_color: #ffae2d;
-    --mobile_menu_text_color: #4400ff;
+    --mobile_menu_text_color: #0007c9;
 }
 
 .darkmode {
     /* Main Dark Mode Colors */
-    --bg_color: #4400ff;
-    --bg_color_faded_1: #4400ffb9;
-    --bg_color_faded_2: #4400ff5d;
+    --bg_color: #000343;
+    --bg_color_faded_1: #000343b9;
+    --bg_color_faded_2: #0003435d;
 
     --text_color: #ffffff;
     --text_color_faded_1: #ffffffb9;
@@ -718,7 +721,7 @@ h1 {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    gap: var(--small_gap);
+    gap: 0.5rem;
 }
 
 .Product_Links,
@@ -2018,6 +2021,30 @@ h1 {
     height: 200px;
 }
 
+.carroussel_left_fade,
+.carroussel_right_fade {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: var(--small_gap);
+    background: linear-gradient(to right, var(--bg_color), transparent);
+    z-index: 2;
+}
+
+.carroussel_left_fade {
+    left: 0;
+}
+
+.carroussel_right_fade {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.top_fade {
+    top: var(--small_gap);
+    bottom: auto;
+}
+
 .carroussel_experiencias {
     bottom: auto;
     top: var(--small_gap);
@@ -2110,6 +2137,7 @@ h1 {
     font-size: clamp(3rem, 8vw, 7rem);
     z-index: 3;
     filter: drop-shadow(0 0 3px var(--bg_color));
+    text-align: center;
 }
 
 .Website_Introduction {

@@ -11,15 +11,6 @@ import { setActiveChocoClass } from "../../context/main_context";
 // Product Card Import
 import Product_Card from "../Shop/Product_Card";
 
-// Images Imports
-import backgroundImg from "../../assets/cacau_textures/dalle5.png";
-import ChocolateImg1 from "../../assets/chocolates/ChocolateClaro1.avif";
-import ChocolateImg2 from "../../assets/chocolates/ChocolateCafé1.avif";
-import ChocolateImg3 from "../../assets/chocolates/ChocolateEscuro1.avif";
-import ChocolateImg4 from "../../assets/chocolates/ChocolateEscuro2.avif";
-import ChocolateImg5 from "../../assets/chocolates/ChocolateBranco1.avif";
-import ChocolateImg6 from "../../assets/chocolates/ChocolateComNozes.avif";
-
 const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props, ref: any) {
     const dispatch = useDispatch();
     const activeChocoClass = useSelector((state: any) => state.activeChocoClass);
@@ -32,8 +23,8 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
 
     return (
         <div className="LP_Section LP_Section_03_Produtos" id="LP_Section_2" ref={ref} key={"LP_Section_2"}>
-            <img src={backgroundImg} alt="background" className="Section_03_Background" />
-            <div className="Type_Header">
+            <div className="Section_03_Background"></div>
+            <div className="Type_Header" key={"Product_Type_Header_A"}>
                 {activeChocoClass === null && <h3 className="Type_Viewer_Title">Nenhum Produto Selecionado</h3>}
                 {activeChocoClass === "classico" && <h3 className="Type_Viewer_Title">Robôs</h3>}
                 {activeChocoClass === "especial" && <h3 className="Type_Viewer_Title">Softwares</h3>}
@@ -42,7 +33,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
             </div>
             <div className="Type_Viewer">
                 {activeChocoClass === 0 && (
-                    <div className="Product_Container">
+                    <div className="Product_Container" key={"Product_Container_A"}>
                         <h3 className="No_Product_Selected_Title">Nenhuma Categoria de Produto Selecionada</h3>
                     </div>
                 )}
@@ -85,7 +76,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                     </m.div>
                 )}
             </div>
-            <div className="Product_Type_Container">
+            <div className="Product_Type_Container" key={"Product_Type_Container_A"}>
                 <button
                     key="ChocoClass_1"
                     className={activeChocoClass === "classico" ? "Product_Type active" : "Product_Type"}
