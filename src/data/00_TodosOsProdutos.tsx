@@ -26,7 +26,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
     {
@@ -54,7 +54,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
     {
@@ -81,7 +81,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
     {
@@ -108,7 +108,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
     {
@@ -135,7 +135,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
     {
@@ -161,7 +161,7 @@ const TodosOsProdutos: ProductType[] = [
 
         components:
             "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
-        solutions: "Sistema Operacional RobiOS, Robô Autônomo Móvel",
+        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 ];
 
