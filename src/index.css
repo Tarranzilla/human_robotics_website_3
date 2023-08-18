@@ -385,9 +385,10 @@ h1 {
     font-family: "Researcher_WOFF2";
     font-weight: normal !important;
     color: var(--primary_color);
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 1px;
-    line-height: 1.2rem;
+    line-height: 1rem;
+    text-transform: uppercase;
 }
 
 .Navbar_Main_Links {
@@ -1653,18 +1654,6 @@ h1 {
     width: 100%;
 }
 
-/* SOLUTION CONTAINERS */
-.Solution_Viewer {
-    height: 100%;
-    width: 100%;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-
 /* HELP CONTAINERS */
 
 .Help_Container {
@@ -2818,6 +2807,26 @@ h1 {
 }
 
 /* SEÇÕES ADICIONAIS - PÁGINAS SECUNDÁRIAS */
+
+/* SOLUTION CONTAINERS */
+.LP_Section_03_Solucoes {
+    gap: 0;
+}
+
+.Solution_Viewer {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--text_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+    padding: var(--small_gap);
+    gap: var(--small_gap);
+    border-radius: var(--small_gap);
+}
 
 .Secondary_Page {
 }

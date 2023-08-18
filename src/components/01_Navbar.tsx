@@ -158,7 +158,7 @@ export default function Navbar() {
                         className={activeSection === 1 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                         key={"Navbar_Mobile_Links_2"}
                     >
-                        Sobre
+                        Produtos
                     </m.a>
                 )}
 
@@ -171,7 +171,7 @@ export default function Navbar() {
                         className={activeSection === 2 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                         key={"Navbar_Mobile_Links_3"}
                     >
-                        Produtos
+                        Soluções
                     </m.a>
                 )}
 
@@ -181,6 +181,19 @@ export default function Navbar() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         href="#LP_Section_4"
+                        className={activeSection === 3 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
+                        key={"Navbar_Mobile_Links_4"}
+                    >
+                        Sobre
+                    </m.a>
+                )}
+
+                {activeSection === 4 && !menuIsOpen && (
+                    <m.a
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        href="#LP_Section_5"
                         className={activeSection === 3 ? "Navbar_Main_Links active" : "Navbar_Main_Links"}
                         key={"Navbar_Mobile_Links_4"}
                     >

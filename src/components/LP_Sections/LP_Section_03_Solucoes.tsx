@@ -27,22 +27,39 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
                 )}
                 {activeSolution === "atendimento" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"ClássicosB"}>
-                        <h3>Assinatura Mensal Robios GO</h3>
+                        <h3>Atendimento</h3>
+                        <p>
+                            Os robôs podem interagir com os clientes, fornecendo informações sobre produtos e ajudando a localizar itens específicos
+                            na loja. Ele pode até mesmo ajudar os clientes a fazer compras, oferecendo sugestões com base em suas preferências.
+                        </p>
                     </m.div>
                 )}
                 {activeSolution === "publicidade" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"EspeciaisB"}>
-                        <h3>Assinatura Mensal Robios GO</h3>
+                        <h3>Publicidade</h3>
+                        <p>
+                            Os robôs podem realizar atividades promocionais, como distribuir brindes e amostras de produtos, fornecer informações
+                            sobre os produtos e serviços e até mesmo realizar vendas diretas.
+                        </p>
                     </m.div>
                 )}
                 {activeSolution === "inspecao" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"KitsB"}>
-                        <h3>Assinatura Mensal Robios GO</h3>
+                        <h3>Inspeção</h3>
+                        <p>
+                            Os robôs podem ser programados para inspecionar produtos e materiais em busca de defeitos ou irregularidades, usando o
+                            leitor de RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise
+                            posterior.
+                        </p>
                     </m.div>
                 )}
                 {activeSolution === "transporte" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"AssinaturasB"}>
-                        <h3>Experiências</h3>
+                        <h3>Transporte</h3>
+                        <p>
+                            Os robôs podem ser programados para entregar materiais e suprimentos em toda a fábrica, usando o leitor de RFID e código
+                            de barras para identificar a localização e a quantidade dos materiais a serem entregues.
+                        </p>
                     </m.div>
                 )}
             </div>
