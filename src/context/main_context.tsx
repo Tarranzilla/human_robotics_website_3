@@ -25,6 +25,7 @@ const initialState = {
     chocoClasses: ["classico", "especial", "kit", "assinatura"],
     activeChocoClass: "classico",
     activeProduct: null as ChocolateType | null,
+    activeSolution: "atendimento",
     privacyPolicyIsOpen: false,
     termsIsOpen: false,
     siteMapIsOpen: false,
@@ -69,6 +70,10 @@ export const authSlice = createSlice({
         setActiveSection: (state, action) => {
             state.activeSection = action.payload.activeSection;
             console.log("Active Section: " + state.activeSection);
+        },
+        setActiveSolution: (state, action) => {
+            state.activeSolution = action.payload;
+            console.log("Active Solution: " + state.activeSolution);
         },
         toggleLoading: (state) => {
             state.isLoading = !state.isLoading;
@@ -166,6 +171,7 @@ export const {
     toggleProductDetails,
     setActiveProduct,
     setActiveChocoClass,
+    setActiveSolution,
     togglePrivacyPolicy,
     toggleTerms,
     toggleSiteMap,
