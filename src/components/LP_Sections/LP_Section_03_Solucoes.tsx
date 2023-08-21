@@ -6,7 +6,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
-import { setActiveSolution, toggleSolutionDetails } from "../../context/main_context";
+import { setActiveSolution, setActiveSolutionClass, toggleSolutionDetails } from "../../context/main_context";
 
 // Video Imports
 import VideoEventos from "../../assets/videos/01_Robios_Eventos_Desktop_720p.mp4";
@@ -18,13 +18,16 @@ import VideoEventosAtendimento from "../../assets/videos/Robios_Evento_Transport
 
 const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props, ref: any) {
     const dispatch = useDispatch();
-    const activeSolution = useSelector((state: any) => state.activeSolution);
 
-    const handleSetActiveSolution = (activeSolution) => {
-        dispatch(setActiveSolution(activeSolution));
+    const availableSolutions = useSelector((state: any) => state.availableSolutions);
+    const activeSolutionClass = useSelector((state: any) => state.activeSolutionClass);
+
+    const handleSetActiveSolutionClass = (activeSolutionClass) => {
+        dispatch(setActiveSolutionClass(activeSolutionClass));
     };
 
-    const toggleActiveSolutionButton = () => {
+    const toggleActiveSolutionButton = (id) => {
+        dispatch(setActiveSolution(id));
         dispatch(toggleSolutionDetails());
         console.log("Toggling Solution Details");
     };
@@ -33,95 +36,59 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
         <div className="LP_Section LP_Section_03_Solucoes" id="LP_Section_3" ref={ref} key={"LP_Section_3"}>
             <div className="Section_03_Background"></div>
             <div className="Solution_Viewer">
-                {activeSolution === 0 && (
+                {activeSolutionClass === null && (
                     <div className="Solution_Card" key={"Product_Container_B"}>
                         <h3 className="No_Product_Selected_Title">Nenhuma Categoria de Produto Selecionada</h3>
                     </div>
                 )}
-                {activeSolution === "atendimento" && (
-                    <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"ClássicosB"}>
-                        <div className="Solution_Video_Fader"></div>
-                        <video className="Solution_Video" src={VideoEventosAtendimento} autoPlay loop muted />
-                        <h3 className="Solution_Title">Atendimento</h3>
-                        <p className="Solution_Description">
-                            Os robôs podem interagir com os clientes, fornecendo informações sobre produtos e ajudando a localizar itens específicos
-                            na loja. Ele pode até mesmo ajudar os clientes a fazer compras, oferecendo sugestões com base em suas preferências.
-                        </p>
-                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
-                            <span className="material-icons">info</span>Mais Detalhes
-                        </button>
-                    </m.div>
-                )}
-                {activeSolution === "publicidade" && (
-                    <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"EspeciaisB"}>
-                        <div className="Solution_Video_Fader"></div>
-                        <video className="Solution_Video" src={VideoEventos} autoPlay loop muted />
-                        <h3 className="Solution_Title">Publicidade</h3>
-                        <p className="Solution_Description">
-                            Os robôs podem realizar atividades promocionais, como distribuir brindes e amostras de produtos, fornecer informações
-                            sobre os produtos e serviços e até mesmo realizar vendas diretas.
-                        </p>
-                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
-                            <span className="material-icons">info</span>Mais Detalhes
-                        </button>
-                    </m.div>
-                )}
-                {activeSolution === "inspecao" && (
-                    <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"KitsB"}>
-                        <div className="Solution_Video_Fader"></div>
-                        <video className="Solution_Video" src={VideoSaude} autoPlay loop muted />
-                        <h3 className="Solution_Title">Inspeção</h3>
-                        <p className="Solution_Description">
-                            Os robôs podem ser programados para inspecionar produtos e materiais em busca de defeitos ou irregularidades, usando o
-                            leitor de RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise
-                            posterior.
-                        </p>
-                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
-                            <span className="material-icons">info</span>Mais Detalhes
-                        </button>
-                    </m.div>
-                )}
-                {activeSolution === "transporte" && (
-                    <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"AssinaturasB"}>
-                        <div className="Solution_Video_Fader"></div>
-                        <video className="Solution_Video" src={VideoNavegação} autoPlay loop muted />
-                        <h3 className="Solution_Title">Transporte</h3>
-                        <p className="Solution_Description">
-                            Os robôs podem ser programados para entregar materiais e suprimentos em toda a fábrica, usando o leitor de RFID e código
-                            de barras para identificar a localização e a quantidade dos materiais a serem entregues.
-                        </p>
-                        <button className="Solution_KnowMore_Button" onClick={toggleActiveSolutionButton}>
-                            <span className="material-icons">info</span>Mais Detalhes
-                        </button>
-                    </m.div>
-                )}
+
+                {availableSolutions.map((solution: any) => {
+                    if (solution.class === activeSolutionClass) {
+                        return (
+                            <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={solution.domId}>
+                                <div className="Solution_Video_Fader"></div>
+                                <video className="Solution_Video" src={solution.videoSrc[0]} autoPlay loop muted />
+                                <h3 className="Solution_Title">{solution.name}</h3>
+                                <p className="Solution_Description">{solution.description}</p>
+                                <button
+                                    className="Solution_KnowMore_Button"
+                                    onClick={() => {
+                                        toggleActiveSolutionButton({ id: solution.id });
+                                    }}
+                                >
+                                    <span className="material-icons">info</span>Mais Detalhes
+                                </button>
+                            </m.div>
+                        );
+                    }
+                })}
             </div>
             <div className="Product_Type_Container" key={"Product_Type_Container_B"}>
                 <button
                     key="ChocoClass_1"
-                    className={activeSolution === "atendimento" ? "Product_Type active" : "Product_Type"}
-                    onClick={() => handleSetActiveSolution("atendimento")}
+                    className={activeSolutionClass === "atendimento" ? "Product_Type active" : "Product_Type"}
+                    onClick={() => handleSetActiveSolutionClass("atendimento")}
                 >
                     <h3 className="Product_Type_Title">Atendimento</h3>
                 </button>
                 <button
                     key="ChocoClass_2"
-                    className={activeSolution === "publicidade" ? "Product_Type active" : "Product_Type"}
-                    onClick={() => handleSetActiveSolution("publicidade")}
+                    className={activeSolutionClass === "publicidade" ? "Product_Type active" : "Product_Type"}
+                    onClick={() => handleSetActiveSolutionClass("publicidade")}
                 >
                     <h3 className="Product_Type_Title">Publicidade</h3>
                 </button>
                 <button
                     key="ChocoClass_3"
-                    className={activeSolution === "inspecao" ? "Product_Type active" : "Product_Type"}
-                    onClick={() => handleSetActiveSolution("inspecao")}
+                    className={activeSolutionClass === "inspecao" ? "Product_Type active" : "Product_Type"}
+                    onClick={() => handleSetActiveSolutionClass("inspecao")}
                 >
                     <h3 className="Product_Type_Title">Inspeção</h3>
                 </button>
                 <button
                     key="ChocoClass_4"
-                    className={activeSolution === "transporte" ? "Product_Type active" : "Product_Type"}
-                    onClick={() => handleSetActiveSolution("transporte")}
+                    className={activeSolutionClass === "transporte" ? "Product_Type active" : "Product_Type"}
+                    onClick={() => handleSetActiveSolutionClass("transporte")}
                 >
                     <h3 className="Product_Type_Title">Transporte</h3>
                 </button>

@@ -2,11 +2,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // Data Imports
-//Legacy Imports
-import ChocolateType from "../types/Chocolate"; // Import the Chocolate interface
-import TodosOsChocolates from "../data/TodosOsChocolates"; // Import the Chocolate data
+//// Legacy Imports
+//// import ChocolateType from "../types/Chocolate"; // Import the Chocolate interface
+//// import TodosOsChocolates from "../data/TodosOsChocolates"; // Import the Chocolate data
 
-//New Imports
+// New Data Imports
 import ProductType from "../types/00_Produto"; // import the product interface
 import TodosOsProdutos from "../data/00_TodosOsProdutos"; // import the product data
 
@@ -14,52 +14,48 @@ import SolutionType from "../types/01A_Solucao"; // import the solution interfac
 import TodasAsSolucoes from "../data/01_TodasAsSolucoes"; // import the solution data
 
 const initialState = {
+    token: null,
     mode: "light",
     username: "Guest User",
     currencyType: "BRL",
     language: "pt-br",
+
+    isLoading: false,
+    lgpdConsent: false,
     menuIsOpen: false,
     searchIsOpen: false,
     cartIsOpen: false,
     checkoutHelpIsOpen: false,
-    token: null,
-    lgpdConsent: false,
-    activeSection: 1,
-    isLoading: false,
-    availableChocolates: TodosOsChocolates,
-    cartItems: [] as ChocolateType[],
-    cartTotal: 0,
-    productDetailsIsOpen: false,
-    chocoClasses: ["classico", "especial", "kit", "assinatura"],
-    activeChocoClass: "classico",
-    activeProduct: null as ChocolateType | null,
-    activeSolution: "atendimento",
-    solutionDetailsIsOpen: false,
     privacyPolicyIsOpen: false,
     termsIsOpen: false,
     siteMapIsOpen: false,
+    productDetailsIsOpen: false,
+    solutionDetailsIsOpen: false,
+    activeSection: 1,
+
+    availableProducts: TodosOsProdutos,
+    activeProduct: null as ProductType | null,
+    productClasses: ["robos", "sofwares", "assinaturas", "experiencias"],
+    activeProductClass: "robos",
+
+    availableSolutions: TodasAsSolucoes,
+    activeSolution: null as SolutionType | null,
+    solutionClasses: ["atendimento", "publicidade", "inspecao", "transporte"],
+    activeSolutionClass: "atendimento",
+
+    cartItems: [] as ProductType[],
+    cartTotal: 0,
+
+    // availableChocolates: TodosOsChocolates,
+    // cartItems: [] as ChocolateType[],
+    // chocoClasses: ["classico", "especial", "kit", "assinatura"],
+    // activeChocoClass: "classico",
 };
 
 export const authSlice = createSlice({
     name: "auth",
     initialState,
     reducers: {
-        toggleMenu: (state) => {
-            state.menuIsOpen = !state.menuIsOpen;
-            console.log("Menu is toggled: " + (state.menuIsOpen ? "open" : "closed"));
-        },
-        toggleCart: (state) => {
-            state.cartIsOpen = !state.cartIsOpen;
-            console.log("Cart is toggled: " + (state.cartIsOpen ? "open" : "closed"));
-        },
-        toggleCheckoutHelp: (state) => {
-            state.checkoutHelpIsOpen = !state.checkoutHelpIsOpen;
-            console.log("Checkout Help is toggled: " + (state.checkoutHelpIsOpen ? "open" : "closed"));
-        },
-        toggleSearch: (state) => {
-            state.searchIsOpen = !state.searchIsOpen;
-            console.log("Search is toggled :" + (state.searchIsOpen ? "open" : "closed"));
-        },
         setMode: (state) => {
             state.mode = state.mode === "light" ? "dark" : "light";
             console.log("Mode: " + state.mode);
@@ -72,25 +68,37 @@ export const authSlice = createSlice({
             state.username = "Guest User";
             state.token = null;
         },
-        setLgpdConsent: (state) => {
-            state.lgpdConsent = !state.lgpdConsent;
-            console.log("LGPD Consent: " + state.lgpdConsent);
+        toggleCurrency: (state) => {
+            state.currencyType = state.currencyType === "BRL" ? "USD" : "BRL";
+            console.log("Currency: " + state.currencyType);
         },
-        setActiveSection: (state, action) => {
-            state.activeSection = action.payload.activeSection;
-            console.log("Active Section: " + state.activeSection);
-        },
-        setActiveSolution: (state, action) => {
-            state.activeSolution = action.payload;
-            console.log("Active Solution: " + state.activeSolution);
+        toggleLanguage: (state) => {
+            state.language = state.language === "pt-br" ? "en" : "pt-br";
+            console.log("Language: " + state.language);
         },
         toggleLoading: (state) => {
             state.isLoading = !state.isLoading;
             console.log("Loading is toggled: " + (state.isLoading ? "on" : "off"));
         },
+        setLgpdConsent: (state) => {
+            state.lgpdConsent = !state.lgpdConsent;
+            console.log("LGPD Consent: " + state.lgpdConsent);
+        },
+        toggleMenu: (state) => {
+            state.menuIsOpen = !state.menuIsOpen;
+            console.log("Menu is toggled: " + (state.menuIsOpen ? "open" : "closed"));
+        },
+        toggleSearch: (state) => {
+            state.searchIsOpen = !state.searchIsOpen;
+            console.log("Search is toggled :" + (state.searchIsOpen ? "open" : "closed"));
+        },
+        toggleCart: (state) => {
+            state.cartIsOpen = !state.cartIsOpen;
+            console.log("Cart is toggled: " + (state.cartIsOpen ? "open" : "closed"));
+        },
         addToCart: (state, action) => {
             const { id, quantity } = action.payload;
-            const item = state.availableChocolates.find((item) => item.id === id);
+            const item = state.availableProducts.find((item) => item.id === id);
             if (item && id !== undefined) {
                 const inCartIndex = state.cartItems.findIndex((item) => item.id === id);
 
@@ -121,23 +129,43 @@ export const authSlice = createSlice({
         },
         getCartTotal: (state) => {
             state.cartTotal = state.cartItems.reduce((acc, item) => {
-                return acc + item.price * item.cartQuantity;
+                return acc + item.buyPrice * item.cartQuantity;
             }, 0);
+        },
+        toggleCheckoutHelp: (state) => {
+            state.checkoutHelpIsOpen = !state.checkoutHelpIsOpen;
+            console.log("Checkout Help is toggled: " + (state.checkoutHelpIsOpen ? "open" : "closed"));
+        },
+        setActiveSection: (state, action) => {
+            state.activeSection = action.payload.activeSection;
+            console.log("Active Section: " + state.activeSection);
         },
         toggleProductDetails: (state) => {
             state.productDetailsIsOpen = !state.productDetailsIsOpen;
         },
         setActiveProduct: (state, action) => {
             const { id } = action.payload;
-            const item = state.availableChocolates.find((item) => item.id === id);
+            const item = state.availableProducts.find((item) => item.id === id);
             if (item && id !== undefined) {
                 state.activeProduct = item;
             }
             console.log("Active Product: " + state.activeProduct?.name);
         },
-        setActiveChocoClass: (state, action) => {
-            state.activeChocoClass = action.payload;
-            console.log("Active Choco Class: " + state.activeChocoClass);
+        setActiveProductClass: (state, action) => {
+            state.activeProductClass = action.payload;
+            console.log("Active Product: " + state.activeProductClass);
+        },
+        setActiveSolution: (state, action) => {
+            const { id } = action.payload;
+            const item = state.availableSolutions.find((item) => item.id === id);
+            if (item && id !== undefined) {
+                state.activeSolution = item;
+            }
+            console.log("Active Solution: " + state.activeSolution?.name);
+        },
+        setActiveSolutionClass: (state, action) => {
+            state.activeSolutionClass = action.payload;
+            console.log("Active Solution Class: " + state.activeSolutionClass);
         },
         toggleSolutionDetails: (state) => {
             state.solutionDetailsIsOpen = !state.solutionDetailsIsOpen;
@@ -154,14 +182,6 @@ export const authSlice = createSlice({
         toggleSiteMap: (state) => {
             state.siteMapIsOpen = !state.siteMapIsOpen;
             console.log("Site Map is toggled: " + (state.siteMapIsOpen ? "open" : "closed"));
-        },
-        toggleCurrency: (state) => {
-            state.currencyType = state.currencyType === "BRL" ? "USD" : "BRL";
-            console.log("Currency: " + state.currencyType);
-        },
-        toggleLanguage: (state) => {
-            state.language = state.language === "pt-br" ? "en" : "pt-br";
-            console.log("Language: " + state.language);
         },
     },
 });
@@ -184,8 +204,9 @@ export const {
     toggleSolutionDetails,
     toggleProductDetails,
     setActiveProduct,
-    setActiveChocoClass,
+    setActiveProductClass,
     setActiveSolution,
+    setActiveSolutionClass,
     togglePrivacyPolicy,
     toggleTerms,
     toggleSiteMap,

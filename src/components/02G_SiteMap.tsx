@@ -8,7 +8,7 @@ import {
     toggleTerms,
     togglePrivacyPolicy,
     toggleMenu,
-    setActiveChocoClass,
+    setActiveProductClass,
     setActiveProduct,
     toggleProductDetails,
 } from "../context/main_context";
@@ -30,9 +30,9 @@ export default function SiteMap() {
         dispatch(toggleSiteMap());
     };
 
-    const toggleProductDetailsButton = (chocoClass, productId) => {
+    const toggleProductDetailsButton = (productClass, productId) => {
         dispatch(toggleMenu());
-        dispatch(setActiveChocoClass(chocoClass));
+        dispatch(setActiveProductClass(productClass));
         dispatch(setActiveProduct({ id: productId }));
         if (!productDetailsIsOpen) {
             dispatch(toggleProductDetails());

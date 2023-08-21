@@ -2622,10 +2622,21 @@ h1 {
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-.Product_Card:hover .Card_Product_Description {
+.Card_Template {
+    justify-content: center;
+}
+
+.Product_Card:hover .Card_Product_Description,
+.Product_Card:focus-within .Card_Product_Description {
     opacity: 1;
+}
+
+.Product_Card:hover .Product_Bg_Image,
+.Product_Card:focus-within .Product_Bg_Image {
+    filter: opacity(0.8) saturate(1) brightness(1);
 }
 
 .Product_Card::after {
@@ -2700,11 +2711,19 @@ h1 {
     top: 0;
     left: 0;
     z-index: -2;
-    filter: opacity(0.5);
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.2s ease-in-out;
 }
+
+.Product_Bg_Image {
+    filter: opacity(0.5) saturate(0.5) brightness(0.5);
+}
+
+.Product_Main_Image {
+}
+
 .Card_Product_Description {
     opacity: 0;
     margin-top: auto;
@@ -2871,7 +2890,7 @@ h1 {
 
 .Acao_Contato:hover,
 .Acao_Contato:focus {
-    background-color: var(--bg_color);
+    background-color: var(--success_color);
     color: var(--text_color);
     scale: 1.05;
 }
@@ -2887,6 +2906,15 @@ h1 {
     border: none;
     background-color: var(--text_color);
     color: var(--bg_color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.Contato_Location_Button:hover,
+.Contato_Location_Button:focus {
+    background-color: var(--success_color);
+    color: var(--text_color);
+    scale: 1.05;
 }
 
 /* SEÇÕES ADICIONAIS - PÁGINAS SECUNDÁRIAS */

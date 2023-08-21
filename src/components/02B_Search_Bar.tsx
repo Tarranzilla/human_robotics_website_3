@@ -14,8 +14,8 @@ import { toggleSearch } from "../context/main_context";
 export default function SearchBar() {
     const dispatch = useDispatch();
     const [searchQuery, setSearchQuery] = useState("");
-    const availableChocolates = useSelector((state: any) => state.availableChocolates);
-    const [filteredChocolates, setFilteredChocolates] = useState([]); // Store filtered chocolates in local state
+    const availableProducts = useSelector((state: any) => state.availableProducts);
+    const [filteredProducts, setFilteredProducts] = useState([]); // Store filtered chocolates in local state
 
     const toggleSearchButton = () => {
         dispatch(toggleSearch());
@@ -24,12 +24,12 @@ export default function SearchBar() {
     const handleSearch = (event) => {
         const query = event.target.value;
         setSearchQuery(query);
-        const filtered = searchChocolates(query);
-        setFilteredChocolates(filtered); // Update the filtered chocolates in local state
+        const filtered = searchProducts(query);
+        setFilteredProducts(filtered); // Update the filtered chocolates in local state
     };
 
-    const searchChocolates = (query) => {
-        const filtered = availableChocolates.filter((chocolate: any) => chocolate.name.toLowerCase().includes(query.toLowerCase()));
+    const searchProducts = (query) => {
+        const filtered = availableProducts.filter((product: any) => product.name.toLowerCase().includes(query.toLowerCase()));
         return filtered;
     };
 
@@ -54,8 +54,8 @@ export default function SearchBar() {
                 <div className="SearchBar_Result_List">
                     {searchQuery.length > 0 ? (
                         // Render the search results based on the filteredChocolates array
-                        filteredChocolates.length > 0 ? (
-                            filteredChocolates.map((chocolate: any) => <p key={chocolate.name}>{chocolate.name}</p>)
+                        filteredProducts.length > 0 ? (
+                            filteredProducts.map((product: any) => <p key={product.name}>{product.name}</p>)
                         ) : (
                             <p>Nenhum resultado encontrado.</p>
                         )

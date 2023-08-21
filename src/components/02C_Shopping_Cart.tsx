@@ -8,8 +8,8 @@ import Cart_Item from "./Shop/Cart_Item";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleCheckoutHelp, toggleCart, getCartTotal } from "../context/main_context";
 
-// Chocolate Type Import
-import ChocolateType from "../types/Chocolate";
+// Product Type Import
+import ProductType from "../types/00_Produto";
 
 // Data Imports
 import TodosOsChocolates from "../data/TodosOsChocolates";
@@ -86,10 +86,10 @@ export default function Shopping_Cart() {
             </div>
 
             <div className="Cart_List">
-                {cartItems.map((item: ChocolateType) => {
-                    const { id, imgSrc, name, type, description, price } = item;
+                {cartItems.map((item: ProductType) => {
+                    const { id, imgSrc, name, type, description, buyPrice } = item;
 
-                    return <Cart_Item imgSrc={imgSrc} name={name} type={type} price={price} id={id} />;
+                    return <Cart_Item imgSrc={imgSrc[0]} name={name} type={type} price={buyPrice} id={id} />;
                 })}
             </div>
             <div className="Checkout">

@@ -12,6 +12,8 @@ export default function Solution_Detail() {
         dispatch(toggleSolutionDetails());
     };
 
+    const activeSolution = useSelector((state: any) => state.activeSolution);
+
     return (
         <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Privacy_Container">
             <div className="Privacy_Header">
@@ -24,7 +26,8 @@ export default function Solution_Detail() {
                 </button>
             </div>
             <div className="Privacy_Body">
-                <p>Detalhe</p>
+                <h2>{activeSolution.name}</h2>
+                <p>{activeSolution.description}</p>
             </div>
         </m.div>
     );

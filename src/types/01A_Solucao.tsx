@@ -3,6 +3,7 @@ export default interface SolutionType {
 
     id: number;
     name: string;
+    class: string;
     description: string;
     imgSrc: Array<string>;
     videoSrc: Array<string>;

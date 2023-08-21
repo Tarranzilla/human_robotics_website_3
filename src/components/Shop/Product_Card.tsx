@@ -1,11 +1,11 @@
-// Chocolate Type Import
-import ChocolateType from "../../types/Chocolate";
+// Product Type Import
+import ProductType from "../../types/00_Produto";
 
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
 import { toggleCart, addToCart, toggleProductDetails, setActiveProduct } from "../../context/main_context";
 
-export default function Product_Card({ product: { id, imgSrc, name, type, description, price, domId } }) {
+export default function Product_Card({ product: { id, imgSrc, bgImgSrc, prename, name, type, description, price, domId } }) {
     const dispatch = useDispatch();
 
     const openDetailsButton = (id) => {
@@ -19,7 +19,7 @@ export default function Product_Card({ product: { id, imgSrc, name, type, descri
         dispatch(addToCart({ id, quantity }));
     };
 
-    const getItemTotalQuantity = (cartItems: ChocolateType[], itemId: number): number => {
+    const getItemTotalQuantity = (cartItems: ProductType[], itemId: number): number => {
         let totalQuantity = 0;
 
         for (const item of cartItems) {
@@ -37,8 +37,10 @@ export default function Product_Card({ product: { id, imgSrc, name, type, descri
 
     return (
         <div className="Product_Card" id={domId}>
-            <img className="Card_Product_Image" src={imgSrc}></img>
+            <img className="Card_Product_Image Product_Bg_Image" src={bgImgSrc}></img>
+            <img className="Card_Product_Image Product_Main_Image" src={imgSrc[0]}></img>
             <div className="Product_Card_Header">
+                <h3 className="Card_Product_Prename">{prename}</h3>
                 <h3 className="Card_Product_Name">{name}</h3>
                 <h3 className="Card_Product_Type">{type}</h3>
             </div>

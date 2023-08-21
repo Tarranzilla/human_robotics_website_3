@@ -11,10 +11,11 @@ const TodosOsProdutos: ProductType[] = [
         class: "robos",
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
-        imgSrc: ["/robots_backgrounds/fundo_go.png"],
+        bgImgSrc: "/robots_backgrounds/fundo_go.png",
+        imgSrc: ["/robots_images/go_crop.png"],
 
         buyPrice: 25000,
-        rentPrice: 1000,
+        rentPrice: 1250,
         cartQuantity: 0,
 
         producerName: "Human Robotics",
@@ -40,10 +41,11 @@ const TodosOsProdutos: ProductType[] = [
         class: "robos",
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
-        imgSrc: ["/robots_backgrounds/fundo_inspector.png"],
+        bgImgSrc: "/robots_backgrounds/fundo_inspector.png",
+        imgSrc: ["/robots_images/inspector_crop.png"],
 
         buyPrice: 35000,
-        rentPrice: 1500,
+        rentPrice: 1750,
         cartQuantity: 0,
 
         producerName: "Human Robotics",
@@ -69,9 +71,10 @@ const TodosOsProdutos: ProductType[] = [
         class: "robos",
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
-        imgSrc: ["/robots_backgrounds/fundo_cargo.png"],
+        bgImgSrc: "/robots_backgrounds/fundo_cargo.png",
+        imgSrc: ["/robots_images/cargo_crop.png"],
         buyPrice: 25000,
-        rentPrice: 1000,
+        rentPrice: 1250,
         cartQuantity: 0,
 
         producerName: "Human Robotics",
@@ -94,12 +97,13 @@ const TodosOsProdutos: ProductType[] = [
         prename: "",
         name: "RobiOS",
         type: "Sistema Operacional Robótico",
-        class: "sistemas",
+        class: "softwares",
         description:
             "Um sistema operacional robótico capaz de gerenciar e controlar robôs autônomos móveis, com uma interface gráfica intuitiva e de fácil utilização.",
-        imgSrc: ["/robots_backgrounds/fundo_avatar.png"],
-        buyPrice: 1000,
-        rentPrice: 100,
+        bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
+        imgSrc: ["/robots_images/go_crop.png"],
+        buyPrice: 5000,
+        rentPrice: 500,
         cartQuantity: 0,
 
         producerName: "Human Robotics",
@@ -122,12 +126,13 @@ const TodosOsProdutos: ProductType[] = [
         prename: "RobiOS",
         name: "Studio",
         type: "Software de Personalização",
-        class: "sistemas",
+        class: "softwares",
         description:
             "Um software capaz de personalizar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
-        imgSrc: ["/robots_backgrounds/fundo_avatar.png"],
+        bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
+        imgSrc: ["/robots_images/go_crop.png"],
         buyPrice: 3500,
-        rentPrice: 100,
+        rentPrice: 350,
         cartQuantity: 0,
 
         producerName: "Human Robotics",
@@ -150,11 +155,12 @@ const TodosOsProdutos: ProductType[] = [
         prename: "RobiOS",
         name: "Avatar",
         type: "Assistente Virtual Inteligente",
-        class: "sistemas",
+        class: "softwares",
         description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",
-        imgSrc: ["/robots_backgrounds/fundo_avatar.png"],
+        bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
+        imgSrc: ["/robots_images/go_crop.png"],
         buyPrice: 3500,
-        rentPrice: 100,
+        rentPrice: 350,
         cartQuantity: 0,
 
         producerName: "Human Robotics",

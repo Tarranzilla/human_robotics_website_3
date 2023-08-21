@@ -7,6 +7,7 @@ export default interface ProductType {
     type: string;
     class: string;
     description: string;
+    bgImgSrc: string;
     imgSrc: Array<string>;
 
     buyPrice: number;

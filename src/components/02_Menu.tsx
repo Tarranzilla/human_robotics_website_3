@@ -7,7 +7,7 @@ import {
     toggleMenu,
     setActiveProduct,
     toggleProductDetails,
-    setActiveChocoClass,
+    setActiveProductClass,
     togglePrivacyPolicy,
     toggleTerms,
     toggleSiteMap,
@@ -32,9 +32,9 @@ export default function Menu() {
         // "light" || "dark"
     };
 
-    const toggleProductDetailsButton = (chocoClass, productId) => {
+    const toggleProductDetailsButton = (productClass, productId) => {
         dispatch(toggleMenu());
-        dispatch(setActiveChocoClass(chocoClass));
+        dispatch(setActiveProductClass(productClass));
         dispatch(setActiveProduct({ id: productId }));
         if (!productDetailsIsOpen) {
             dispatch(toggleProductDetails());
