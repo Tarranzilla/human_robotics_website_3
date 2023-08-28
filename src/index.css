@@ -2075,13 +2075,20 @@ h1 {
 }
 
 .Brand_Declaration {
-    left: var(--small_gap);
-    position: absolute;
     color: var(--primary_color);
     font-size: clamp(2.8rem, 8vw, 7rem);
     z-index: 3;
     filter: drop-shadow(0 0 3px var(--bg_color));
     text-align: center;
+    line-height: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.Brand_Name {
+    color: var(--primary_color);
+    font-size: clamp(6rem, 16vw, 14rem);
+    opacity: 0.5;
 }
 
 .Website_Introduction {
