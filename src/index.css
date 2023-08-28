@@ -1520,7 +1520,7 @@ h1 {
     gap: 0.5rem;
 
     flex-shrink: 0;
-    padding-bottom: var(--small_gap);
+    padding: 0;
 }
 
 .Product_Detail_Image_Container::-webkit-scrollbar-thumb {
@@ -2646,7 +2646,7 @@ h1 {
     height: 100%;
     background-image: linear-gradient(to bottom, var(--marrom_primario), transparent);
     opacity: 0.8;
-    z-index: -1;
+    z-index: -2;
     top: 0;
     left: 0;
 }
@@ -2660,26 +2660,34 @@ h1 {
     width: 100%;
 }
 
+.Card_Product_Prename {
+    font-family: "Researcher_WOFF2";
+    margin-bottom: -1rem;
+    height: 1.4rem;
+}
+
 .Card_Product_Name {
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(2.4rem, 2vw, 2.7rem);
     font-weight: 600;
     color: var(--cardText_color);
     text-align: center;
+    font-family: "Researcher_WOFF2";
 }
 
 .Card_Product_Type {
-    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 400;
     color: var(--cardText_color);
     position: relative;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .Card_Product_Type::before,
 .Card_Product_Type::after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 100px;
     height: 2px;
     bottom: calc(50% - 2px);
     border-radius: 50%;
@@ -2687,11 +2695,11 @@ h1 {
 }
 
 .Card_Product_Type::before {
-    left: -60px;
+    left: -110px;
 }
 
 .Card_Product_Type::after {
-    right: -60px;
+    right: -110px;
 }
 
 .Product_Card_Body {
@@ -2710,7 +2718,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
+    z-index: -1;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2719,6 +2727,7 @@ h1 {
 
 .Product_Bg_Image {
     filter: opacity(0.5) saturate(0.5) brightness(0.5);
+    z-index: -3;
 }
 
 .Product_Main_Image {
@@ -3300,7 +3309,7 @@ h1 {
         gap: 0.5rem;
 
         flex-shrink: 0;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0;
     }
 
     .Product_Detail_Image {

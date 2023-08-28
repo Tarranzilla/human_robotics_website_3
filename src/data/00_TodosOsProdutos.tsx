@@ -12,7 +12,7 @@ const TodosOsProdutos: ProductType[] = [
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
-        imgSrc: ["/robots_images/go_crop.png"],
+        imgSrc: ["/robots_images/new5/01_go_crop.png", "/robots_images/go_fullsize.png"],
 
         buyPrice: 25000,
         rentPrice: 1250,
@@ -36,13 +36,13 @@ const TodosOsProdutos: ProductType[] = [
 
         id: 1,
         prename: "RobiOS",
-        name: "Inspector",
+        name: "INSPECTOR",
         type: "Robô Autônomo Móvel",
         class: "robos",
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         bgImgSrc: "/robots_backgrounds/fundo_inspector.png",
-        imgSrc: ["/robots_images/inspector_crop.png"],
+        imgSrc: ["/robots_images/new5/02_inspector_crop.png", "/robots_images/inspector_fullsize.png"],
 
         buyPrice: 35000,
         rentPrice: 1750,
@@ -66,13 +66,13 @@ const TodosOsProdutos: ProductType[] = [
 
         id: 2,
         prename: "RobiOS",
-        name: "Cargo",
+        name: "CARGO",
         type: "Robô Autônomo Móvel",
         class: "robos",
         description:
             "Um robô capaz de se locomover de forma autônoma e inteligente, com sensores de distância e de cor, além de um sistema de comunicação via Internet.",
         bgImgSrc: "/robots_backgrounds/fundo_cargo.png",
-        imgSrc: ["/robots_images/cargo_crop.png"],
+        imgSrc: ["/robots_images/new5/03_cargo_crop.png", "/robots_images/cargo_fullsize.png"],
         buyPrice: 25000,
         rentPrice: 1250,
         cartQuantity: 0,
@@ -101,7 +101,7 @@ const TodosOsProdutos: ProductType[] = [
         description:
             "Um sistema operacional robótico capaz de gerenciar e controlar robôs autônomos móveis, com uma interface gráfica intuitiva e de fácil utilização.",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
-        imgSrc: ["/robots_images/go_crop.png"],
+        imgSrc: ["/robots_images/new5/04_RobiOs.png"],
         buyPrice: 5000,
         rentPrice: 500,
         cartQuantity: 0,
@@ -124,13 +124,13 @@ const TodosOsProdutos: ProductType[] = [
 
         id: 4,
         prename: "RobiOS",
-        name: "Studio",
+        name: "STUDIO",
         type: "Software de Personalização",
         class: "softwares",
         description:
             "Um software capaz de personalizar robôs autônomos móveis, com uma interface gráfica intuitiva e fácil de usar. Compatível com a nossa linha de produtos.",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
-        imgSrc: ["/robots_images/go_crop.png"],
+        imgSrc: ["/robots_images/new5/05_Studio.png"],
         buyPrice: 3500,
         rentPrice: 350,
         cartQuantity: 0,
@@ -153,12 +153,12 @@ const TodosOsProdutos: ProductType[] = [
 
         id: 5,
         prename: "RobiOS",
-        name: "Avatar",
+        name: "AVATAR",
         type: "Assistente Virtual Inteligente",
         class: "softwares",
         description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
-        imgSrc: ["/robots_images/go_crop.png"],
+        imgSrc: ["/robots_images/new5/06_Avatar.png"],
         buyPrice: 3500,
         rentPrice: 350,
         cartQuantity: 0,
