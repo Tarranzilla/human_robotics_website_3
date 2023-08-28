@@ -20,7 +20,7 @@ const initialState = {
     currencyType: "BRL",
     language: "pt-br",
 
-    isLoading: false,
+    isLoading: true,
     lgpdConsent: false,
     menuIsOpen: false,
     searchIsOpen: false,
@@ -35,7 +35,7 @@ const initialState = {
 
     availableProducts: TodosOsProdutos,
     activeProduct: null as ProductType | null,
-    productClasses: ["robos", "sofwares", "assinaturas", "experiencias"],
+    productClasses: ["robos", "sofwares", "servicos", "experiencias"],
     activeProductClass: "robos",
 
     availableSolutions: TodasAsSolucoes,

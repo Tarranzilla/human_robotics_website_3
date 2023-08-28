@@ -58,42 +58,6 @@ const membrosDaEquipe = [
         bio: "Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e robótica pela USP.",
     },
     {
-        nome: "Franklin Link",
-        cargo: "Técnico em Mecatrônica",
-        foto: fotoFranklin,
-        linkedin: "https://www.linkedin.com/",
-        telephone: "999-999-999",
-        email: "test@test.com",
-        bio: "Franklin é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e robótica pela USP.",
-    },
-    {
-        nome: "Gustavo da Paz",
-        cargo: "Design 3D e Gestão de Projetos",
-        foto: fotoGustavo,
-        linkedin: "https://www.linkedin.com/",
-        telephone: "999-999-999",
-        email: "test@test.com",
-        bio: "Gustavo é formado em Design pela PUC e possui especializações em modelagem 3D USP.",
-    },
-    {
-        nome: "Gustavo Raposo",
-        cargo: "Desenvolvedor Mobile",
-        foto: fotoGustavo2,
-        linkedin: "https://www.linkedin.com/",
-        telephone: "999-999-999",
-        email: "test@test.com",
-        bio: "Gustavo é formado em Desenvolvimento de Sofware pela PUC.",
-    },
-    {
-        nome: "Helen Almeida",
-        cargo: "Assistente Administrativa",
-        foto: fotoHelen,
-        linkedin: "https://www.linkedin.com/",
-        telephone: "999-999-999",
-        email: "test@test.com",
-        bio: "Helen é formada em Administração pela PUC.",
-    },
-    {
         nome: "Ieda Ikuta",
         cargo: "Técnica em Eletrônica",
         foto: fotoIeda,
@@ -173,6 +137,42 @@ const membrosDaEquipe = [
         telephone: "999-999-999",
         email: "test@test.com",
         bio: "Otoniel é formado em Engenharia Eletronica pela PUC.",
+    },
+    {
+        nome: "Franklin Link",
+        cargo: "Técnico em Mecatrônica",
+        foto: fotoFranklin,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Franklin é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e robótica pela USP.",
+    },
+    {
+        nome: "Gustavo da Paz",
+        cargo: "Design 3D e Gestão de Projetos",
+        foto: fotoGustavo,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Gustavo é formado em Design pela PUC e possui especializações em modelagem 3D USP.",
+    },
+    {
+        nome: "Gustavo Raposo",
+        cargo: "Desenvolvedor Mobile",
+        foto: fotoGustavo2,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Gustavo é formado em Desenvolvimento de Sofware pela PUC.",
+    },
+    {
+        nome: "Helen Almeida",
+        cargo: "Assistente Administrativa",
+        foto: fotoHelen,
+        linkedin: "https://www.linkedin.com/",
+        telephone: "999-999-999",
+        email: "test@test.com",
+        bio: "Helen é formada em Administração pela PUC.",
     },
     {
         nome: "Renan Felipe",
@@ -255,10 +255,10 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                             de robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
                         </p>
                         <p className="Kakaw_Description">
-                            Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo, Otoniel ,
-                            Leandro, Larissa e muitas outras pessoas* a equipe da Human Robotics cresceu e trabalhou incansavelmente para criar
-                            assistentes virtuais que pudessem auxiliar pessoas em diversas áreas, desde a educação infantil até a assistência médica
-                            remota.
+                            Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo, Otoniel,
+                            Leandro, Larissa, Lucas, Hellen, Alexandre e Vitor, a equipe da Human Robotics cresceu e trabalhou incansavelmente para
+                            criar assistentes virtuais que pudessem auxiliar pessoas em diversas áreas, desde a educação infantil até a assistência
+                            médica remota.
                         </p>
                         <p className="Kakaw_Description">
                             Como uma empresa com valores criativos, éticos e sustentáveis, estamos comprometidos em fornecer a nossos clientes uma

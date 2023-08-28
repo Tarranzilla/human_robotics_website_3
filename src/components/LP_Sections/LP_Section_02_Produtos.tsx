@@ -28,7 +28,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                 {activeProductClass === null && <h3 className="Type_Viewer_Title">Nenhum Produto Selecionado</h3>}
                 {activeProductClass === "robos" && <h3 className="Type_Viewer_Title">Robôs</h3>}
                 {activeProductClass === "softwares" && <h3 className="Type_Viewer_Title">Softwares</h3>}
-                {activeProductClass === "assinaturas" && <h3 className="Type_Viewer_Title">Assinaturas</h3>}
+                {activeProductClass === "servicos" && <h3 className="Type_Viewer_Title">Serviços</h3>}
                 {activeProductClass === "experiencias" && <h3 className="Type_Viewer_Title">Experiências</h3>}
             </div>
             <div className="Type_Viewer">
@@ -55,24 +55,22 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                         })}
                     </m.div>
                 )}
-                {activeProductClass === "assinaturas" && (
+                {activeProductClass === "servicos" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_3"}>
-                        <div className="Product_Card Card_Template">
-                            <h3>Assinatura Mensal Robios GO</h3>
-                        </div>
-                        <div className="Product_Card Card_Template">
-                            <h3>Assinatura Mensal Robios Inspector</h3>
-                        </div>
-                        <div className="Product_Card Card_Template">
-                            <h3>Assinatura Mensal Robios Cargo</h3>
-                        </div>
+                        {availableProducts.map((product: any) => {
+                            if (product.class === "servicos") {
+                                return <Product_Card product={product} key={product.id} />;
+                            }
+                        })}
                     </m.div>
                 )}
                 {activeProductClass === "experiencias" && (
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_4"}>
-                        <div className="Product_Card">
-                            <h3>Experiências</h3>
-                        </div>
+                        {availableProducts.map((product: any) => {
+                            if (product.class === "experiencias") {
+                                return <Product_Card product={product} key={product.id} />;
+                            }
+                        })}
                     </m.div>
                 )}
             </div>
@@ -94,9 +92,9 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                 <button
                     key="ProductClass_3"
                     className={activeProductClass === "assinaturas" ? "Product_Type active" : "Product_Type"}
-                    onClick={() => handleSetActiveProductClass("assinaturas")}
+                    onClick={() => handleSetActiveProductClass("servicos")}
                 >
-                    <h3 className="Product_Type_Title">Assinaturas</h3>
+                    <h3 className="Product_Type_Title">Serviços</h3>
                 </button>
                 <button
                     key="ProductClass_4"

@@ -2,10 +2,14 @@
 import { Outlet } from "react-router-dom";
 
 //React Redux Imports
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleLoading } from "./context/main_context";
 
 // Framer Motion Imports
-import { AnimatePresence } from "framer-motion";
+import { motion as m, AnimatePresence } from "framer-motion";
+
+// Vanilla React Imports
+import { useEffect, useState } from "react";
 
 // Components Imports
 import Navbar from "./components/01_Navbar";
@@ -23,7 +27,10 @@ import SiteMap from "./components/02G_SiteMap";
 import Loading from "./components/03_Loading";
 import Footer from "./components/04_Footer";
 
+import Icon_HumanRobotics from "./components/Icons/Icon_HumanRobotics";
+
 function App() {
+    const isLoading = useSelector((state: any) => state.isLoading);
     const menuIsOpen = useSelector((state: any) => state.menuIsOpen);
     const cartIsOpen = useSelector((state: any) => state.cartIsOpen);
     const checkoutHelpIsOpen = useSelector((state: any) => state.checkoutHelpIsOpen);
@@ -34,10 +41,27 @@ function App() {
     const termsIsOpen = useSelector((state: any) => state.termsIsOpen);
     const siteMapIsOpen = useSelector((state: any) => state.siteMapIsOpen);
     const lgpdConsent = useSelector((state: any) => state.lgpdConsent);
+
+    const [isMounted, setIsMounted] = useState(false);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        console.log("Website has been mounted and contents are loaded.");
+        setTimeout(() => {
+            setIsMounted(true);
+        }, 5000);
+    }, []);
+
     return (
         <>
             <AnimatePresence>
                 <Navbar key="Navbar_key" />
+                {!isMounted && (
+                    <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Loading_Screen_Test">
+                        <Icon_HumanRobotics />
+                    </m.div>
+                )}
                 {!lgpdConsent && <Cookies_Banner key="Cookies_Banner_Key" />}
                 {siteMapIsOpen && <SiteMap key="SiteMap_Key" />}
                 {termsIsOpen && <Terms key="Terms_Key" />}

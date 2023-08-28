@@ -144,7 +144,15 @@ export default function ProductDetail() {
                             <h3 className="Product_Detail_Text_Item_Header_Title">Soluções</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.solutions}</p>
+                            <div className="Product_Detail_Text_Content">
+                                {activeProduct.solutions.map((solution: string) => {
+                                    return (
+                                        <div>
+                                            <p>{solution}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>

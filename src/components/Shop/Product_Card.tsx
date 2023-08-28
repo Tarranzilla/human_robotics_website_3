@@ -39,6 +39,7 @@ export default function Product_Card({ product: { id, imgSrc, bgImgSrc, prename,
         <div className="Product_Card" id={domId}>
             <img className="Card_Product_Image Product_Bg_Image" src={bgImgSrc}></img>
             <img className="Card_Product_Image Product_Main_Image" src={imgSrc[0]}></img>
+            <div className="Product_Description_Background"></div>
             <div className="Product_Card_Header">
                 <h3 className="Card_Product_Prename">{prename}</h3>
                 <h3 className="Card_Product_Name">{name}</h3>
