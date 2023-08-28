@@ -1595,6 +1595,12 @@ h1 {
     gap: var(--small_gap);
 }
 
+.Product_Component {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small_gap);
+}
+
 /* HELP CONTAINERS */
 
 .Help_Container {
@@ -2625,6 +2631,11 @@ h1 {
     font-family: "Researcher_WOFF2";
 }
 
+.Service_Name {
+    line-height: 1;
+    font-size: 1.8rem;
+}
+
 .Card_Product_Type {
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 400;
@@ -2638,7 +2649,7 @@ h1 {
 .Card_Product_Type::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 200px;
     height: 2px;
     bottom: calc(50% - 2px);
     border-radius: 50%;
@@ -2646,11 +2657,11 @@ h1 {
 }
 
 .Card_Product_Type::before {
-    left: -110px;
+    left: -210px;
 }
 
 .Card_Product_Type::after {
-    right: -110px;
+    right: -210px;
 }
 
 .Product_Card_Body {

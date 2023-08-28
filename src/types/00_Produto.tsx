@@ -7,6 +7,7 @@ export default interface ProductType {
     type: string;
     class: string;
     description: string;
+    fullDescription: string;
     bgImgSrc: string;
     imgSrc: Array<string>;
 
@@ -22,6 +23,6 @@ export default interface ProductType {
     sellerOrigin: string;
     sellerOriginCoordinates: string;
 
-    components: string;
+    components: Array<object>;
     solutions: Array<string>;
 }

@@ -244,27 +244,18 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                     <div className="Sobre_Text_Container">
                         <p className="Kakaw_Header">
                             <strong>
-                                Na Human Robotics, estamos empenhados em trazer para você robôs de qualidade excepcional, enquanto protegemos o meio
-                                ambiente e promovemos o comércio justo.
+                                A Human Robotics é uma empresa que busca estar na vanguarda da robótica e da inteligência artificial, criando soluções
+                                inovadoras e personalizadas para atender às necessidades de nossos clientes em setores como Varejo, Indústria e
+                                Cultura.
                             </strong>
                         </p>
+                        <p className="Kakaw_Description">
+                            Inspirados pela Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
+                            buscamos confecionar robôs e experiências de altíssima qualidade por meio do uso de componentes sofisticados e
+                            pesquisadores de campo habilitados.
+                        </p>
                         <img className="Sobre_Img WideImg" src={fotoEquipe}></img>
-                        <p className="Kakaw_Description">
-                            A história da Human Robotics começa em março de 2017, quando Olivier Smadja teve a ideia de criar um robô para cuidar de
-                            pessoas idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha
-                            de robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
-                        </p>
-                        <p className="Kakaw_Description">
-                            Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo, Otoniel,
-                            Leandro, Larissa, Lucas, Hellen, Alexandre e Vitor, a equipe da Human Robotics cresceu e trabalhou incansavelmente para
-                            criar assistentes virtuais que pudessem auxiliar pessoas em diversas áreas, desde a educação infantil até a assistência
-                            médica remota.
-                        </p>
-                        <p className="Kakaw_Description">
-                            Como uma empresa com valores criativos, éticos e sustentáveis, estamos comprometidos em fornecer a nossos clientes uma
-                            experiência única e intuitiva. Desde os componentes cuidadosamente selecionados, até a produção quase artesanal em nossa
-                            própria fábrica em Curitiba, cada etapa do processo é feita com paixão e responsabilidade.
-                        </p>
+
                         <p className="Kakaw_Header">
                             A Human Robotics tem uma visão clara e ambiciosa para o futuro. Nossa meta é liderar a transformação tecnológica no
                             Brasil, sendo a vanguarda das tecnologias de atendimento, educação, interação, inspeção e transporte em bases robóticas.
@@ -273,35 +264,6 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                             A missão da Human Robotics é simples e ao mesmo tempo revolucionária: tornar a robótica mais humana, mais acessível e mais
                             presente na vida das pessoas. Com soluções inovadoras e uma equipe comprometida com a excelência, a empresa está mudando a
                             forma como interagimos com a tecnologia, tornando-a uma aliada poderosa em todas as áreas da vida.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Acreditamos que a tecnologia deve ser usada para servir as pessoas, os animais e o meio ambiente.
-                        </p>
-
-                        <p className="Kakaw_Header">
-                            Valorizamos a diversidade e o respeito às diferenças entre as pessoas, promovendo a inclusão e a igualdade em todas as
-                            nossas atividades.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Acreditamos na transparência e na ética em todas as nossas relações, sejam elas com clientes, colaboradores ou parceiros.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Encorajamos a criatividade e a inovação, estimulando a liberdade e a subjetividade dos pensamentos de todos os envolvidos
-                            em nossas atividades.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Valorizamos o trabalho em equipe e a colaboração, acreditando que juntos podemos alcançar grandes feitos.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Comprometemo-nos com a excelência em todas as nossas atividades, sempre buscando aperfeiçoamento contínuo e a satisfação
-                            dos clientes.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Somos movidos pelos desafios e pela busca por soluções inovadoras, sempre com foco na qualidade e eficiência.
-                        </p>
-                        <p className="Kakaw_Header">
-                            Acreditamos que a tecnologia deve ser acessível a todos, e nos esforçamos para tornar a robótica cada vez mais disponível
-                            e útil para a maioria dos brasileiros.
                         </p>
 
                         <p className="Kakaw_Header">
@@ -343,9 +305,15 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                                 <img className="Sobre_Img" src={fotoOlivier}></img>
                             </div>
                             <p className="Kakaw_Description">
-                                "Inspirados na Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
-                                buscamos confecionar robôs e experiências de forma pragmática por meio do uso de componentes sofisticados e
-                                pesquisadores de campo habilitados."
+                                A história da Human Robotics começa em março de 2017, quando Olivier Smadja teve a ideia de criar um robô para cuidar
+                                de pessoas idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior:
+                                uma linha de robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
+                            </p>
+                            <p className="Kakaw_Description">
+                                Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo,
+                                Otoniel, Leandro, Larissa, Lucas, Hellen, Alexandre e Vitor, a equipe da Human Robotics cresceu e trabalhou
+                                incansavelmente para criar assistentes virtuais que pudessem auxiliar pessoas em diversas áreas, desde a educação
+                                infantil até a assistência médica remota.
                             </p>
                             <p className="Kakaw_Header">
                                 Olivier é formado em engenharia da produção pela Universidade de Paris e possui especializações em programação e
@@ -581,6 +549,36 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <p className="Kakaw_Header">
                             Para alcançar esse objetivo, estamos desenvolvendo robôs acessíveis e fáceis de usar, que podem ser utilizados em uma
                             ampla variedade de aplicações e setores.
+                        </p>
+
+                        <p className="Kakaw_Header">
+                            Acreditamos que a tecnologia deve ser usada para servir as pessoas, os animais e o meio ambiente.
+                        </p>
+
+                        <p className="Kakaw_Header">
+                            Valorizamos a diversidade e o respeito às diferenças entre as pessoas, promovendo a inclusão e a igualdade em todas as
+                            nossas atividades.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Acreditamos na transparência e na ética em todas as nossas relações, sejam elas com clientes, colaboradores ou parceiros.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Encorajamos a criatividade e a inovação, estimulando a liberdade e a subjetividade dos pensamentos de todos os envolvidos
+                            em nossas atividades.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Valorizamos o trabalho em equipe e a colaboração, acreditando que juntos podemos alcançar grandes feitos.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Comprometemo-nos com a excelência em todas as nossas atividades, sempre buscando aperfeiçoamento contínuo e a satisfação
+                            dos clientes.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Somos movidos pelos desafios e pela busca por soluções inovadoras, sempre com foco na qualidade e eficiência.
+                        </p>
+                        <p className="Kakaw_Header">
+                            Acreditamos que a tecnologia deve ser acessível a todos, e nos esforçamos para tornar a robótica cada vez mais disponível
+                            e útil para a maioria dos brasileiros.
                         </p>
                     </div>
                 </div>

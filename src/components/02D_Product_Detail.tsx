@@ -135,7 +135,16 @@ export default function ProductDetail() {
                             <h3 className="Product_Detail_Text_Item_Header_Title">Componentes</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.components}</p>
+                            <p className="Product_Detail_Text_Content">
+                                {activeProduct.components.map((component) => {
+                                    return (
+                                        <div className="Product_Component">
+                                            <span className="material-icons">check</span>
+                                            <p>{component.name}</p>
+                                        </div>
+                                    );
+                                })}
+                            </p>
                         </div>
                     </div>
 

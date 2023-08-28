@@ -7,11 +7,30 @@ const TodasAsSolucoes: SolutionType[] = [
         id: 0,
         name: "Atendimento",
         class: "atendimento",
+        fullDescription:
+            "Automatizar tarefas repetitivas e contínuas, permitindo que os funcionários se concentrem em atividades que exigem mais habilidade e criatividade. Disponibilizar robôs de guia que possam auxiliar as pessoas e fornecer informações e descrições precisas em ambientes públicos. Aumentar a segurança e a privacidade em pesquisas públicas, proporcionando soluções avançadas de reconhecimento facial e análise de dados.",
         description:
-            "Os robôs podem interagir com os clientes, fornecendo informações sobre produtos e ajudando a localizar itens específicos na loja. Ele pode até mesmo ajudar os clientes a fazer compras, oferecendo sugestões com base em suas preferências.",
+            "Interaja com os seus clientes como nunca antes, ofereça sugestões e informações personalizadas e em tempo real sobre produtos, como localização, preço e avaliações",
         imgSrc: ["/robots_backgrounds/fundo_atendimento.png"],
         videoSrc: ["/videos/01_Robios_Eventos_Desktop_720p.mp4"],
         relatedProducts: [0, 1, 2, 3, 4, 5],
+        partners: [
+            {
+                name: "Unimed",
+                imgSrc: "/partners/unimed.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Carrefour",
+                imgSrc: "/partners/carrefour.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Shopping Mueller",
+                imgSrc: "/partners/mueller.png",
+                description: "https://robios.com.br/",
+            },
+        ],
     },
 
     {
@@ -20,11 +39,30 @@ const TodasAsSolucoes: SolutionType[] = [
         id: 1,
         name: "Publicidade",
         class: "publicidade",
+        fullDescription:
+            "Oferecer soluções de publicidade interativa durante eventos, permitindo a interação com potenciais clientes e coletando informações valiosas para análise de dados.",
         description:
-            "Os robôs podem realizar atividades promocionais, como distribuir brindes e amostras de produtos, fornecer informações sobre os produtos e serviços e até mesmo realizar vendas diretas.",
+            "Realize atividades promocionais, distribuia presentes e amostras, forneça informações sobre os produtos e serviços e até mesmo realize vendas diretas.",
         imgSrc: ["/robots_backgrounds/fundo_entrega.png"],
         videoSrc: ["/videos/02_Robios_Varejo_Desktop_QuickCuts_720p.mp4"],
         relatedProducts: [0, 1, 2, 3, 4, 5],
+        partners: [
+            {
+                name: "Unimed",
+                imgSrc: "/partners/unimed.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Carrefour",
+                imgSrc: "/partners/carrefour.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Shopping Mueller",
+                imgSrc: "/partners/mueller.png",
+                description: "https://robios.com.br/",
+            },
+        ],
     },
 
     {
@@ -33,11 +71,30 @@ const TodasAsSolucoes: SolutionType[] = [
         id: 2,
         name: "Inspeção",
         class: "inspecao",
+        fullDescription:
+            "Realizar rondas e vistorias recorrentes em ambientes comerciais e industriais, proporcionando maior segurança e controle de qualidade.",
         description:
-            "Os robôs podem ser programados para inspecionar produtos e materiais em busca de defeitos ou irregularidades, usando o leitor de RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise posterior.",
+            "Inspecione ambientes, ferramentas e produtos em busca de defeitos ou irregularidades, usando tecnologias de ponta como LIDAR, RFID e código de barras para identificar o produto e armazenar informações sobre a inspeção para análise posterior.",
         imgSrc: ["/robots_backgrounds/fundo_inspector.png"],
         videoSrc: ["/videos/05_Video_Navegacao.mp4"],
         relatedProducts: [0, 1, 2, 3, 4, 5],
+        partners: [
+            {
+                name: "Unimed",
+                imgSrc: "/partners/unimed.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Carrefour",
+                imgSrc: "/partners/carrefour.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Shopping Mueller",
+                imgSrc: "/partners/mueller.png",
+                description: "https://robios.com.br/",
+            },
+        ],
     },
 
     {
@@ -46,11 +103,30 @@ const TodasAsSolucoes: SolutionType[] = [
         id: 3,
         name: "Transporte",
         class: "transporte",
+        fullDescription:
+            "Oferecer soluções de transporte de pequenos objetos de um ponto a outro, permitindo a redução de custos e aumentando a eficiência operacional.",
         description:
-            "Os robôs podem ser programados para entregar materiais e suprimentos em toda a fábrica, usando o leitor de RFID e código de barras para identificar a localização e a quantidade dos materiais a serem entregues.",
+            "Programe a entrega de materiais e suprimentos em todo seu ambiente de trabalho, tendo em mãos a localização e a quantidade dos produtos.",
         imgSrc: ["/robots_backgrounds/fundo_cargo.png"],
         videoSrc: ["/videos/Robios_Evento_Transporte_Atendimento.mp4"],
         relatedProducts: [0, 1, 2, 3, 4, 5],
+        partners: [
+            {
+                name: "Unimed",
+                imgSrc: "/partners/unimed.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Carrefour",
+                imgSrc: "/partners/carrefour.png",
+                description: "https://robios.com.br/",
+            },
+            {
+                name: "Shopping Mueller",
+                imgSrc: "/partners/mueller.png",
+                description: "https://robios.com.br/",
+            },
+        ],
     },
 ];
 

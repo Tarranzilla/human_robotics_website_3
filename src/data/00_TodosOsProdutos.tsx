@@ -9,7 +9,9 @@ const TodosOsProdutos: ProductType[] = [
         name: "GO",
         type: "Robô Autônomo Móvel",
         class: "robos",
-        description: "Um robô capaz de se locomover de forma autônoma e inteligente.",
+        description: "Um robô capaz de interagir e se locomover de forma autônoma e inteligente.",
+        fullDescription:
+            "Um robô autônomo móvel com câmera 4K para telepresença, câmeras fish-eye para navegação, câmera 3D (infravermelho e RGB), LIDAR + sensores ultrasônicos, tela de 10.1 polegadas touch e full HD, auto-falante 40w full range, computador interno (Intel NUC), motores silenciosos e bateria com autonomia de 3 a 5 horas, também com capacidade de auto recarga.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/01_go_crop.png", "/robots_images/go_fullsize.png"],
 
@@ -25,8 +27,28 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components:
-            "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
+        components: [
+            {
+                name: "Sensores de Navegação LIDAR",
+                imgSrc: "",
+            },
+            {
+                name: "Sensores de Navegação Ultrasom",
+                imgSrc: "",
+            },
+            {
+                name: "Tela de 11 Polegadas",
+                imgSrc: "",
+            },
+            {
+                name: "Auto Falantes HiFi",
+                imgSrc: "",
+            },
+            {
+                name: "Bateria com capacidade para 6 Horas.",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -39,6 +61,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Robô Autônomo Móvel",
         class: "robos",
         description: "Um robô para a inspeção de ambientes, produtos e equipamentos.",
+        fullDescription: "",
         bgImgSrc: "/robots_backgrounds/fundo_inspector.png",
         imgSrc: ["/robots_images/new5/02_inspector_crop.png", "/robots_images/inspector_fullsize.png"],
 
@@ -54,8 +77,28 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components:
-            "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
+        components: [
+            {
+                name: "Sensores de Navegação LIDAR",
+                imgSrc: "",
+            },
+            {
+                name: "Sensores de Navegação Ultrasom",
+                imgSrc: "",
+            },
+            {
+                name: "Tela de 11 Polegadas",
+                imgSrc: "",
+            },
+            {
+                name: "Auto Falantes HiFi",
+                imgSrc: "",
+            },
+            {
+                name: "Bateria com capacidade para 6 Horas.",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -67,7 +110,8 @@ const TodosOsProdutos: ProductType[] = [
         name: "CARGO",
         type: "Robô Autônomo Móvel",
         class: "robos",
-        description: "Um robô para o transporte.",
+        description: "Um robô que lhe permite armazenar e transportar objetos e ferramentas.",
+        fullDescription: "",
         bgImgSrc: "/robots_backgrounds/fundo_cargo.png",
         imgSrc: ["/robots_images/new5/03_cargo_crop.png", "/robots_images/cargo_fullsize.png"],
         buyPrice: 25000,
@@ -82,8 +126,28 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components:
-            "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
+        components: [
+            {
+                name: "Sensores de Navegação LIDAR",
+                imgSrc: "",
+            },
+            {
+                name: "Sensores de Navegação Ultrasom",
+                imgSrc: "",
+            },
+            {
+                name: "Tela de 11 Polegadas",
+                imgSrc: "",
+            },
+            {
+                name: "Auto Falantes HiFi",
+                imgSrc: "",
+            },
+            {
+                name: "Bateria com capacidade para 6 Horas.",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -97,6 +161,7 @@ const TodosOsProdutos: ProductType[] = [
         class: "softwares",
         description:
             "Um sistema operacional robótico capaz de gerenciar e controlar robôs autônomos móveis, com uma interface gráfica intuitiva e de fácil utilização.",
+        fullDescription: "",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/04_RobiOs.png"],
         buyPrice: 5000,
@@ -111,8 +176,12 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components:
-            "Sensores de Navegação LIDAR, Sensores de Navegação Ultrasom, Tela de 11 Polegadas, Auto Falantes HiFi, Bateria com capacidade para 6 Horas.",
+        components: [
+            {
+                name: "Licença Software RobiOS",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -124,7 +193,8 @@ const TodosOsProdutos: ProductType[] = [
         name: "STUDIO",
         type: "Software de Personalização",
         class: "softwares",
-        description: "Um software para personalizar as ações dos robôs e assistentes, com uma interface gráfica intuitiva e fácil de usar.",
+        description: "Software para a personalização das ações dos robôs e assistentes, com uma interface gráfica intuitiva e fácil de usar.",
+        fullDescription: "",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/05_Studio.png"],
         buyPrice: 3500,
@@ -139,7 +209,12 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Software RobiOS Studio.",
+        components: [
+            {
+                name: "Licença Software RobiOS Studio",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -151,7 +226,8 @@ const TodosOsProdutos: ProductType[] = [
         name: "AVATAR",
         type: "Assistente Virtual Inteligente",
         class: "softwares",
-        description: "Um software capaz de emular avatares virtuais que pode ser usado em qualquer dispositivo Android",
+        fullDescription: "",
+        description: "Software capaz de emular Avatares - assistentes virtuais que podem ser acessados em qualquer dispositivo Android",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/06_Avatar.png"],
         buyPrice: 3500,
@@ -166,7 +242,12 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Software RobiOS.",
+        components: [
+            {
+                name: "Licença Software RobiOS Avatar",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
     {
@@ -178,7 +259,10 @@ const TodosOsProdutos: ProductType[] = [
         type: "Serviço Adicional",
         class: "servicos",
 
-        description: "Customize o seu robô com a sua marca, com a sua identidade visual, com a sua cara. Nós podemos fazer isso para você.",
+        description:
+            "Customize seu robô visualmente aplicando a sua marca e identidade visual, estuturalmente com módulos e comportamentalmente com uma personalidade única.",
+        fullDescription:
+            "Cada robô é modular e pode passar por serviços de personalização de hardware, software e interação - oferecendo a possibilidade da criação de robôs únicos e adaptados às necessidades de cada cliente.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/07_Customizacao.png"],
         buyPrice: 5000,
@@ -193,7 +277,20 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Personalização de Robôs Autônomos Móveis, Personalização de Software, Personalização de Avatares Virtuais.",
+        components: [
+            {
+                name: "Personalização de Robôs",
+                imgSrc: "",
+            },
+            {
+                name: "Personalização de Software",
+                imgSrc: "",
+            },
+            {
+                name: "Personalização de Avatares Virtuais",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -206,7 +303,8 @@ const TodosOsProdutos: ProductType[] = [
         type: "Serviço Adicional",
         class: "servicos",
 
-        description: "Mapeamos ambientes com LIDAR e os compilamos um arquivo digital.",
+        fullDescription: "",
+        description: "Mapeie ambientes internos e externos com LIDAR e os compile um arquivo digital em conjunto com percursos personalizados.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/08_Mapeamento.png"],
         buyPrice: 5000,
@@ -221,7 +319,16 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Mapeamento de Ambientes Internos, Mapeamento de Ambientes Externos.",
+        components: [
+            {
+                name: "Mapeamento de Ambientes Internos e Externos",
+                imgSrc: "",
+            },
+            {
+                name: "Desenvolvimento de Rotas Personalizadas",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -234,7 +341,9 @@ const TodosOsProdutos: ProductType[] = [
         type: "Serviço Adicional",
         class: "servicos",
 
-        description: "Treinamos a sua equipe para que ela possa operar e personalizar o seu robô.",
+        fullDescription:
+            "A Human Robotics oferece serviços de treinamento para operadores de robôs, garantindo que seus clientes possam utilizar seus produtos com eficiência e segurança. A Human Robotics também oferece uma garantia de 2 anos para nossos produtos. Esta garantia pode ser estendida caso o usuário deseje por um valor adicional. ",
+        description: "Treine a sua equipe para que ela possa operar e personalizar o seu robô.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/09_Treinamento.png"],
         buyPrice: 5000,
@@ -249,7 +358,24 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Treinamento de Operação, Treinamento de Manutenção, Suporte Técnico.",
+        components: [
+            {
+                name: "Treinamento de Operação",
+                imgSrc: "",
+            },
+            {
+                name: "Treinamento de Manutenção",
+                imgSrc: "",
+            },
+            {
+                name: "Treinamento de Personalização",
+                imgSrc: "",
+            },
+            {
+                name: "Suporte Técnico",
+                imgSrc: "",
+            },
+        ],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -262,7 +388,8 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        description: "Experiências para engajar o público e aprimorar sua linha de produção.",
+        fullDescription: "",
+        description: "Proporcione experiências capazes de engajar o público, ativar produtos e aprimorar seu fluxo de distribuição.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/10_Varejo.png"],
         buyPrice: 5000,
@@ -275,7 +402,7 @@ const TodosOsProdutos: ProductType[] = [
         sellerName: "Human Robotics",
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
-        components: "Experiências publicitárias e operacionais.",
+        components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
         solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
     },
 
@@ -288,7 +415,8 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        description: "Experiências com o atendimento de demandas, inspeção e transporte de equipamento.",
+        fullDescription: "",
+        description: "Proporcione experiências capazes de facilitar o atendimento de clientes, a inspeção de recursos e transporte de equipamento.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/11_Industria.png"],
         buyPrice: 5000,
@@ -303,7 +431,7 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Experiências publicitárias e operacionais.",
+        components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
         solutions: ["Atendimento", "Inspeção", "Transporte"],
     },
 
@@ -316,7 +444,8 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        description: "Experiências com foco em atendimentos humanizados e criativos.",
+        fullDescription: "",
+        description: "Proporcione experiências que estimulam aprendizados mais humanizados, criativos e informatizados.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/12_Cultura.png"],
         buyPrice: 5000,
@@ -331,7 +460,7 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
-        components: "Experiências publicitárias e operacionais.",
+        components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
         solutions: ["Atendimento", "Publicidade"],
     },
 ];

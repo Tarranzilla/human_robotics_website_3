@@ -8,8 +8,13 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { setActiveProductClass } from "../../context/main_context";
 
-// Product Card Import
+// Card Imports
 import Product_Card from "../Shop/Product_Card";
+
+import Robot_Card from "../cards/Robot_Card";
+import Software_Card from "../cards/Software_Card";
+import Service_Card from "../cards/Service_Card";
+import Experience_Card from "../cards/Experience_Card";
 
 const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props, ref: any) {
     const dispatch = useDispatch();
@@ -41,7 +46,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_1"}>
                         {availableProducts.map((product: any) => {
                             if (product.class === "robos") {
-                                return <Product_Card product={product} key={product.id} />;
+                                return <Robot_Card product={product} key={product.id} />;
                             }
                         })}
                     </m.div>
@@ -50,7 +55,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_2"}>
                         {availableProducts.map((product: any) => {
                             if (product.class === "softwares") {
-                                return <Product_Card product={product} key={product.id} />;
+                                return <Software_Card product={product} key={product.id} />;
                             }
                         })}
                     </m.div>
@@ -59,7 +64,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_3"}>
                         {availableProducts.map((product: any) => {
                             if (product.class === "servicos") {
-                                return <Product_Card product={product} key={product.id} />;
+                                return <Service_Card product={product} key={product.id} />;
                             }
                         })}
                     </m.div>
@@ -68,7 +73,7 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
                     <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Product_Container" key={"Prod_Cont_4"}>
                         {availableProducts.map((product: any) => {
                             if (product.class === "experiencias") {
-                                return <Product_Card product={product} key={product.id} />;
+                                return <Experience_Card product={product} key={product.id} />;
                             }
                         })}
                     </m.div>

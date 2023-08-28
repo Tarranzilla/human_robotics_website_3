@@ -5,8 +5,10 @@ export default interface SolutionType {
     name: string;
     class: string;
     description: string;
+    fullDescription: string;
     imgSrc: Array<string>;
     videoSrc: Array<string>;
+    partners: Array<object>;
 
     relatedProducts: Array<number>;
 }
