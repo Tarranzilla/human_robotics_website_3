@@ -33,17 +33,15 @@ export default function Solution_Detail() {
                 </div>
 
                 <div className="Solution_Detail_Right_Content">
-                    <h2>{activeSolution.name}</h2>
-                    <p>{activeSolution.description}</p>
-                    <p>{activeSolution.fullDescription}</p>
+                    <h2 className="Solution_Detail_Title">{activeSolution.name}</h2>
+                    <p className="Solution_Detail_Description">{activeSolution.description}</p>
+                    <p className="Solution_Detail_FullDescription">{activeSolution.fullDescription}</p>
+                    <p className="Solution_Partner_Title">Parceiros que utilizam nossos serviços:</p>
                     <div className="Solution_Partner_Container">
                         {activeSolution.partners.map((partner: any) => {
                             return (
                                 <div className="Solution_Partner">
                                     <img src={partner.imgSrc} alt={partner.name} />
-                                    <a href={partner.description} target="_blank" rel="noreferrer">
-                                        {partner.name}
-                                    </a>
                                 </div>
                             );
                         })}

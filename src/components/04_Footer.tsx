@@ -10,6 +10,7 @@ import Icon_Instagram from "./Icons/Icon_Instagram";
 import Icon_Facebook from "./Icons/Icon_Facebook";
 import Icon_Twitter from "./Icons/Icon_Twitter";
 import Icon_Linkedin from "./Icons/Icon_Linkedin";
+import Icon_Youtube from "./Icons/Icon_Youtube";
 
 export default function Footer() {
     const dispatch = useDispatch();
@@ -48,7 +49,7 @@ export default function Footer() {
                 <Icon_Linkedin />
                 <Icon_Facebook />
                 <Icon_Instagram />
-                <Icon_Twitter />
+                <Icon_Youtube />
             </div>
         </div>
     );

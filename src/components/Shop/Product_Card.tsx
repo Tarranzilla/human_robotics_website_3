@@ -55,8 +55,7 @@ export default function Product_Card({ product: { id, imgSrc, bgImgSrc, prename,
                         openDetailsButton(id);
                     }}
                 >
-                    <span className="material-icons">style</span>
-                    Mais Detalhes
+                    <span className="material-icons">style</span>+ Informações
                 </button>
             </div>
         </div>

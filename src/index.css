@@ -67,15 +67,26 @@
     /* Main Brand Colors */
     --hr_cinza_escuro: #333;
     --hr_cinza_neutro: #b3b3b3;
+
     --hr_fundo_claro: #ffffff;
-
+    /*
+        filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(190deg) brightness(107%) contrast(100%);
+    */
     --hr_azul_claro: #00aaff;
+    /* 
+        from black to --hr_azul_claro
+        filter: invert(60%) sepia(44%) saturate(5889%) hue-rotate(170deg) brightness(100%) contrast(104%);
+    */
     --hr_azul_escuro: #4400ff;
+    /*
+        filter: invert(11%) sepia(100%) saturate(6704%) hue-rotate(261deg) brightness(89%) contrast(131%);
+    */
     --hr_roxo: #ae00ff;
-
     --hr_azul_claro_2: #0007c9;
     --hr_azul_escuro_2: #000343;
-
+    /*
+        filter: invert(5%) sepia(58%) saturate(5907%) hue-rotate(227deg) brightness(92%) contrast(117%);
+    */
     --hr_perigo: #ff5520;
     --hr_alerta: #ffae2d;
     --hr_sucesso: #00ffd6;
@@ -111,7 +122,7 @@
     --shopping_cart_color: var(--cinza_neutro);
     --searchbar_color: var(--cinza_neutro);
     --menu_color: var(--cinza_neutro);
-    --cardText_color: #ffae2d;
+    --cardText_color: #00aaff;
     --mobile_menu_text_color: #0007c9;
 }
 
@@ -2456,7 +2467,6 @@ h1 {
 
 .Type_Viewer_Title {
     font-family: "Researcher_WOFF2";
-    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -2553,6 +2563,8 @@ h1 {
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
+    outline: 1px solid var(--anchor_hover_color);
+    outline-offset: -1px;
 }
 
 .Card_Template {
@@ -2578,7 +2590,7 @@ h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, var(--marrom_primario), transparent);
+    background-image: linear-gradient(to bottom, var(--text_color), transparent);
     opacity: 0.8;
     z-index: -2;
     top: 0;
@@ -2598,6 +2610,7 @@ h1 {
     font-family: "Researcher_WOFF2";
     margin-bottom: -1rem;
     height: 1.4rem;
+    color: var(--bg_color);
 }
 
 .Card_Product_Name {
@@ -2613,10 +2626,15 @@ h1 {
     font-size: 1.8rem;
 }
 
+.Experience_Card_Image,
+.Service_Card_Image {
+    filter: invert(60%) sepia(44%) saturate(5889%) hue-rotate(170deg) brightness(100%) contrast(104%);
+}
+
 .Card_Product_Type {
     font-size: clamp(0.8rem, 2vw, 1rem);
     font-weight: 400;
-    color: var(--cardText_color);
+    color: var(--bg_color);
     position: relative;
     text-align: center;
     letter-spacing: 2px;
@@ -2630,7 +2648,7 @@ h1 {
     height: 2px;
     bottom: calc(50% - 2px);
     border-radius: 50%;
-    background-color: var(--cardText_color);
+    background-color: var(--bg_color);
 }
 
 .Card_Product_Type::before {
@@ -2665,7 +2683,7 @@ h1 {
 }
 
 .Product_Bg_Image {
-    filter: opacity(0.5) saturate(0.5) brightness(0.5);
+    filter: opacity(0.5) saturate(0.8) brightness(0.5);
     z-index: -3;
 }
 
@@ -2723,13 +2741,30 @@ h1 {
     transition: all 0.2s ease-in-out;
 }
 
+.Card_Product_Detail_Button {
+    backdrop-filter: blur(10px);
+    background-color: var(--bg_color_faded_2);
+    border: 1px solid var(--anchor_hover_color);
+    z-index: 4;
+    overflow: hidden;
+    color: var(--text_color);
+    font-weight: 600;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.Product_Card_Body {
+    margin-bottom: 3rem;
+}
+
 .Card_AddToCart_Button {
     padding: 0;
 }
 
 .Card_Product_Detail_Button:focus,
 .Card_Product_Detail_Button:hover {
-    background-color: var(--bg_color);
+    background-color: var(--anchor_hover_color);
     color: var(--text_color);
 }
 
@@ -2738,7 +2773,7 @@ h1 {
 .Card_ScheduleDemo_Button:focus,
 .Card_ScheduleDemo_Button:hover {
     background-color: var(--anchor_hover_color);
-    color: var(--marrom_primario);
+    color: var(--bg_color);
 }
 
 .AddToCartLeft,
@@ -2758,9 +2793,15 @@ h1 {
     background-color: var(--bg_color);
     color: var(--text_color);
     border-radius: var(--small_gap);
+    transition: all 0.2s ease-in-out;
 }
 
-/* SEÇÃO 4 - CONTATO */
+.Card_AddToCart_Button:focus .AddToCartLeft,
+.Card_AddToCart_Button:hover .AddToCartLeft {
+    scale: 1.1;
+}
+
+/* SEÇÃO 4 (Agora 5) - CONTATO */
 
 .LP_Section_04_Contato {
     padding: var(--small_gap);
@@ -2972,8 +3013,7 @@ h1 {
     scale: 1.05;
 }
 
-.Secondary_Page {
-}
+/* SOLUTION DETAIL */
 
 .Solution_Detail_Body {
     display: flex;
@@ -2983,18 +3023,44 @@ h1 {
     gap: var(--small_gap);
 }
 
+.Solution_Detail_Image_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    gap: var(--small_gap);
+    overflow-y: auto;
+}
+
+.Solution_Detail_Image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--small_gap);
+    filter: opacity(0.8);
+}
+
 .Solution_Detail_Right_Content {
-    width: 100%;
+    width: 50%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    gap: var(--small_gap);
+    padding-right: var(--small_gap);
+}
+
+.Solution_Detail_Title {
+    font-family: "Researcher_WOFF2";
 }
 
 .Solution_Partner_Container {
     display: flex;
+    flex: 1;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: var(--small_gap);
     width: 100%;
@@ -3018,23 +3084,6 @@ h1 {
 
 .Solution_Partner img {
     max-width: 200px;
-    border-radius: var(--small_gap);
-    filter: opacity(0.5);
-}
-
-.Solution_Detail_Image_Container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    overflow-y: auto;
-}
-
-.Solution_Detail_Image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
     border-radius: var(--small_gap);
     filter: opacity(0.5);
 }

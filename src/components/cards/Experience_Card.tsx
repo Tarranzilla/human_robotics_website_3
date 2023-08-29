@@ -38,7 +38,7 @@ export default function Experience_Card({ product: { id, imgSrc, bgImgSrc, prena
     return (
         <div className="Product_Card Experience_Card" id={domId}>
             <img className="Card_Product_Image Product_Bg_Image" src={bgImgSrc}></img>
-            <img className="Card_Product_Image Product_Main_Image" src={imgSrc[0]}></img>
+            <img className="Card_Product_Image Product_Main_Image Experience_Card_Image" src={imgSrc[0]}></img>
             <div className="Product_Description_Background"></div>
             <div className="Product_Card_Header">
                 <h3 className="Card_Product_Prename Experience_Prename">{prename}</h3>

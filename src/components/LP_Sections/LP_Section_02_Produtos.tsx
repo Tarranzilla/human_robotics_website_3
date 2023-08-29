@@ -31,10 +31,10 @@ const LP_Section_02_Produtos = forwardRef(function LP_Section_02_Produtos(props,
             <div className="Section_03_Background"></div>
             <div className="Type_Header" key={"Product_Type_Header_A"}>
                 {activeProductClass === null && <h3 className="Type_Viewer_Title">Nenhum Produto Selecionado</h3>}
-                {activeProductClass === "robos" && <h3 className="Type_Viewer_Title">Robôs</h3>}
-                {activeProductClass === "softwares" && <h3 className="Type_Viewer_Title">Softwares</h3>}
-                {activeProductClass === "servicos" && <h3 className="Type_Viewer_Title">Serviços</h3>}
-                {activeProductClass === "experiencias" && <h3 className="Type_Viewer_Title">Experiências</h3>}
+                {activeProductClass === "robos" && <h3 className="Type_Viewer_Title">ROBÔS</h3>}
+                {activeProductClass === "softwares" && <h3 className="Type_Viewer_Title">SOFTWARES</h3>}
+                {activeProductClass === "servicos" && <h3 className="Type_Viewer_Title">SERVIÇOS - RobiOS UNIVERSE</h3>}
+                {activeProductClass === "experiencias" && <h3 className="Type_Viewer_Title">EXPERIÊNCIAS</h3>}
             </div>
             <div className="Type_Viewer">
                 {activeProductClass === null && (

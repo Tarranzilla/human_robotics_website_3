@@ -48,17 +48,14 @@ export default function Robot_Card({ product: { id, imgSrc, bgImgSrc, prename, n
             <div className="Product_Card_Body">
                 <p className="Card_Product_Description">{description}</p>
             </div>
-            <div className="Product_Card_Footer">
-                <button
-                    className="Card_Product_Detail_Button"
-                    onClick={() => {
-                        openDetailsButton(id);
-                    }}
-                >
-                    <span className="material-icons">style</span>
-                    Mais Detalhes
-                </button>
-            </div>
+            <button
+                className="Card_Product_Detail_Button"
+                onClick={() => {
+                    openDetailsButton(id);
+                }}
+            >
+                <span className="material-icons">style</span>Mais Detalhes
+            </button>
         </div>
     );
 }
