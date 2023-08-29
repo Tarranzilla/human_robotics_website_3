@@ -3245,6 +3245,10 @@ h1 {
     fill: var(--bg_color);
 }
 
+/* MEDIA QUERYS */
+
+/* MOBILE */
+
 @media only screen and (max-width: 1200px) {
     .Desktop_Only {
         display: none;
