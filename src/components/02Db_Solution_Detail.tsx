@@ -15,10 +15,10 @@ export default function Solution_Detail() {
     const activeSolution = useSelector((state: any) => state.activeSolution);
 
     return (
-        <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Privacy_Container">
-            <div className="Privacy_Header">
-                <span className="material-icons Privacy_Icon">info</span>
-                <h2 className="Privacy_Title">Detalhe de Solução</h2>
+        <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="Solution_Detail_Container">
+            <div className="Privacy_Header Solution_Detail_Header">
+                <span className="material-icons Privacy_Icon Solution_Detail_Icon">info</span>
+                <h2 className="Privacy_Title Solution_Detail_Title">Detalhe de Solução</h2>
                 <button className="Privacy_Close_Btn">
                     <span className="material-icons" onClick={toggleSolutionDetailButton}>
                         close
@@ -47,6 +47,9 @@ export default function Solution_Detail() {
                         })}
                     </div>
                 </div>
+            </div>
+            <div className="Solution_Detail_Footer">
+                <button className="Card_ScheduleDemo_Button">Agendar Demonstração</button>
             </div>
         </m.div>
     );
