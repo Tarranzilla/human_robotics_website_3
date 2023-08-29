@@ -1601,6 +1601,15 @@ h1 {
     gap: var(--small_gap);
 }
 
+.Product_Detail_FullDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: var(--small_gap);
+}
+
 /* HELP CONTAINERS */
 
 .Help_Container {
@@ -2996,6 +3005,70 @@ h1 {
 }
 
 .Secondary_Page {
+}
+
+.Solution_Detail_Body {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: var(--small_gap);
+}
+
+.Solution_Detail_Right_Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.Solution_Partner_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--small_gap);
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+
+.Solution_Partner {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    border-radius: var(--small_gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Solution_Partner img {
+    max-width: 200px;
+    border-radius: var(--small_gap);
+    filter: opacity(0.5);
+}
+
+.Solution_Detail_Image_Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Solution_Detail_Image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--small_gap);
+    filter: opacity(0.5);
 }
 
 /* FOOTER */

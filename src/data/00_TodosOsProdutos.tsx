@@ -10,8 +10,9 @@ const TodosOsProdutos: ProductType[] = [
         type: "Robô Autônomo Móvel",
         class: "robos",
         description: "Um robô capaz de interagir e se locomover de forma autônoma e inteligente.",
-        fullDescription:
+        fullDescription: [
             "Um robô autônomo móvel com câmera 4K para telepresença, câmeras fish-eye para navegação, câmera 3D (infravermelho e RGB), LIDAR + sensores ultrasônicos, tela de 10.1 polegadas touch e full HD, auto-falante 40w full range, computador interno (Intel NUC), motores silenciosos e bateria com autonomia de 3 a 5 horas, também com capacidade de auto recarga.",
+        ],
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/01_go_crop.png", "/robots_images/go_fullsize.png"],
 
@@ -61,7 +62,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Robô Autônomo Móvel",
         class: "robos",
         description: "Um robô para a inspeção de ambientes, produtos e equipamentos.",
-        fullDescription: "",
+        fullDescription: [""],
         bgImgSrc: "/robots_backgrounds/fundo_inspector.png",
         imgSrc: ["/robots_images/new5/02_inspector_crop.png", "/robots_images/inspector_fullsize.png"],
 
@@ -111,7 +112,12 @@ const TodosOsProdutos: ProductType[] = [
         type: "Robô Autônomo Móvel",
         class: "robos",
         description: "Um robô que lhe permite armazenar e transportar objetos e ferramentas.",
-        fullDescription: "",
+        fullDescription: [
+            "Um robô autônomo, ainda em desenvolvimento - projetado para realizar entregas em espaços internos, com capacidade de carga de até 50kg e autonomia de até 8 horas.",
+            "O surgimento da Internet Industrial das Coisas (IIoT) e o advento de uma rede de sistemas conectados estão ajudando as indústrias a realizar uma infinidade de tarefas, como agendamento de materiais, seleção, pedidos, embalagem, segurança de armazém e inspeção, além de melhorar significativamente a eficiência operacional.",
+            "Alguns dos benefícios da automação logística são o aprimoramento do serviço ao cliente, escalabilidade e velocidade, controle organizacional e a redução de erros e de acidentes.",
+        ],
+
         bgImgSrc: "/robots_backgrounds/fundo_cargo.png",
         imgSrc: ["/robots_images/new5/03_cargo_crop.png", "/robots_images/cargo_fullsize.png"],
         buyPrice: 25000,
@@ -161,7 +167,7 @@ const TodosOsProdutos: ProductType[] = [
         class: "softwares",
         description:
             "Um sistema operacional robótico capaz de gerenciar e controlar robôs autônomos móveis, com uma interface gráfica intuitiva e de fácil utilização.",
-        fullDescription: "",
+        fullDescription: [""],
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/04_RobiOs.png"],
         buyPrice: 5000,
@@ -194,7 +200,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Software de Personalização",
         class: "softwares",
         description: "Software para a personalização das ações dos robôs e assistentes, com uma interface gráfica intuitiva e fácil de usar.",
-        fullDescription: "",
+        fullDescription: [""],
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/05_Studio.png"],
         buyPrice: 3500,
@@ -226,7 +232,7 @@ const TodosOsProdutos: ProductType[] = [
         name: "AVATAR",
         type: "Assistente Virtual Inteligente",
         class: "softwares",
-        fullDescription: "",
+        fullDescription: [""],
         description: "Software capaz de emular Avatares - assistentes virtuais que podem ser acessados em qualquer dispositivo Android",
         bgImgSrc: "/robots_backgrounds/fundo_avatar.png",
         imgSrc: ["/robots_images/new5/06_Avatar.png"],
@@ -261,8 +267,9 @@ const TodosOsProdutos: ProductType[] = [
 
         description:
             "Customize seu robô visualmente aplicando a sua marca e identidade visual, estuturalmente com módulos e comportamentalmente com uma personalidade única.",
-        fullDescription:
+        fullDescription: [
             "Cada robô é modular e pode passar por serviços de personalização de hardware, software e interação - oferecendo a possibilidade da criação de robôs únicos e adaptados às necessidades de cada cliente.",
+        ],
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/07_Customizacao.png"],
         buyPrice: 5000,
@@ -303,7 +310,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Serviço Adicional",
         class: "servicos",
 
-        fullDescription: "",
+        fullDescription: [""],
         description: "Mapeie ambientes internos e externos com LIDAR e os compile um arquivo digital em conjunto com percursos personalizados.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/08_Mapeamento.png"],
@@ -341,8 +348,10 @@ const TodosOsProdutos: ProductType[] = [
         type: "Serviço Adicional",
         class: "servicos",
 
-        fullDescription:
-            "A Human Robotics oferece serviços de treinamento para operadores de robôs, garantindo que seus clientes possam utilizar seus produtos com eficiência e segurança. A Human Robotics também oferece uma garantia de 2 anos para nossos produtos. Esta garantia pode ser estendida caso o usuário deseje por um valor adicional. ",
+        fullDescription: [
+            "Oferecemos serviços de treinamento para operadores de robôs, garantindo que seus clientes possam utilizar seus produtos com eficiência e segurança.",
+            "Também oferecemos uma garantia de 2 anos para nossos produtos. Esta garantia pode ser estendida caso o usuário deseje por um valor adicional. ",
+        ],
         description: "Treine a sua equipe para que ela possa operar e personalizar o seu robô.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/09_Treinamento.png"],
@@ -388,7 +397,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        fullDescription: "",
+        fullDescription: [""],
         description: "Proporcione experiências capazes de engajar o público, ativar produtos e aprimorar seu fluxo de distribuição.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/10_Varejo.png"],
@@ -415,7 +424,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        fullDescription: "",
+        fullDescription: [""],
         description: "Proporcione experiências capazes de facilitar o atendimento de clientes, a inspeção de recursos e transporte de equipamento.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/11_Industria.png"],
@@ -444,7 +453,7 @@ const TodosOsProdutos: ProductType[] = [
         type: "Experiência",
         class: "experiencias",
 
-        fullDescription: "",
+        fullDescription: [""],
         description: "Proporcione experiências que estimulam aprendizados mais humanizados, criativos e informatizados.",
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
         imgSrc: ["/robots_images/new5/12_Cultura.png"],

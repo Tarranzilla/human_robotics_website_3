@@ -25,25 +25,30 @@ export default function Solution_Detail() {
                     </span>
                 </button>
             </div>
-            <div className="Privacy_Body">
+            <div className="Solution_Detail_Body">
                 <div className="Solution_Detail_Image_Container">
-                    <img src={activeSolution.imgSrc[0]} alt={activeSolution.name} />
-                    <img src={activeSolution.imgSrc[0]} alt={activeSolution.name} />
-                    <img src={activeSolution.imgSrc[0]} alt={activeSolution.name} />
+                    <img className="Solution_Detail_Image" src={activeSolution.imgSrc[0]} alt={activeSolution.name} />
+                    <img className="Solution_Detail_Image" src={activeSolution.imgSrc[1]} alt={activeSolution.name} />
+                    <img className="Solution_Detail_Image" src={activeSolution.imgSrc[2]} alt={activeSolution.name} />
                 </div>
-                <h2>{activeSolution.name}</h2>
-                <p>{activeSolution.description}</p>
-                <p>{activeSolution.fullDescription}</p>
-                {activeSolution.partners.map((partner: any) => {
-                    return (
-                        <div className="Solution_Partner">
-                            <img src={partner.imgSrc} alt={partner.name} />
-                            <a href={partner.description} target="_blank" rel="noreferrer">
-                                {partner.name}
-                            </a>
-                        </div>
-                    );
-                })}
+
+                <div className="Solution_Detail_Right_Content">
+                    <h2>{activeSolution.name}</h2>
+                    <p>{activeSolution.description}</p>
+                    <p>{activeSolution.fullDescription}</p>
+                    <div className="Solution_Partner_Container">
+                        {activeSolution.partners.map((partner: any) => {
+                            return (
+                                <div className="Solution_Partner">
+                                    <img src={partner.imgSrc} alt={partner.name} />
+                                    <a href={partner.description} target="_blank" rel="noreferrer">
+                                        {partner.name}
+                                    </a>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
             </div>
         </m.div>
     );

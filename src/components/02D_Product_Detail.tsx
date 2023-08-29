@@ -99,34 +99,14 @@ export default function ProductDetail() {
                             <h3 className="Product_Detail_Text_Item_Header_Title">Descrição</h3>
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.description}</p>
-                        </div>
-                    </div>
-
-                    <div className="Product_Detail_Text_Item">
-                        <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Coordenadas de Origem</h3>
-                        </div>
-                        <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.productOriginCoordinates}</p>
-                        </div>
-                    </div>
-
-                    <div className="Product_Detail_Text_Item">
-                        <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Origem das Peças</h3>
-                        </div>
-                        <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.productOrigin}</p>
-                        </div>
-                    </div>
-
-                    <div className="Product_Detail_Text_Item">
-                        <div className="Product_Detail_Text_Item_Header">
-                            <h3 className="Product_Detail_Text_Item_Header_Title">Produtor do Robô</h3>
-                        </div>
-                        <div className="Product_Detail_Text_Item_Content">
-                            <p className="Product_Detail_Text_Content">{activeProduct.producerName}</p>
+                            <p className="Product_Detail_Text_Content">
+                                <strong>{activeProduct.description}</strong>
+                            </p>
+                            <div className="Product_Detail_FullDescription">
+                                {activeProduct.fullDescription.map((paragraph) => {
+                                    return <p className="Product_Detail_Text_Content">{paragraph}</p>;
+                                })}
+                            </div>
                         </div>
                     </div>
 
@@ -162,6 +142,33 @@ export default function ProductDetail() {
                                     );
                                 })}
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="Product_Detail_Text_Item">
+                        <div className="Product_Detail_Text_Item_Header">
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Coordenadas de Origem</h3>
+                        </div>
+                        <div className="Product_Detail_Text_Item_Content">
+                            <p className="Product_Detail_Text_Content">{activeProduct.productOriginCoordinates}</p>
+                        </div>
+                    </div>
+
+                    <div className="Product_Detail_Text_Item">
+                        <div className="Product_Detail_Text_Item_Header">
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Origem das Peças</h3>
+                        </div>
+                        <div className="Product_Detail_Text_Item_Content">
+                            <p className="Product_Detail_Text_Content">{activeProduct.productOrigin}</p>
+                        </div>
+                    </div>
+
+                    <div className="Product_Detail_Text_Item">
+                        <div className="Product_Detail_Text_Item_Header">
+                            <h3 className="Product_Detail_Text_Item_Header_Title">Produtor do Robô</h3>
+                        </div>
+                        <div className="Product_Detail_Text_Item_Content">
+                            <p className="Product_Detail_Text_Content">{activeProduct.producerName}</p>
                         </div>
                     </div>
                 </div>
