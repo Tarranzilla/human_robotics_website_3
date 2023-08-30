@@ -1,6 +1,8 @@
 //Framer Motion Imports
 import { motion as m } from "framer-motion";
 
+import { persistor } from "../main.tsx";
+
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -62,6 +64,11 @@ export default function Menu() {
 
     const toggleLanguageButton = () => {
         dispatch(toggleLanguage());
+    };
+
+    const handleResetButton = () => {
+        persistor.purge();
+        window.location.reload();
     };
 
     return (
@@ -204,6 +211,9 @@ export default function Menu() {
                                 Modo de Cor: <span className={mode === "dark" ? "Config_Option active" : "Config_Option"}>Escuro</span>
                                 <span className={mode === "light" ? "Config_Option active" : "Config_Option"}>Claro</span>
                             </a>
+                            <button className="Config_Reset" onClick={handleResetButton}>
+                                <span className="material-icons">restart_alt</span>Reiniciar aplicativo e limpar todos os dados
+                            </button>
                         </div>
                     </div>
                 </div>

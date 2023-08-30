@@ -279,6 +279,15 @@ h1 {
     }
 }
 
+@keyframes Rotate360Y {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .Navbar_LogoType_Container {
     display: flex;
     flex-direction: column;
@@ -735,6 +744,30 @@ h1 {
 .Config_Option.active {
     background-color: var(--anchor_hover_color);
     color: var(--text_color);
+}
+
+.Config_Reset {
+    font-size: clamp(0.6rem, 1vw, 0.8rem);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--menu_color);
+    color: var(--text_color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.Config_Reset:focus,
+.Config_Reset:hover {
+    background-color: var(--warning_color);
+    color: var(--bg_color);
+    scale: 1.05;
 }
 
 /* COOKIES BANNER */
@@ -2985,7 +3018,7 @@ h1 {
 }
 
 .Solution_Description {
-    font-size: clamp(1.2rem, 1.6vw, 2.2rem);
+    font-size: clamp(0.9rem, 1.6vw, 2.2rem);
     font-weight: 600;
     color: var(--text_color);
 }
@@ -3058,9 +3091,12 @@ h1 {
     gap: var(--small_gap);
     padding: var(--small_gap);
     overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .Solution_Detail_Image {
+    scroll-snap-align: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -3460,7 +3496,8 @@ h1 {
     .Cookies_Banner,
     .SiteMap_Container,
     .Terms_Container,
-    .Privacy_Container {
+    .Privacy_Container,
+    .Solution_Detail_Container {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -3480,6 +3517,33 @@ h1 {
 
     .Mapa_Body {
         padding: 0;
+    }
+
+    .Solution_Detail_Body {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        overflow-y: auto;
+        padding-right: 0.5rem;
+    }
+
+    .Solution_Detail_Image_Container {
+        width: 100%;
+        height: 50%;
+        flex-shrink: 0;
+    }
+
+    .Solution_Detail_Right_Content {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Solution_Card {
+        padding: var(--small_gap);
     }
 
     /* LANDING PAGE */

@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Redux Imports
 import authReducer from "./context/main_context.tsx";
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, createAction } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
 // Redux Persist Imports
@@ -60,11 +60,14 @@ const store = configureStore({
         }),
 });
 
+export const persistor = persistStore(store);
+export const clearPersistedData = createAction("persist/clearPersistedData");
+
 // Render, Provider and PersistGate (?)
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <React.StrictMode>
         <Provider store={store}>
-            <PersistGate loading={null} persistor={persistStore(store)}>
+            <PersistGate loading={null} persistor={persistor}>
                 <RouterProvider router={router} />
             </PersistGate>
         </Provider>
