@@ -302,6 +302,11 @@ h1 {
     width: 100%;
 }
 
+.Navbar_LogoType_Mobile {
+    fill: var(--text_color);
+    width: 100%;
+}
+
 .Human {
     width: 68%;
 }
@@ -321,6 +326,7 @@ h1 {
 
 .Navbar_Mobile {
     display: none;
+    max-width: 200px;
 }
 
 .Mobile_Navbar_Title {
@@ -331,6 +337,7 @@ h1 {
     letter-spacing: 1px;
     line-height: 1rem;
     text-transform: uppercase;
+    max-width: 200px;
 }
 
 .Navbar_Main_Links {
@@ -2149,7 +2156,7 @@ h1 {
 
 .Brand_Name {
     color: var(--primary_color);
-    font-size: clamp(4.5rem, 16vw, 14rem);
+    font-size: clamp(4.3rem, 16vw, 14rem);
     opacity: 0.5;
 }
 
@@ -3093,6 +3100,7 @@ h1 {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    position: relative;
 }
 
 .Solution_Detail_Image {
@@ -3105,6 +3113,7 @@ h1 {
 }
 
 .Solution_Detail_Right_Content {
+    height: 100%;
     width: 50%;
     flex: 1;
     display: flex;
@@ -3119,22 +3128,72 @@ h1 {
     font-family: "Researcher_WOFF2";
 }
 
+.Solution_Detail_Content_Title {
+    font-family: "Researcher_WOFF2";
+    font-size: clamp(2rem, 2vw, 2.8rem);
+    text-transform: uppercase;
+}
+
+.Solution_Recommended_Products_Container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small_gap);
+}
+
+.Product_Detail_Solution_Container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--small_gap);
+    flex-direction: column;
+    align-items: center;
+    padding-block: var(--small_gap);
+}
+
+.Product_Detail_Solution,
+.Solution_Recommended_Product {
+    background-color: var(--anchor_hover_color);
+    color: var(--bg_color);
+    padding: 0.5rem;
+    border-radius: var(--small_gap);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-family: "Researcher_WOFF2";
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Product_Detail_Solution {
+    width: 100%;
+    max-width: 300px;
+    text-transform: uppercase;
+}
+
+.Product_Detail_Solution:focus,
+.Product_Detail_Solution:hover,
+.Solution_Recommended_Product:hover,
+.Solution_Recommended_Product:focus {
+    background-color: var(--text_color);
+    color: var(--bg_color);
+    scale: 1.05;
+}
+
 .Solution_Partner_Container {
     display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     gap: var(--small_gap);
     width: 100%;
     height: 100%;
     overflow-x: auto;
+    position: relative;
 }
 
 .Solution_Partner {
     position: relative;
     width: 100%;
-    max-width: 150px;
+    max-width: 180px;
     flex-grow: 1;
     flex-shrink: 0;
     aspect-ratio: 1/1;
