@@ -24,5 +24,5 @@ export default interface ProductType {
     sellerOriginCoordinates: string;
 
     components: Array<object>;
-    solutions: Array<string>;
+    solutions: Array<object>;
 }

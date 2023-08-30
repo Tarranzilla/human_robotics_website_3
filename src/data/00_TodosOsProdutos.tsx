@@ -14,7 +14,7 @@ const TodosOsProdutos: ProductType[] = [
             "Um robô autônomo móvel com câmera 4K para telepresença, câmeras fish-eye para navegação, câmera 3D (infravermelho e RGB), LIDAR + sensores ultrasônicos, tela de 10.1 polegadas touch e full HD, auto-falante 40w full range, computador interno (Intel NUC), motores silenciosos e bateria com autonomia de 3 a 5 horas, também com capacidade de auto recarga.",
         ],
         bgImgSrc: "/robots_backgrounds/fundo_go.png",
-        imgSrc: ["/robots_images/new5/01_go_crop.png", "/robots_images/go_fullsize.png"],
+        imgSrc: ["/robots_images/new8/01B_Go.png", "/robots_images/new8/GO_Detail_01.png", "/robots_images/new8/GO_Detail_02.png"],
 
         buyPrice: 25000,
         rentPrice: 1250,
@@ -50,7 +50,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -64,7 +85,11 @@ const TodosOsProdutos: ProductType[] = [
         description: "Um robô para a inspeção de ambientes, produtos e equipamentos.",
         fullDescription: [""],
         bgImgSrc: "/robots_backgrounds/fundo_inspector.png",
-        imgSrc: ["/robots_images/new5/02_inspector_crop.png", "/robots_images/inspector_fullsize.png"],
+        imgSrc: [
+            "/robots_images/new8/02B_Inspector.png",
+            "/robots_images/new8/INSPECTOR_Detail_01.png",
+            "/robots_images/new8/INSPECTOR_Detail_02.png",
+        ],
 
         buyPrice: 35000,
         rentPrice: 1750,
@@ -100,7 +125,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -119,7 +165,7 @@ const TodosOsProdutos: ProductType[] = [
         ],
 
         bgImgSrc: "/robots_backgrounds/fundo_cargo.png",
-        imgSrc: ["/robots_images/new5/03_cargo_crop.png", "/robots_images/cargo_fullsize.png"],
+        imgSrc: ["/robots_images/new8/03B_Cargo.png", "/robots_images/new8/CARGO_Detail_01.png", "/robots_images/new8/CARGO_Detail_02.png"],
         buyPrice: 25000,
         rentPrice: 1250,
         cartQuantity: 0,
@@ -154,7 +200,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -188,7 +255,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -221,7 +309,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -254,7 +363,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
     {
         domId: "produto-06",
@@ -298,7 +428,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -336,7 +487,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -385,7 +557,28 @@ const TodosOsProdutos: ProductType[] = [
                 imgSrc: "",
             },
         ],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -412,7 +605,24 @@ const TodosOsProdutos: ProductType[] = [
         sellerOrigin: "Curitiba, Paraná, Brasil",
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
         components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
-        solutions: ["Atendimento", "Publicidade", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+            },
+        ],
     },
 
     {
@@ -441,7 +651,28 @@ const TodosOsProdutos: ProductType[] = [
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
         components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
-        solutions: ["Atendimento", "Inspeção", "Transporte"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+            {
+                name: "Inspeção",
+                imgSrc: "robots_images/new8/Inspecao.png",
+                id: 2,
+            },
+            {
+                name: "Transporte",
+                imgSrc: "robots_images/new8/Transporte.png",
+                id: 3,
+            },
+        ],
     },
 
     {
@@ -470,7 +701,18 @@ const TodosOsProdutos: ProductType[] = [
         sellerOriginCoordinates: "Latitude: -25.4284, Longitude: -49.2733",
 
         components: [{ name: "Experiências publicitárias e operacionais.", imgSrc: "" }],
-        solutions: ["Atendimento", "Publicidade"],
+        solutions: [
+            {
+                name: "Atendimento",
+                imgSrc: "robots_images/new8/Atendimento.png",
+                id: 0,
+            },
+            {
+                name: "Publicidade",
+                imgSrc: "robots_images/new8/Publi.png",
+                id: 1,
+            },
+        ],
     },
 ];
 

@@ -3,13 +3,19 @@ import ProductType from "../types/00_Produto";
 
 // Redux Imports
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, toggleProductDetails, toggleCart } from "../context/main_context";
+import { addToCart, toggleProductDetails, toggleCart, toggleSolutionDetails, setActiveSolution } from "../context/main_context";
 
 //Framer Motion Imports
 import { motion as m } from "framer-motion";
 
 export default function ProductDetail() {
     const dispatch = useDispatch();
+
+    const openDetailsButton = (id) => {
+        console.log("Opening Solution details");
+        dispatch(toggleSolutionDetails());
+        dispatch(setActiveSolution({ id: id }));
+    };
 
     const activeProduct = useSelector((state: any) => state.activeProduct);
 
@@ -64,7 +70,7 @@ export default function ProductDetail() {
                         <a href="#detail_image_02" className="Product_Detail_Image_Next_Btn">
                             <span className="material-icons">east</span>
                         </a>
-                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[0]}></img>
+                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[1]}></img>
                     </div>
 
                     <div className="Product_Detail_Image_Block" id="detail_image_02">
@@ -74,14 +80,14 @@ export default function ProductDetail() {
                         <a href="#detail_image_03" className="Product_Detail_Image_Next_Btn">
                             <span className="material-icons">east</span>
                         </a>
-                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[0]}></img>
+                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[2]}></img>
                     </div>
 
                     <div className="Product_Detail_Image_Block" id="detail_image_03">
                         <a href="#detail_image_01" className="Product_Detail_Image_Previous_Btn">
                             <span className="material-icons">west</span>
                         </a>
-                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[0]}></img>
+                        <img className="Product_Detail_Image" src={activeProduct.imgSrc[1]}></img>
                     </div>
                 </div>
                 <div className="Product_Detail_Text_Container">
@@ -134,8 +140,18 @@ export default function ProductDetail() {
                         </div>
                         <div className="Product_Detail_Text_Item_Content">
                             <div className="Product_Detail_Solution_Container">
-                                {activeProduct.solutions.map((solution: string) => {
-                                    return <p className="Product_Detail_Solution">{solution}</p>;
+                                {activeProduct.solutions.map((solution) => {
+                                    return (
+                                        <div
+                                            className="Product_Detail_Solution"
+                                            onClick={() => {
+                                                openDetailsButton(solution.id);
+                                            }}
+                                        >
+                                            <img src={solution.imgSrc} className="Product_Detail_Solution_Img"></img>
+                                            <p className="Product_Detail_Solution_Name">{solution.name}</p>
+                                        </div>
+                                    );
                                 })}
                             </div>
                         </div>
