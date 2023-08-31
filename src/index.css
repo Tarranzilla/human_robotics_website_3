@@ -1587,7 +1587,6 @@ h1 {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: var(--small_gap);
-    padding: var(--small_gap);
 }
 
 .Product_Detail_Text_Container {
@@ -2409,7 +2408,6 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
     gap: var(--small_gap);
     width: 100%;
     height: 100%;
@@ -2434,7 +2432,7 @@ h1 {
 }
 
 .Sobre_Member_Image_Container {
-    width: 100%;
+    height: 100%;
     aspect-ratio: 1/1;
     max-height: 250px;
     max-width: 250px;
@@ -2754,7 +2752,7 @@ h1 {
 }
 
 .Robot_Card_Main_Image {
-    top: 6rem;
+    top: 6.5rem;
     object-fit: contain;
 }
 
@@ -3212,11 +3210,10 @@ h1 {
 .Solution_Partner {
     position: relative;
     width: 100%;
-    max-width: 180px;
+    max-width: 120px;
     flex-grow: 1;
     flex-shrink: 0;
     aspect-ratio: 1/1;
-    border-radius: var(--small_gap);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3225,7 +3222,6 @@ h1 {
 
 .Solution_Partner img {
     width: 100%;
-    border-radius: var(--small_gap);
     filter: opacity(0.5);
 }
 
@@ -3363,7 +3359,7 @@ h1 {
 
 /* MOBILE */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
     .Desktop_Only {
         display: none;
     }
@@ -3602,6 +3598,7 @@ h1 {
         justify-content: start;
         align-items: center;
         height: 100%;
+        width: 100%;
         overflow-y: auto;
         padding-right: 0.5rem;
     }
