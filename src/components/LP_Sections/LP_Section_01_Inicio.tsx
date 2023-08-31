@@ -9,6 +9,16 @@ import backgroundImg from "../../assets/cacau_textures/dalle1.png";
 import CardContainer_Experiencias from "../legacy/Carrossel_Experiencias";
 import CardContainer_Parceiros from "../legacy/Carrossel_Parceiros";
 
+const springTransition = {
+    type: "spring",
+    stiffness: 100,
+    damping: 15,
+    bounce: 0.5,
+    velocity: 50,
+};
+
+const customTransition = springTransition;
+
 const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref: any) {
     const [text, setText] = useState("Agora");
     const textArray = ["Agora", "Interativo", "Humano"];
@@ -32,19 +42,40 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
             <div className="Brand_Declaration">
                 <h2 className="Brand_Declaration">O Futuro da Robótica é</h2>
 
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="popLayout">
                     {text === "Agora" && (
-                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Agora" className="Brand_Name">
+                        <m.h2
+                            initial={{ x: "100vw" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "-100vw" }}
+                            transition={customTransition}
+                            key="Agora"
+                            className="Brand_Name"
+                        >
                             Agora
                         </m.h2>
                     )}
                     {text === "Interativo" && (
-                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Interativo" className="Brand_Name">
+                        <m.h2
+                            initial={{ x: "100vw" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "-100vw" }}
+                            transition={customTransition}
+                            key="Interativo"
+                            className="Brand_Name"
+                        >
                             Interativo
                         </m.h2>
                     )}
                     {text === "Humano" && (
-                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Humano" className="Brand_Name">
+                        <m.h2
+                            initial={{ x: "100vw" }}
+                            animate={{ x: 0 }}
+                            exit={{ x: "-100vw" }}
+                            transition={customTransition}
+                            key="Humano"
+                            className="Brand_Name"
+                        >
                             Humano
                         </m.h2>
                     )}
