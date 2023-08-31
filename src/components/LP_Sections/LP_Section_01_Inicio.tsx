@@ -42,14 +42,14 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
             <div className="Brand_Declaration">
                 <h2 className="Brand_Declaration">O Futuro da Robótica é</h2>
 
-                <AnimatePresence mode="popLayout">
+                <AnimatePresence mode="wait">
                     {text === "Agora" && (
                         <m.h2
                             initial={{ x: "100vw" }}
                             animate={{ x: 0 }}
                             exit={{ x: "-100vw" }}
                             transition={customTransition}
-                            key="Agora"
+                            key="Agora_BRAND"
                             className="Brand_Name"
                         >
                             Agora
@@ -61,7 +61,7 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
                             animate={{ x: 0 }}
                             exit={{ x: "-100vw" }}
                             transition={customTransition}
-                            key="Interativo"
+                            key="Interativo_BRAND"
                             className="Brand_Name"
                         >
                             Interativo
@@ -73,7 +73,7 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
                             animate={{ x: 0 }}
                             exit={{ x: "-100vw" }}
                             transition={customTransition}
-                            key="Humano"
+                            key="Humano_BRAND"
                             className="Brand_Name"
                         >
                             Humano
