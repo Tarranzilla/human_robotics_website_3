@@ -32,21 +32,23 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
             <div className="Brand_Declaration">
                 <h2 className="Brand_Declaration">O Futuro da Robótica é</h2>
 
-                {text === "Agora" && (
-                    <m.h2 initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Brand_Name">
-                        Agora
-                    </m.h2>
-                )}
-                {text === "Interativo" && (
-                    <m.h2 initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Brand_Name">
-                        Interativo
-                    </m.h2>
-                )}
-                {text === "Humano" && (
-                    <m.h2 initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Brand_Name">
-                        Humano
-                    </m.h2>
-                )}
+                <AnimatePresence mode="wait">
+                    {text === "Agora" && (
+                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Agora" className="Brand_Name">
+                            Agora
+                        </m.h2>
+                    )}
+                    {text === "Interativo" && (
+                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Interativo" className="Brand_Name">
+                            Interativo
+                        </m.h2>
+                    )}
+                    {text === "Humano" && (
+                        <m.h2 initial={{ x: 2000 }} animate={{ x: 0 }} exit={{ x: -2000 }} key="Humano" className="Brand_Name">
+                            Humano
+                        </m.h2>
+                    )}
+                </AnimatePresence>
             </div>
 
             <CardContainer_Parceiros />

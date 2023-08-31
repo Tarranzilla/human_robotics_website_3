@@ -91,6 +91,20 @@
     --hr_alerta: #ffae2d;
     --hr_sucesso: #00ffd6;
 
+    /* NOVAS CORES FINAIS */
+
+    --hr_cinza_claro: #e3e4ed;
+    --hr_cinza_medio: #8b90b5;
+
+    --hr_azul_claro: #404ab6;
+    --hr_azul_escuro: #18286c;
+
+    --hr_azul_primário: #4400ff;
+
+    --hr_sucesso_verde: #afff00;
+    --hr_alerta_amarelo: #ffce00;
+    --hr_alerta_vermelho: #ff1e00;
+
     /* Main Light Mode Colors */
     --bg_color: #ffffff;
     --bg_color_faded_1: #ffffffb9;

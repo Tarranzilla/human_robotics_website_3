@@ -16,6 +16,16 @@ import VideoNavegação from "../../assets/videos/05_Video_Navegacao.mp4";
 import VideoApresentacao from "../../assets/videos/Robios_Apresentacao.mp4";
 import VideoEventosAtendimento from "../../assets/videos/Robios_Evento_Transporte_Atendimento.mp4";
 
+const springTransition = {
+    type: "spring",
+    stiffness: 100,
+    damping: 15,
+    bounce: 0.5,
+    velocity: 50,
+};
+
+const customTransition = springTransition;
+
 const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props, ref: any) {
     const dispatch = useDispatch();
 
@@ -36,32 +46,41 @@ const LP_Section_03_Solucoes = forwardRef(function LP_Section_03_Solucoes(props,
         <div className="LP_Section LP_Section_03_Solucoes" id="LP_Section_3" ref={ref} key={"LP_Section_3"}>
             <div className="Section_03_Background"></div>
             <div className="Solution_Viewer">
-                {activeSolutionClass === null && (
-                    <div className="Solution_Card" key={"Product_Container_B"}>
-                        <h3 className="No_Product_Selected_Title">Nenhuma Categoria de Produto Selecionada</h3>
-                    </div>
-                )}
+                <AnimatePresence mode="popLayout">
+                    {activeSolutionClass === null && (
+                        <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={"Solution_Container_NONE"}>
+                            <h3 className="No_Product_Selected_Title">Nenhuma Categoria de Produto Selecionada</h3>
+                        </m.div>
+                    )}
 
-                {availableSolutions.map((solution: any) => {
-                    if (solution.class === activeSolutionClass) {
-                        return (
-                            <m.div initial={{ x: 1000 }} animate={{ x: 0 }} exit={{ x: -1000 }} className="Solution_Card" key={solution.domId}>
-                                <div className="Solution_Video_Fader"></div>
-                                <video className="Solution_Video" src={solution.videoSrc[0]} autoPlay loop muted />
-                                <h3 className="Solution_Title">{solution.name}</h3>
-                                <p className="Solution_Description">{solution.description}</p>
-                                <button
-                                    className="Solution_KnowMore_Button"
-                                    onClick={() => {
-                                        toggleActiveSolutionButton({ id: solution.id });
-                                    }}
+                    {availableSolutions.map((solution: any) => {
+                        if (solution.class === activeSolutionClass) {
+                            return (
+                                <m.div
+                                    initial={{ x: "100vw" }}
+                                    animate={{ x: 0 }}
+                                    exit={{ x: "-100vw" }}
+                                    transition={customTransition}
+                                    className="Solution_Card"
+                                    key={solution.domId}
                                 >
-                                    <span className="material-icons">info</span>Mais Detalhes
-                                </button>
-                            </m.div>
-                        );
-                    }
-                })}
+                                    <div className="Solution_Video_Fader"></div>
+                                    <video className="Solution_Video" src={solution.videoSrc[0]} autoPlay loop muted />
+                                    <h3 className="Solution_Title">{solution.name}</h3>
+                                    <p className="Solution_Description">{solution.description}</p>
+                                    <button
+                                        className="Solution_KnowMore_Button"
+                                        onClick={() => {
+                                            toggleActiveSolutionButton({ id: solution.id });
+                                        }}
+                                    >
+                                        <span className="material-icons">info</span>Mais Detalhes
+                                    </button>
+                                </m.div>
+                            );
+                        }
+                    })}
+                </AnimatePresence>
             </div>
             <div className="Product_Type_Container" key={"Product_Type_Container_B"}>
                 <button
