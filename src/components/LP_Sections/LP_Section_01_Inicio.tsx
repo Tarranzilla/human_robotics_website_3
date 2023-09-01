@@ -42,7 +42,7 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
             <div className="Brand_Declaration">
                 <h2 className="Brand_Declaration">O Futuro da Robótica é</h2>
 
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="popLayout">
                     {text === "Agora" && (
                         <m.h2
                             initial={{ x: "100vw" }}
