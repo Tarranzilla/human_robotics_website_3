@@ -23,16 +23,38 @@ const LP_Section_01_Inicio = forwardRef(function LP_Section_01_Inicio(props, ref
     const [text, setText] = useState("Agora");
     const textArray = ["Agora", "Interativo", "Humano"];
     let index = 0;
-
+    let intervalId: number;
+  
+    const animateText = () => {
+      setText(textArray[index]);
+      index = (index + 1) % textArray.length;
+    };
+  
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        // Page is not visible, clear the interval
+        clearInterval(intervalId);
+      } else {
+        // Page is visible, restart the interval
+        intervalId = setInterval(animateText, 2000);
+      }
+    };
+  
     useEffect(() => {
-        const interval = setInterval(() => {
-            setText(textArray[index]);
-            index = (index + 1) % textArray.length;
-        }, 2000);
-
-        return () => clearInterval(interval);
-    }, []);
-
+      // Start the animation loop
+      intervalId = setInterval(animateText, 2000);
+  
+      // Add visibility change event listener
+      document.addEventListener("visibilitychange", handleVisibilityChange);
+  
+      // Cleanup function
+      return () => {
+        clearInterval(intervalId);
+        document.removeEventListener("visibilitychange", handleVisibilityChange);
+        index = 0; // Reset the index
+      };
+    }, []); // Run once on mount
+    
     return (
         <div className="LP_Section LP_Section_01_Inicio" id="LP_Section_1" ref={ref} key={"LP_Section_1"}>
             <div className="carroussel_left_fade top_fade"></div>

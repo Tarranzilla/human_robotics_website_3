@@ -1518,6 +1518,7 @@ h1 {
     aspect-ratio: 1/1;
 
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: start;
     align-items: center;
@@ -1543,7 +1544,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -1605,6 +1605,7 @@ h1 {
 
 .Product_Detail_Text_Container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -2344,7 +2345,7 @@ h1 {
 }
 
 .Sobre_Header_Text {
-    font-size: clamp(1rem, 2vw, 1.6rem);
+    font-size: clamp(1rem, 2vw, 1.3rem);
     color: var(--primary_color);
 }
 
@@ -2354,7 +2355,7 @@ h1 {
     justify-content: start;
     align-items: center;
     gap: 0.25rem;
-    font-size: clamp(0.9rem, 2vw, 1.4rem);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .Link_Pessoa {
@@ -2402,6 +2403,8 @@ h1 {
     max-height: 75%;
     object-fit: cover;
 }
+
+/* Testar column-count */
 
 .Sobre_Text_Container {
     display: flex;
@@ -3369,41 +3372,22 @@ h1 {
     fill: var(--bg_color);
 }
 
-/* MEDIA QUERYS */
+/* MEDIA QUERIES */
 
-/* MOBILE */
+/* BIG SCREENS */
+@media only screen and (min-width: 2000px) {
+
+}
+
+/* SMALL AND MEDIUM DESKTOP */
 
 @media only screen and (max-width: 1440px) {
-    .Desktop_Only {
-        display: none;
-    }
-
-    .Mobile_Only {
-        display: block;
-    }
 
     /* NAVBAR */
     .Navbar {
         justify-content: space-between;
         padding-inline: var(--small_gap);
         gap: 0.5rem;
-    }
-
-    .Navbar_Main {
-        display: none;
-    }
-
-    .Navbar_Tools_ToggleMode {
-        display: none;
-    }
-
-    .Navbar_Mobile {
-        display: flex;
-    }
-
-    .Navbar_Logo_Container {
-        gap: 0.4rem;
-        flex: 0;
     }
 
     .Navbar_LogoType_Container {
@@ -3506,6 +3490,153 @@ h1 {
 
         align-items: start;
     }
+    .Help_Container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        align-items: start;
+    }
+
+    .Help_Text_Container {
+        width: 100%;
+    }
+
+    .Mapa_Container,
+    .Cookies_Banner,
+    .SiteMap_Container,
+    .Terms_Container,
+    .Privacy_Container,
+    .Solution_Detail_Container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .Mapa_Body,
+    .Cookies_Banner_Body,
+    .SiteMap_Body,
+    .Terms_Body,
+    .Privacy_Body {
+        width: 100%;
+        justify-content: start;
+        padding: 0.5rem;
+    }
+
+    .Mapa_Body {
+        padding: 0;
+    }
+
+    /* LANDING PAGE */
+    .Landing_Page {
+        padding-left: 0.5rem;
+    }
+
+    .Brand_Declaration {
+        margin-top: var(--small_gap);
+    }
+
+    /* SOBRE */
+
+    .Sobre_Card_Content {
+        flex-direction: column;
+    }
+
+    .Sobre_Mobile_Only {
+        display: flex;
+    }
+
+    .Sobre_Card_Title {
+        max-width: 200px;
+    }
+
+
+    .LP_Section_01_Inicio {
+        padding: var(--small_gap);
+        justify-content: center;
+    }
+
+    .Card_AddToCart_Button {
+        gap: 0;
+    }
+
+    .AddToCartLeft {
+        width: 60%;
+    }
+
+    .AddToCartRight {
+        width: 40%;
+    }
+
+    .Product_Card {
+        min-width: 300px;
+    }
+
+    .LP_Section_04_Contato {
+        padding: var(--small_gap);
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .Info_Contato_Item {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.3rem;
+
+        border-bottom: 2px solid var(--text_color);
+    }
+}
+
+/* TABLET */
+
+@media only screen and (max-width: 1024px) {
+    .Navbar_Main {
+        display: none;
+    }
+
+    .Navbar_Tools_ToggleMode {
+        display: none;
+    }
+
+    .Navbar_Mobile {
+        display: flex;
+    }
+
+    .Desktop_Only {
+        display: none;
+    }
+
+    .Mobile_Only {
+        display: block;
+    }
+
+    .Navbar_Logo_Container {
+        gap: 0.4rem;
+        flex: 0;
+    }
+
+    .Footer {
+        gap: var(--small_gap);
+        padding: var(--small_gap);
+    }
+
+    .Footer_Copyright {
+        flex: 1;
+        width: 100%;
+        flex-shrink: 0;
+        font-size: clamp(0.8rem, 1vw, 1rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 0;
+    }
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
 
     .Product_Detail_Content {
         width: 100%;
@@ -3524,10 +3655,12 @@ h1 {
 
     .Product_Detail_Image_Container {
         height: auto;
+        max-height: 75%;
         width: 100%;
         aspect-ratio: 1/1;
 
         display: flex;
+        flex: auto;
         flex-direction: row;
         justify-content: start;
         align-items: center;
@@ -3568,45 +3701,6 @@ h1 {
         flex-direction: column;
     }
 
-    .Help_Container {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-
-        align-items: start;
-    }
-
-    .Help_Text_Container {
-        width: 100%;
-    }
-
-    .Mapa_Container,
-    .Cookies_Banner,
-    .SiteMap_Container,
-    .Terms_Container,
-    .Privacy_Container,
-    .Solution_Detail_Container {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-
-        align-items: start;
-    }
-
-    .Mapa_Body,
-    .Cookies_Banner_Body,
-    .SiteMap_Body,
-    .Terms_Body,
-    .Privacy_Body {
-        width: 100%;
-        justify-content: start;
-        padding: 0.5rem;
-    }
-
-    .Mapa_Body {
-        padding: 0;
-    }
-
     .Solution_Detail_Body {
         flex-direction: column;
         justify-content: start;
@@ -3635,81 +3729,11 @@ h1 {
         padding: var(--small_gap);
     }
 
-    /* LANDING PAGE */
-    .Landing_Page {
-        padding-left: 0.5rem;
-    }
+}
 
-    .Brand_Declaration {
-        margin-top: var(--small_gap);
-    }
+/* MICRO SCREENS */
+@media only screen and (max-width: 480px) {
 
-    /* SOBRE */
-
-    .Sobre_Card_Content {
-        flex-direction: column;
-    }
-
-    .Sobre_Mobile_Only {
-        display: flex;
-    }
-
-    .Sobre_Card_Title {
-        max-width: 200px;
-    }
-
-    .Footer {
-        gap: var(--small_gap);
-        padding: var(--small_gap);
-    }
-
-    .Footer_Copyright {
-        flex: 1;
-        width: 100%;
-        flex-shrink: 0;
-        font-size: clamp(0.8rem, 1vw, 1rem);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        gap: 0;
-    }
-
-    .LP_Section_01_Inicio {
-        padding: var(--small_gap);
-        justify-content: center;
-    }
-
-    .Card_AddToCart_Button {
-        gap: 0;
-    }
-
-    .AddToCartLeft {
-        width: 60%;
-    }
-
-    .AddToCartRight {
-        width: 40%;
-    }
-
-    .Product_Card {
-        min-width: 300px;
-    }
-
-    .LP_Section_04_Contato {
-        padding: var(--small_gap);
-        justify-content: space-between;
-        gap: 0.5rem;
-    }
-
-    .Info_Contato_Item {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        padding: 0.3rem;
-
-        border-bottom: 2px solid var(--text_color);
-    }
 }
 
 /* Safari Override */
