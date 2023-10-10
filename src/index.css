@@ -2649,7 +2649,6 @@ h1 {
     border-radius: var(--small_gap);
     flex: 1;
     min-width: 350px;
-    max-width: 500px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -3385,16 +3384,23 @@ h1 {
 /* MEDIA QUERIES */
 
 /* BIG SCREENS */
-@media only screen and (min-width: 2000px) {
-}
-
-/* SMALL AND MEDIUM DESKTOP */
-
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1740px) {
     :root {
         --section_viewer_height: calc(90vh);
     }
 
+    .Footer {
+        display: none;
+    }
+
+    .Content_Viewer {
+        height: calc(90vh - var(--small_gap));
+    }
+}
+
+/* SMALL AND MEDIUM DESKTOP */
+
+@media only screen and (max-width: 1919px) {
     /* NAVBAR */
     .Navbar {
         justify-content: space-between;
@@ -3597,14 +3603,6 @@ h1 {
 
         border-bottom: 2px solid var(--text_color);
     }
-
-    .Footer {
-        display: none;
-    }
-
-    .Content_Viewer {
-        height: calc(90vh - var(--small_gap));
-    }
 }
 
 @media only screen and (min-width: 1540px) {
@@ -3772,6 +3770,10 @@ h1 {
 
     .Content_Viewer {
         height: calc(90vh - var(--small_gap));
+    }
+
+    .Secondary_Media_Container {
+        display: flex;
     }
 }
 
