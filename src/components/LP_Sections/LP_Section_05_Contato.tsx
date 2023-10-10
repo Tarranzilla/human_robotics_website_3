@@ -7,6 +7,14 @@ import { motion as m, AnimatePresence } from "framer-motion";
 //Bg Image Import
 import backgroundImg from "../../assets/cacau_textures/dalle4.png";
 
+//Icon imports
+import Icon_Whatsapp from "../Icons/Icon_Whatsapp";
+import Icon_Instagram from "../Icons/Icon_Instagram";
+import Icon_Facebook from "../Icons/Icon_Facebook";
+import Icon_Twitter from "../Icons/Icon_Twitter";
+import Icon_Linkedin from "../Icons/Icon_Linkedin";
+import Icon_Youtube from "../Icons/Icon_Youtube";
+
 const LP_Section_05_Contato = forwardRef(function LP_Section_05_Contato(props, ref: any) {
     const [map1isOpen, setMap1isOpen] = useState(false);
     const [map2isOpen, setMap2isOpen] = useState(false);
@@ -117,6 +125,17 @@ const LP_Section_05_Contato = forwardRef(function LP_Section_05_Contato(props, r
                     <a className="Acao_Contato" href="https://api.whatsapp.com/send?phone=5541999977955&text=Ol%C3%A1" target="_blank">
                         Enviar Mensagem por WhatsApp
                     </a>
+                    <a className="Acao_Contato" href="https://api.whatsapp.com/send?phone=5541999977955&text=Ol%C3%A1" target="_blank">
+                        Inscreva-se na Newsletter
+                    </a>
+                </div>
+
+                <div className="Social_Media_Container Secondary_Media_Container">
+                    <Icon_Whatsapp />
+                    <Icon_Linkedin />
+                    <Icon_Facebook />
+                    <Icon_Instagram />
+                    <Icon_Youtube />
                 </div>
             </div>
         </div>
