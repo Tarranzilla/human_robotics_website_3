@@ -176,44 +176,46 @@ export default function Menu() {
                     </div>
                 </div>
 
-                <div className="Secondary_Links">
-                    <a href="#Privacidade" className="Menu_Link_Secondary" onClick={togglePrivacyButton}>
-                        <span className="material-icons">privacy_tip</span>Privacidade
-                    </a>
-                    <a href="#Termos" className="Menu_Link_Secondary" onClick={toggleTermsButton}>
-                        <span className="material-icons">assignment</span>
-                        Termos
-                    </a>
-                    <a href="#Mapa do Site" className="Menu_Link_Secondary" onClick={toggleSiteMapButton}>
-                        <span className="material-icons">map</span>Mapa do Site
-                    </a>
-                </div>
-
-                <div className="Configurations">
-                    <div className="Configurations_Header">
-                        <span className="material-icons LP_Links_Icon">settings</span>
-                        <p className="Menu_Link">Configurações</p>
+                <div className="Menu_Div">
+                    <div className="Secondary_Links">
+                        <a href="#Privacidade" className="Menu_Link_Secondary" onClick={togglePrivacyButton}>
+                            <span className="material-icons">privacy_tip</span>Privacidade
+                        </a>
+                        <a href="#Termos" className="Menu_Link_Secondary" onClick={toggleTermsButton}>
+                            <span className="material-icons">assignment</span>
+                            Termos
+                        </a>
+                        <a href="#Mapa do Site" className="Menu_Link_Secondary" onClick={toggleSiteMapButton}>
+                            <span className="material-icons">map</span>Mapa do Site
+                        </a>
                     </div>
-                    <div className="LP_Links_Horizontal_Organizer Config_Organizer">
-                        <div className="LP_Links_Line_Container">
-                            <div className="LP_Links_Line"></div>
+
+                    <div className="Configurations">
+                        <div className="Configurations_Header">
+                            <span className="material-icons LP_Links_Icon">settings</span>
+                            <p className="Menu_Link">Configurações</p>
                         </div>
-                        <div className="Configurations_Links">
-                            <a href="#Idioma" className="Menu_Link Config_Link" onClick={toggleLanguageButton}>
-                                Idioma: <span className={language === "pt-br" ? "Config_Option active" : "Config_Option"}>Português</span>
-                                <span className={language === "en" ? "Config_Option active" : "Config_Option"}>English</span>
-                            </a>
-                            <a href="#Moeda" className="Menu_Link Config_Link" onClick={toggleCurrencyButton}>
-                                Moeda: <span className={currencyType === "BRL" ? "Config_Option active" : "Config_Option"}>Real (R$)</span>{" "}
-                                <span className={currencyType === "USD" ? "Config_Option active" : "Config_Option"}>Dollar (USD)</span>
-                            </a>
-                            <a href="#Cores" className="Menu_Link Config_Link" onClick={toggleColorModeButton}>
-                                Modo de Cor: <span className={mode === "dark" ? "Config_Option active" : "Config_Option"}>Escuro</span>
-                                <span className={mode === "light" ? "Config_Option active" : "Config_Option"}>Claro</span>
-                            </a>
-                            <button className="Config_Reset" onClick={handleResetButton}>
-                                <span className="material-icons">restart_alt</span>Reiniciar aplicativo e limpar todos os dados
-                            </button>
+                        <div className="LP_Links_Horizontal_Organizer Config_Organizer">
+                            <div className="LP_Links_Line_Container">
+                                <div className="LP_Links_Line"></div>
+                            </div>
+                            <div className="Configurations_Links">
+                                <a href="#Idioma" className="Menu_Link Config_Link" onClick={toggleLanguageButton}>
+                                    Idioma: <span className={language === "pt-br" ? "Config_Option active" : "Config_Option"}>Português</span>
+                                    <span className={language === "en" ? "Config_Option active" : "Config_Option"}>English</span>
+                                </a>
+                                <a href="#Moeda" className="Menu_Link Config_Link" onClick={toggleCurrencyButton}>
+                                    Moeda: <span className={currencyType === "BRL" ? "Config_Option active" : "Config_Option"}>Real (R$)</span>{" "}
+                                    <span className={currencyType === "USD" ? "Config_Option active" : "Config_Option"}>Dollar (USD)</span>
+                                </a>
+                                <a href="#Cores" className="Menu_Link Config_Link" onClick={toggleColorModeButton}>
+                                    Modo de Cor: <span className={mode === "dark" ? "Config_Option active" : "Config_Option"}>Escuro</span>
+                                    <span className={mode === "light" ? "Config_Option active" : "Config_Option"}>Claro</span>
+                                </a>
+                                <button className="Config_Reset" onClick={handleResetButton}>
+                                    <span className="material-icons">restart_alt</span>Reiniciar aplicativo e limpar todos os dados
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
