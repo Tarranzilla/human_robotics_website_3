@@ -308,7 +308,7 @@ h1 {
     align-items: start;
     justify-content: start;
     gap: var(--small_gap);
-    max-width: 200px;
+    max-width: clamp(100px, 10vw, 400px);
 }
 
 .Navbar_LogoType {
@@ -363,7 +363,7 @@ h1 {
     font-family: "Researcher_WOFF2";
     font-weight: normal !important;
     transition: all 0.2s ease-in-out;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(calc(0.5rem + 1.5vh), 1vw, calc(0.5rem + 1.5vh));
     letter-spacing: -2px;
 }
 
@@ -2177,9 +2177,10 @@ h1 {
     }
 }
 
+/* font-size: clamp(2.8rem, 8vw, 7rem); */
 .Brand_Declaration {
     color: var(--primary_color);
-    font-size: clamp(2.8rem, 8vw, 7rem);
+    font-size: clamp(calc(2.8rem + 1vw), 8vw, calc(8rem + 1vw));
     z-index: 3;
     filter: drop-shadow(0 0 3px var(--bg_color));
     text-align: center;
@@ -2188,6 +2189,7 @@ h1 {
     flex-direction: column;
 }
 
+/* font-size: clamp(4.3rem, 16vw, 14rem);  */
 .Brand_Name {
     color: var(--primary_color);
     font-size: clamp(4.3rem, 16vw, 14rem);
@@ -3423,16 +3425,6 @@ h1 {
         gap: 0.5rem;
     }
 
-    .Navbar_LogoType_Container {
-        flex-direction: column;
-        align-items: start;
-        gap: 0;
-    }
-
-    .Navbar_LogoType {
-        display: none;
-    }
-
     .Navbar_Main_Links.active {
         color: var(--mobile_menu_text_color);
     }
@@ -3618,6 +3610,10 @@ h1 {
 /* TABLET */
 
 @media only screen and (max-width: 1024px) {
+    .Navbar_LogoType {
+        display: none;
+    }
+
     .Navbar_Main {
         display: none;
     }
