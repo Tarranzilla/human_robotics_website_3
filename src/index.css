@@ -2490,6 +2490,24 @@ h1 {
     object-fit: cover;
 }
 
+.Desafios_Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.Desafio_Valor {
+    max-width: 340px;
+    padding: var(--small_gap);
+    border: 1px solid var(--text_color);
+    border-radius: var(--small_gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Testar column-count */
 
 .Sobre_Text_Container {

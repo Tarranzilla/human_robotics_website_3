@@ -554,53 +554,44 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                     <div className="Sobre_Text_Container">
                         <p className="Sobre_Header_Text">
                             <strong>
-                                A Human Robotics acredita que a robótica é uma das mais importantes tecnologias para o futuro da humanidade. Através
-                                da automação de tarefas repetitivas, onerosas e complexas, a robótica tem o poder de melhorar a qualidade de vida das
-                                pessoas e liberá-las para realizar atividades mais criativas e significativas.
+                                Acreditamos que a robótica é uma das mais importantes tecnologias para o futuro da humanidade. Através da automação de
+                                tarefas repetitivas, onerosas e complexas, a robótica tem o poder de melhorar a qualidade de vida das pessoas e
+                                liberá-las para realizar atividades mais criativas e significativas.
                             </strong>
                         </p>
 
                         <p className="Sobre_Header_Text">
                             No entanto, a robótica ainda é vista por muitos como uma tecnologia inacessível e cara, destinada apenas a experts de
-                            grandes empresas e organizações governamentais. A Human Robotics está empenhada em mudar essa percepção, tornando a
-                            robótica tão comum quanto os computadores pessoais e os smartphones a todas as pessoas no Brasil, independentemente de sua
-                            posição econômica ou nível de conhecimento técnico.
+                            grandes empresas e organizações governamentais. Estamos empenhados em mudar essa percepção, tornando a robótica tão comum
+                            quanto os computadores pessoais e os smartphones a todas as pessoas no Brasil, independentemente de sua posição econômica
+                            ou nível de conhecimento técnico.
                         </p>
 
-                        <p className="Sobre_Header_Text">
-                            Para alcançar esse objetivo, estamos desenvolvendo robôs acessíveis e fáceis de usar, que podem ser utilizados em uma
-                            ampla variedade de aplicações e setores.
-                        </p>
+                        <div className="Desafios_Container">
+                            <p className="Desafio_Valor">
+                                Acreditamos que a tecnologia deve ser usada para servir as pessoas, os animais e o meio ambiente.
+                            </p>
 
-                        <p className="Sobre_Header_Text">
-                            Acreditamos que a tecnologia deve ser usada para servir as pessoas, os animais e o meio ambiente.
-                        </p>
-
-                        <p className="Sobre_Header_Text">
-                            Valorizamos a diversidade e o respeito às diferenças entre as pessoas, promovendo a inclusão e a igualdade em todas as
-                            nossas atividades.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Acreditamos na transparência e na ética em todas as nossas relações, sejam elas com clientes, colaboradores ou parceiros.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Encorajamos a criatividade e a inovação, estimulando a liberdade e a subjetividade dos pensamentos de todos os envolvidos
-                            em nossas atividades.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Valorizamos o trabalho em equipe e a colaboração, acreditando que juntos podemos alcançar grandes feitos.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Comprometemo-nos com a excelência em todas as nossas atividades, sempre buscando aperfeiçoamento contínuo e a satisfação
-                            dos clientes.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Somos movidos pelos desafios e pela busca por soluções inovadoras, sempre com foco na qualidade e eficiência.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Acreditamos que a tecnologia deve ser acessível a todos, e nos esforçamos para tornar a robótica cada vez mais disponível
-                            e útil para a maioria dos brasileiros.
-                        </p>
+                            <p className="Desafio_Valor">
+                                Valorizamos a diversidade e o respeito às diferenças entre as pessoas, promovendo a inclusão e a igualdade em todas as
+                                nossas atividades.
+                            </p>
+                            <p className="Desafio_Valor">
+                                Acreditamos na transparência e na ética em todas as nossas relações, sejam elas com clientes, colaboradores ou
+                                parceiros.
+                            </p>
+                            <p className="Desafio_Valor">
+                                Encorajamos a criatividade e a inovação, estimulando a liberdade e a subjetividade dos pensamentos de todos os
+                                envolvidos em nossas atividades.
+                            </p>
+                            <p className="Desafio_Valor">
+                                Valorizamos o trabalho em equipe e a colaboração, acreditando que juntos podemos alcançar grandes feitos.
+                            </p>
+                            <p className="Desafio_Valor">
+                                Comprometemo-nos com a excelência em todas as nossas atividades, sempre buscando aperfeiçoamento contínuo e a
+                                satisfação dos clientes.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
