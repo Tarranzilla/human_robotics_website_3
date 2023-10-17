@@ -228,6 +228,9 @@ import fotoAlexandria2 from "../../assets/sobre/alexandria_02.jpg";
 import fotoDaVinci from "../../assets/sobre/davinci.jpg";
 import fotoRUR from "../../assets/sobre/rur.jpg";
 
+import fotoGIRINO from "../../assets/sobre/GIRINO.png";
+import fotoCHICO from "../../assets/sobre/ROBOCHICO.png";
+
 const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: any) {
     return (
         <div className="LP_Section LP_Section_02_Sobre" id="LP_Section_4" ref={ref} key={"LP_Section_4"}>
@@ -490,40 +493,49 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">A Robótica no Brasil</h2>
                     </div>
-                    <div className="Sobre_Text_Container">
-                        <p className="Sobre_Header_Text">
-                            <strong>
-                                A robótica poder ser uma força transformadora para a sociedade brasileira, ajudando a criar empregos de alta
-                                qualidade, aumentando a eficiência e a produtividade, e melhorando a qualidade de vida das pessoas em todo o país.
-                            </strong>
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Para falar em robótica no Brasil é impossível não falar do setor onde essa pesquisa e seu desenvolvimento aconteceram de
-                            forma intensa e pioneira, que é a pesquisa de robótica para águas profundas e ultra profundas, na prospecção e exploração
-                            de petróleo na costa brasileira.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Quando, na década de 1980, a Petróleo Brasileiro S.A. - PETROBRAS, além de iniciar suas buscas por hidrocarbonetos na
-                            Amazônia, passou a intensificar pesquisas e realizações positivas de descobertas de novas fontes de óleo na plataforma
-                            cont inental brasileira, foi preciso entender, desenvolver pesquisas e dominar tecnologias relacionadas a águas profundas.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Dentro deste esforço foi criado o Laboratório de Robótica do Centro de Pesquisas Leopoldo Miguez de Mello - CENPES, da
-                            PETROBRAS, onde realmente começou-se do início, trabalhando com manipuladores hidráulicos submarinos, depois com o
-                            desenvolvimento de várias ferramentas, algumas tele operadas, e outros sistemas para intervenções especiais.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            O robô G.I.R.I.N.O. 3 (Gabarito Interno Robotizado de Incidência Normal ao Oleoduto) é um robô desenvolvido pelo
-                            Laboratório de Robótica da área de Tecnologia Submarina do Centro de Pesquisa da Petrobras, que visa procurar vias menos
-                            arriscadas no processo de inspeção interna de dutos, cujos movimentos de deslocamento são gerados por energia hidráulica.
-                            (PANTA, 2005).
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            O robô Chico Mendes 4 é um novo conceito de veículo híbrido, tele-operado, desenvolvido prioritariamente para atender as
-                            demandas de pesquisa e monitoramento socioambientais na Amazônia, também pode ser considerado como uma alternativa de
-                            locomoção para a região amazônica. Versátil, pouco invasivo, reconhece e se adapta aos diferentes tipos de cenários e
-                            obstáculos ao longo de seus trajetos e missões – características fundamentais para mobilidade e acessibilidade na região.
-                        </p>
+
+                    <div className="Card_Content Sobre_Card_Content">
+                        <div className="Card_1_Content_A">
+                            <img className="Sobre_Img" src={fotoCHICO}></img>
+                        </div>
+
+                        <div className="Sobre_Text_Container">
+                            <p className="Sobre_Header_Text">
+                                <strong>
+                                    A robótica poder ser uma força transformadora para a sociedade brasileira, ajudando a criar empregos de alta
+                                    qualidade, aumentando a eficiência e a produtividade, e melhorando a qualidade de vida das pessoas em todo o país.
+                                </strong>
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Para falar em robótica no Brasil é impossível não falar do setor onde essa pesquisa e seu desenvolvimento aconteceram
+                                de forma intensa e pioneira, que é a pesquisa de robótica para águas profundas e ultra profundas, na prospecção e
+                                exploração de petróleo na costa brasileira.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Quando, na década de 1980, a Petróleo Brasileiro S.A. - PETROBRAS, além de iniciar suas buscas por hidrocarbonetos na
+                                Amazônia, passou a intensificar pesquisas e realizações positivas de descobertas de novas fontes de óleo na plataforma
+                                cont inental brasileira, foi preciso entender, desenvolver pesquisas e dominar tecnologias relacionadas a águas
+                                profundas.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Dentro deste esforço foi criado o Laboratório de Robótica do Centro de Pesquisas Leopoldo Miguez de Mello - CENPES, da
+                                PETROBRAS, onde realmente começou-se do início, trabalhando com manipuladores hidráulicos submarinos, depois com o
+                                desenvolvimento de várias ferramentas, algumas tele operadas, e outros sistemas para intervenções especiais.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                O robô G.I.R.I.N.O. 3 (Gabarito Interno Robotizado de Incidência Normal ao Oleoduto) é um robô desenvolvido pelo
+                                Laboratório de Robótica da área de Tecnologia Submarina do Centro de Pesquisa da Petrobras, que visa procurar vias
+                                menos arriscadas no processo de inspeção interna de dutos, cujos movimentos de deslocamento são gerados por energia
+                                hidráulica. (PANTA, 2005).
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                O robô Chico Mendes 4 é um novo conceito de veículo híbrido, tele-operado, desenvolvido prioritariamente para atender
+                                as demandas de pesquisa e monitoramento socioambientais na Amazônia, também pode ser considerado como uma alternativa
+                                de locomoção para a região amazônica. Versátil, pouco invasivo, reconhece e se adapta aos diferentes tipos de cenários
+                                e obstáculos ao longo de seus trajetos e missões – características fundamentais para mobilidade e acessibilidade na
+                                região.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -725,77 +737,78 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">Perguntas Frequentes</h2>
                     </div>
+
+                    <p className="Sobre_Header_Text">
+                        <strong>Algumas informações relevantes sobre nossos Produtos, Serviços e Empresa.</strong>
+                    </p>
                     <div className="Sobre_Text_Container FAQ_Container">
-                        <p className="Sobre_Header_Text">
-                            <strong>Algumas informações relevantes sobre nossos Produtos, Serviços e Empresa.</strong>
-                        </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>É possível fazer integração com outros softwares?</strong> Sim! É possível integrar o software do Robios com
                             qualquer outro software com abertura para integrações API.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O RobiOS pode reconhecer pessoas?</strong> O Robios identifica a presença e aproximação humana, podendo seguir ou
                             abordar quem se aproxima, porém não consegue ainda reconhecer diferentes pessoas.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O RobiOS funciona por comando de voz ou touch screen?</strong> É possível interagir com o Robios das duas formas,
                             bastando apenas alterar a configuração. A interação por touch screen é mais recomendada em locais com barulhos ou ruídos
                             (como eventos), para não gerar confusão na identificação das informações
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Como o RobiOS consegue identificar os locais?</strong> Em um primeiro momento, é feito o mapeamento do local com
                             um joystick, e a definição de onde ficará a dock station do Robios. Com isso, é gerado um mapa por onde o Robios poderá se
                             locomover, e seu reconhecimento de localização é por meio da sua movimentação a partir da dock station.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O RobiOS desvia de obstáculos?</strong> Sim! O Robios possui sensores que permitem que ele reconheça a presença de
                             pessoas e obstáculos e desvie deles, traçando novas rotas dentro do local para chegar ao destino, caso necessário.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Posso levar o RobiOS a outros locais?</strong> Você pode trocar o Robios de local, porém é necessário fazer o
                             mapeamento a cada local novo. Não se preocupe, todos os mapas ficam salvos, e ao retorná-lo a algum local já mapeado,
                             basta selecionar o respectivo mapa em suas configurações.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O RobiOS pode passar em desníveis?</strong> Não recomendamos locais com desníveis, como degraus e locais com
                             buracos ou pisos com texturas, pois podem desequilibrar o Robios e danificar o robô.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>É possível personalizar o corpo do RobiOS?</strong> Conseguimos personalizar a plotagem do corpo com outras cores
                             e logo, deixando com a carinha e identidade visual da sua empresa!
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Posso alterar o script após a primeira configuração?</strong> Sim, você pode alterar o script a qualquer momento!
                             Basta acessar uma plataforma intuitiva e fácil de usar para fazer novas configurações, sem utilizar linguagem de
                             programação!
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             O RobiOS depende de conexão com a Internet? Para o Robios, apenas o mapeamento e a telepresença dependem da Internet, as
                             demais interações funcionam de forma offline. Para o Totem e o Avatar, a Internet é necessária para suas funções.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Como funcionam as manutenções?</strong> Caso seja necessária alguma manutenção no software, conseguimos fazer a
                             manutenção de forma remota.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Qual o sistema operacional do RobiOS?</strong> O RobiOS possui Android como sistema operacional.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Tem garantia?</strong> O RobiOS tem 1 ano de garantia, que pode ser extendida no contrato.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O contrato é por aluguel ou compra?</strong> Temos as 2 opções de contrato.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Como funciona a telepresença?</strong> É gerado um link por meio da nossa plataforma, que você pode enviar à
                             pessoa que acessará o Robios. Por meio desse link, o usuário pode movimentar o Robô, e conversar por videochamada com quem
                             estiver próximo a ele.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>O Robios possui braços?</strong> Não! É possível acoplar bandejas para que o Robios possa levar pequenos itens,
                             como brindes e folders.
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="FAQ_Description_Text">
                             <strong>Minha empresa recebe treinamento ao adquirir o Robios?</strong> Sua empresa receberá um treinamento sobre a
                             utilização do Robios e configurações iniciais. Porém temos disponível para contratação treinamentos mais detalhados sobre
                             configurações avançadas e integrações.

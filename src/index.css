@@ -2428,6 +2428,22 @@ h1 {
     font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
+.FAQ_Description_Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    padding: var(--small_gap);
+    max-width: 500px;
+    border: 1px solid var(--text_color);
+    border-radius: var(--small_gap);
+}
+
+.FAQ_Description_Text strong {
+    margin-bottom: var(--small_gap);
+}
+
 .Link_Pessoa {
     color: var(--primary_color);
     text-underline-offset: 0.3rem;
@@ -2647,6 +2663,11 @@ h1 {
 
 .FAQ_Container {
     gap: var(--small_gap);
+    margin-top: var(--small_gap);
+    text-align: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
 }
 
 .Sobre_Mobile_Only {
