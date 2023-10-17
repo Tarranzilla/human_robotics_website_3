@@ -106,6 +106,9 @@
     --hr_alerta_vermelho: #ff1e00;
 
     /* Main Light Mode Colors */
+    --bg-color-alternate: #e3e4ed;
+    --bg-color-alternate-2: #00aaff;
+
     --bg_color: #ffffff;
     --bg_color_faded_1: #ffffffb9;
     --bg_color_faded_2: #ffffff5d;
@@ -142,6 +145,9 @@
 
 .darkmode {
     /* Main Dark Mode Colors */
+    --bg-color-alternate: #000343;
+    --bg-color-alternate-2: #1d0289;
+
     --bg_color: #000343;
     --bg_color_faded_1: #000343b9;
     --bg_color_faded_2: #0003435d;
@@ -201,7 +207,7 @@ html {
 
 body {
     height: var(--viewport_height);
-    background-color: var(--bg_color);
+    background: var(--bg_color);
     color: var(--text_color);
     overflow-x: hidden;
 }
@@ -804,6 +810,36 @@ h1 {
     scale: 1.05;
 }
 
+.Pragmata_Web {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5vw;
+    height: 2rem;
+}
+
+.Pragmata_Web a {
+    color: var(--text_color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.Pragmata_Web a:focus,
+.Pragmata_Web a:hover {
+    color: var(--anchor_hover_color);
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+#PragLogo {
+    width: calc(1vw + 1rem);
+    height: calc(1vw + 1rem);
+    fill: var(--anchor_hover_color);
+}
+
 /* COOKIES BANNER */
 .Cookies_Banner {
     z-index: 7;
@@ -828,6 +864,11 @@ h1 {
     backdrop-filter: blur(60px);
     transform: translate3d(0, 0, 0);
     border-radius: var(--small_gap);
+}
+
+.CB_Link {
+    color: var(--anchor_hover_color);
+    font-weight: 600;
 }
 
 .Cookies_Banner_Header {
@@ -2247,7 +2288,6 @@ h1 {
 }
 
 .Sobre_Card_Header {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -2340,7 +2380,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
     gap: var(--small_gap);
     width: 100%;
     height: 100%;
@@ -2356,6 +2395,17 @@ h1 {
 .Sobre_Card_Content {
     flex-direction: row;
     font-size: 1.2rem;
+}
+
+.Card_1_Content_A {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.Card_1_Content_B {
+    justify-content: center;
 }
 
 .Sobre_Img {
@@ -3073,6 +3123,7 @@ h1 {
     font-size: clamp(0.9rem, 1.6vw, 2.2rem);
     font-weight: 600;
     color: var(--text_color);
+    max-width: 800px;
 }
 
 .Solution_Video {
@@ -3308,6 +3359,11 @@ h1 {
     color: var(--text_color);
     position: relative;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .Footer_Info:focus,
@@ -3335,8 +3391,8 @@ h1 {
 
 .Middle_Info {
     padding-inline: var(--small_gap);
-    border-left: 1px solid var(--text_color);
-    border-right: 1px solid var(--text_color);
+    border-left: 2px solid var(--text_color_faded_2);
+    border-right: 2px solid var(--text_color_faded_2);
 }
 
 .Middle_Info::after {
@@ -3532,7 +3588,6 @@ h1 {
     .Terms_Body,
     .Privacy_Body {
         width: 100%;
-        justify-content: start;
         padding: 0.5rem;
     }
 
@@ -3550,18 +3605,6 @@ h1 {
     }
 
     /* SOBRE */
-
-    .Sobre_Card_Content {
-        flex-direction: column;
-    }
-
-    .Sobre_Mobile_Only {
-        display: flex;
-    }
-
-    .Sobre_Card_Title {
-        max-width: 200px;
-    }
 
     .LP_Section_01_Inicio {
         padding: var(--small_gap);
@@ -3667,6 +3710,18 @@ h1 {
 
 /* MOBILE */
 @media only screen and (max-width: 768px) {
+    .Sobre_Card_Title {
+        max-width: 200px;
+    }
+
+    .Sobre_Card_Content {
+        flex-direction: column;
+    }
+
+    .Sobre_Mobile_Only {
+        display: flex;
+    }
+
     .Menu_List_Container {
         flex-direction: column;
     }
@@ -3778,6 +3833,18 @@ h1 {
 
     .Secondary_Media_Container {
         display: flex;
+    }
+
+    .Cookies_Banner {
+        border-radius: var(--small_gap) var(--small_gap) 0 0;
+    }
+
+    .Product_Detail {
+        border-radius: var(--small_gap) var(--small_gap) 0 0;
+    }
+
+    .Card_1_Content_B {
+        justify-content: start;
     }
 }
 

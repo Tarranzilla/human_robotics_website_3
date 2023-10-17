@@ -226,6 +226,7 @@ import fotoEquipe from "../../assets/sobre/Equipe_HR.png";
 import fotoAlexandria from "../../assets/sobre/alexandria.webp";
 import fotoAlexandria2 from "../../assets/sobre/alexandria_02.jpg";
 import fotoDaVinci from "../../assets/sobre/davinci.jpg";
+import fotoRUR from "../../assets/sobre/rur.jpg";
 
 const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: any) {
     return (
@@ -241,34 +242,34 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">A Human Robotics</h2>
                     </div>
-                    <div className="Sobre_Text_Container">
-                        <p className="Sobre_Header_Text">
-                            <strong>
-                                A Human Robotics é uma empresa que busca estar na vanguarda da robótica e da inteligência artificial, criando soluções
-                                inovadoras e personalizadas para atender às necessidades de nossos clientes em setores como Varejo, Indústria e
-                                Cultura.
-                            </strong>
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Inspirados pela Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
-                            buscamos confecionar robôs e experiências de altíssima qualidade por meio do uso de componentes sofisticados e
-                            pesquisadores de campo habilitados.
-                        </p>
-                        <img className="Sobre_Img WideImg" src={fotoEquipe}></img>
+                    <div className="Card_Content Sobre_Card_Content">
+                        <div className="Card_1_Content_A">
+                            <img className="Sobre_Img" src={fotoEquipe}></img>
+                        </div>
+                        <div className="Sobre_Text_Container Card_1_Content_B">
+                            <p className="Sobre_Header_Text">
+                                <strong>
+                                    Somos a vanguarda da robótica e da inteligência artificial no Brasil, criando soluções inovadoras e personalizadas
+                                    para atender às necessidades de nossos clientes em setores como Varejo, Indústria e Cultura.
+                                </strong>
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Inspirados pela Subjetividade que a nossa Cultura tem a oferecer e na Precisão que nossas Tecnologias desbloqueiam,
+                                confecionamos assistentes virtuais e robôs que se destacam pela sua capacidade de interagir com as pessoas.
+                            </p>
 
-                        <p className="Sobre_Header_Text">
-                            A Human Robotics tem uma visão clara e ambiciosa para o futuro. Nossa meta é liderar a transformação tecnológica no
-                            Brasil, sendo a vanguarda das tecnologias de atendimento, educação, interação, inspeção e transporte em bases robóticas.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            A missão da Human Robotics é simples e ao mesmo tempo revolucionária: tornar a robótica mais humana, mais acessível e mais
-                            presente na vida das pessoas. Com soluções inovadoras e uma equipe comprometida com a excelência, a empresa está mudando a
-                            forma como interagimos com a tecnologia, tornando-a uma aliada poderosa em todas as áreas da vida.
-                        </p>
+                            <p className="Sobre_Header_Text">
+                                Temos uma visão clara e ambiciosa para o futuro. Nossa meta é liderar a transformação tecnológica no Brasil, sendo a
+                                vanguarda das tecnologias de atendimento, educação, interação, inspeção e transporte em bases robóticas.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Nossa missão é tornar a robótica mais humana, mais acessível e mais presente na vida das pessoas.
+                            </p>
 
-                        <p className="Sobre_Header_Text">
-                            <strong>Junte-se a nós nesta jornada por uma transformação tecnológica mais humana!</strong>
-                        </p>
+                            <p className="Sobre_Header_Text">
+                                <strong>Junte-se a nós nesta jornada por uma transformação tecnológica mais humana!</strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -305,9 +306,9 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                                 <img className="Sobre_Img" src={fotoFundacao1}></img>
                             </div>
                             <p className="Sobre_Description_Text">
-                                A história da Human Robotics começa em março de 2017, quando Olivier Smadja teve a ideia de criar um robô para cuidar
-                                de pessoas idosas. Com o passar do tempo, porém, a ideia foi ganhando forma e se transformando em algo muito maior:
-                                uma linha de robôs capazes de interagir com pessoas de todas as idades, em diferentes contextos e situações.
+                                Nossa história começa em março de 2017, quando Olivier teve a ideia de criar um robô para cuidar de pessoas idosas.
+                                Com o passar do tempo, a ideia foi ganhando forma e se transformando em algo muito maior: uma linha de robôs capazes
+                                de interagir com pessoas de todas as idades, em diferentes contextos e situações.
                             </p>
                             <p className="Sobre_Description_Text">
                                 Foi assim que nasceu o primeiro robô autônomo de atendimento e telepresença do Brasil. Com a ajuda de Rodrigo,
@@ -340,132 +341,140 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">História da Robótica</h2>
                     </div>
-                    <div className="Sobre_Text_Container">
-                        <p className="Sobre_Header_Text">
-                            <strong>
-                                Aristóteles, em sua obra Política de 322 a.C, especulou que autômatos poderiam, um dia, trazer a igualdade humana
-                                tornando possível a abolição da escravidão:
-                            </strong>
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            “Há apenas uma condição em que podemos imaginar gerentes não precisando de subordinados e mestres não precisando de
-                            escravos. Esta condição seria que cada instrumento pudesse fazer seu próprio trabalho, à palavra de comando ou por
-                            antecipação inteligente, como as estátuas de Dédalo ou os tripés feitos por Hefesto, dos quais Homero relata que "Por
-                            movimento próprio, eles entraram na assembléia dos Deuses no Olimpo", como se um pente de tear pudesse tecer sozinho e um
-                            plectro pudesse tocar harpa sozinho.”
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            No século IV a.C. , o matemático Arquitas de Tarento postulou um dos primei ros registros que temos sobre um autômato,
-                            neste ele apresenta um pássaro mecânico que ele chamou de "O Pombo" , impulsionado a vapor.
-                        </p>
-                        <img className="Sobre_Img WideImg" src={fotoAlexandria}></img>
-                        <p className="Sobre_Header_Text">
-                            Quando os gregos controlaram o Egito, uma sucessão de engenheiros que podiam construir autômatos se estabeleceram em
-                            Alexandria. A partir do polímata Ctesibius (285-222 a.C. ) , os engenheiros alexandrinos deixaram textos detalhando
-                            autômatos viáveis alimentados por hidráulica ou vapor. Ctesibius construiu autômatos semelhantes a humanos, frequentemente
-                            usados em cerimônias religiosas e no culto a deuses.
-                        </p>
-                        <img className="Sobre_Img WideImg" src={fotoAlexandria2}></img>
-                        <p className="Sobre_Description_Text">
-                            Um dos últimos grandes engenheiros alexandrinos, Heron de Alexandria (10-70 d.C. ) construiu um teatro de marionetes
-                            autômatos, onde as figuras e os cenários se moviam por meios mecânicos. Ele descreveu a construção de tais autômatos em
-                            seu tratado sobre pneumática. Os engenheiros de Alexandria construíram autômatos em reverência ao aparente domínio dos
-                            humanos sobre a natureza e como ferramentas para os sacerdotes, mas também iniciaram uma tradição em que autômatos eram
-                            construídos para o entretenimento de quem fosse rico o suficiente.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Entre as primeiras automações verificáveis está um humanoide desenhado por Leonardo da Vinci (1452-1519) em torno de 1495.
-                            Os cadernos de Leonardo, redescobertos na década de 1950, contêm desenhos detalhados de um cavaleiro mecânico em armadura
-                            que era capaz de sentar, acenar com os braços e mover a cabeça e a mandíbula.
-                        </p>
-                        <img className="Sobre_Img WideImg" src={fotoDaVinci}></img>
-                        <p className="Sobre_Description_Text">
-                            O desenvolvimento inicial dos robôs baseou-se no esforço de automatizar as operações industriais. Este esforço foi
-                            bastante exarcebado no começou no século XVIII , dentro da indústria têxtil, com o aparecimento dos primeiros teares
-                            mecânicos. Com o contínuo progresso da revolução industrial, as fábricas procuraram equipar-se com máquinas capazes de
-                            realizar e reproduzir, automaticamente, determinadas tarefas.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Nos anos 1770, o suíço Pier re Jaquet-Droz criou autômatos móveis que pareciam crianças, o que encantou Mary Shelley, que
-                            mais tarde escreveu Frankenstein: O Moderno Prometeu.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            A tentativa final de automação foi O Turco de Wolfgang von Kempelen, uma máquina sofisticada que podia jogar xadrez contra
-                            um oponente humano e percorreu a Europa. Quando a máquina foi levada para o Novo Mundo, ela levou Edgar Allan Poe a
-                            escrever um ensaio, no qual ele concluiu que era impossível para dispositivos mecânicos raciocinar ou pensar.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Em 1898, Nikola Tesla demonstrou um submarino controlado remotamente no Madison Square Garden como "um autômato que,
-                            deixado a si mesmo, agirá como se possuísse razão e sem nenhum controle voluntário do exterior".
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Ele defendeu sua invenção cont ra repór teres críticos, argumentando que seus autômatos não eram "torpedos sem fio", mas
-                            sim "homens mecânicos que farão o trabalho laborioso da raça humana".
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            O termo "robô" foi usado pela primeira vez em uma peça publicada pelo checo Karel Čapek em 1921. R.U.R. (Robôs Universais
-                            de Rossum) era uma sátira, os robôs eram seres biológicos fabricados que realizavam todo o trabalho manual desagradável.
-                            Segundo Čapek, a palavra foi criada por seu irmão Josef a partir da palavra checa robota 'corvée', ou em eslovaco '
-                            trabalho' ou 'trabalho braçal '. (Karel Čapek trabalhava em sua peça durante sua estadia em Trenčianske Teplice, na
-                            Eslováquia, onde seu pai trabalhava como médico. ) A peça R.U.R. substituiu o uso popular da palavra "autômato".
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Em 1939, Konrad Zuse const ruiu o primeiro computador eletromecânico programável, lançando as bases para a construção de
-                            uma máquina humanoide e interativa que hoje consideramos ser um robô.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Em 1941 e 1942, Isaac Asimov formulou as Três Leis da Robótica e, no processo, cunhou a palavra " robótica". Em 1945,
-                            Vannevar Bush publicou Como Podemos Pensar, um ensaio que investigou o potencial do processamento eletrônico de dados. Ele
-                            previu o surgimento de computadores, processadores de texto digital, reconhecimento de voz e tradução automática.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            O primeiro robô móvel capaz de raciocinar sobre seu ambiente, Shakey, foi const ruído em 1970 pelo Stanford Research
-                            Institute (agora SRI International ). Shakey combinava várias entradas de sensores, incluindo câmeras de TV, medidores de
-                            distância a laser e "sensores de impacto" para navegar.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Em 1986, a Honda iniciou seu programa de pesquisa e desenvolvimento para criar robôs capazes de interagir com sucesso com
-                            humanos. Um robô hexapodal chamado Genghis foi revelado pelo MIT em 1989. Genghis era famoso por ser feito rapidamente e
-                            de forma barata devido a métodos de construção; Genghis usava 4 microprocessadores, 22 sensores e 12 motores servo.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            O popular Roomba, um aspirador de pó robótico, foi lançado pela primeira vez em 2002 pela empresa iRobot. Robôs comerciais
-                            e industriais estão agora em uso generalizado, executando trabalhos mais baratos ou com maior precisão e confiabilidade do
-                            que os humanos. Eles também são empregados para tarefas que são muito sujas, perigosas ou monótonas para serem adequadas
-                            para os humanos.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Nos últimos anos, houve um aumento no interesse pelo desenvolvimento de robôs com capacidades mais avançadas, como
-                            inteligência artificial ( IA), aprendizado de máquina e processamento de linguagem natural.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Esses robôs são projetados para real izar tarefas que exigem habilidades cognitivas de nível mais elevado, como tomada de
-                            decisão, resolução de problemas e adaptação a novas situações.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            À medida que a tecnologia continua a evoluir, é certo que os robôs se tornarão cada vez mais sofisticados e capazes de
-                            executar uma ampla gama de tarefas complexas. No entanto, também há preocupações sobre o impacto que os robôs terão na
-                            força de trabalho e na economia.
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            Conforme os robôs se tornam mais avançados, eles podem substituir trabalhadores humanos em certas indústrias, o que poder
-                            ia levar a perdas de emprego e agitação social . Será importante gerenciar cuidadosamente a integração de robôs na
-                            sociedade para garantir que os benefícios sejam maximizados enquanto as consequências negativas sejam minimizadas.
-                        </p>
-                        <p className="Sobre_Header_Text">Mas como podemos definir usos éticos e humanos da tecnologia?</p>
-                        <p className="Sobre_Description_Text">
-                            Uma das idealizações para a Quinta Revolução Industrial, ou 5RI, abrange a noção de colaborações harmoniosas entre humanos
-                            e máquinas, com um foco específico no bem-estar dos múltiplos atores de um ecossistema (ou seja, sociedade, empresas,
-                            pessoas, animais, vegetais, minerais, etc… ).
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Essa aceitação harmoniosa de colaborações entre humanos e máquinas distingue a 5IR da Quarta Revolução Industrial (4IR),
-                            que se concentrou predominantemente em alcançar apenas eficiência, e por consequência lucro, usando tecnologia.
-                        </p>
-                        <p className="Sobre_Header_Text">
-                            Dessa forma, a 5RI abre caminho para uma (r)evolução no pensamento e na alavancagem de colaborações entre humanos e
-                            máquinas para um maior bem-estar da sociedade.
-                        </p>
+                    <div className="Card_Content Sobre_Card_Content">
+                        <div className="Card_1_Content_A">
+                            <img className="Sobre_Img" src={fotoRUR}></img>
+                        </div>
+
+                        <div className="Sobre_Text_Container">
+                            <p className="Sobre_Header_Text">
+                                <strong>
+                                    Aristóteles, em sua obra Política de 322 a.C, especulou que autômatos poderiam, um dia, trazer a igualdade humana
+                                    tornando possível a abolição da escravidão:
+                                </strong>
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                “Há apenas uma condição em que podemos imaginar gerentes não precisando de subordinados e mestres não precisando de
+                                escravos. Esta condição seria que cada instrumento pudesse fazer seu próprio trabalho, à palavra de comando ou por
+                                antecipação inteligente, como as estátuas de Dédalo ou os tripés feitos por Hefesto, dos quais Homero relata que "Por
+                                movimento próprio, eles entraram na assembléia dos Deuses no Olimpo", como se um pente de tear pudesse tecer sozinho e
+                                um plectro pudesse tocar harpa sozinho.”
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                No século IV a.C. , o matemático Arquitas de Tarento postulou um dos primei ros registros que temos sobre um autômato,
+                                neste ele apresenta um pássaro mecânico que ele chamou de "O Pombo" , impulsionado a vapor.
+                            </p>
+                            <img className="Sobre_Img WideImg" src={fotoAlexandria}></img>
+                            <p className="Sobre_Header_Text">
+                                Quando os gregos controlaram o Egito, uma sucessão de engenheiros que podiam construir autômatos se estabeleceram em
+                                Alexandria. A partir do polímata Ctesibius (285-222 a.C. ) , os engenheiros alexandrinos deixaram textos detalhando
+                                autômatos viáveis alimentados por hidráulica ou vapor. Ctesibius construiu autômatos semelhantes a humanos,
+                                frequentemente usados em cerimônias religiosas e no culto a deuses.
+                            </p>
+                            <img className="Sobre_Img WideImg" src={fotoAlexandria2}></img>
+                            <p className="Sobre_Description_Text">
+                                Um dos últimos grandes engenheiros alexandrinos, Heron de Alexandria (10-70 d.C. ) construiu um teatro de marionetes
+                                autômatos, onde as figuras e os cenários se moviam por meios mecânicos. Ele descreveu a construção de tais autômatos
+                                em seu tratado sobre pneumática. Os engenheiros de Alexandria construíram autômatos em reverência ao aparente domínio
+                                dos humanos sobre a natureza e como ferramentas para os sacerdotes, mas também iniciaram uma tradição em que autômatos
+                                eram construídos para o entretenimento de quem fosse rico o suficiente.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Entre as primeiras automações verificáveis está um humanoide desenhado por Leonardo da Vinci (1452-1519) em torno de
+                                1495. Os cadernos de Leonardo, redescobertos na década de 1950, contêm desenhos detalhados de um cavaleiro mecânico em
+                                armadura que era capaz de sentar, acenar com os braços e mover a cabeça e a mandíbula.
+                            </p>
+                            <img className="Sobre_Img WideImg" src={fotoDaVinci}></img>
+                            <p className="Sobre_Description_Text">
+                                O desenvolvimento inicial dos robôs baseou-se no esforço de automatizar as operações industriais. Este esforço foi
+                                bastante exarcebado no começou no século XVIII , dentro da indústria têxtil, com o aparecimento dos primeiros teares
+                                mecânicos. Com o contínuo progresso da revolução industrial, as fábricas procuraram equipar-se com máquinas capazes de
+                                realizar e reproduzir, automaticamente, determinadas tarefas.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Nos anos 1770, o suíço Pier re Jaquet-Droz criou autômatos móveis que pareciam crianças, o que encantou Mary Shelley,
+                                que mais tarde escreveu Frankenstein: O Moderno Prometeu.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                A tentativa final de automação foi O Turco de Wolfgang von Kempelen, uma máquina sofisticada que podia jogar xadrez
+                                contra um oponente humano e percorreu a Europa. Quando a máquina foi levada para o Novo Mundo, ela levou Edgar Allan
+                                Poe a escrever um ensaio, no qual ele concluiu que era impossível para dispositivos mecânicos raciocinar ou pensar.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Em 1898, Nikola Tesla demonstrou um submarino controlado remotamente no Madison Square Garden como "um autômato que,
+                                deixado a si mesmo, agirá como se possuísse razão e sem nenhum controle voluntário do exterior".
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Ele defendeu sua invenção cont ra repór teres críticos, argumentando que seus autômatos não eram "torpedos sem fio",
+                                mas sim "homens mecânicos que farão o trabalho laborioso da raça humana".
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                O termo "robô" foi usado pela primeira vez em uma peça publicada pelo checo Karel Čapek em 1921. R.U.R. (Robôs
+                                Universais de Rossum) era uma sátira, os robôs eram seres biológicos fabricados que realizavam todo o trabalho manual
+                                desagradável. Segundo Čapek, a palavra foi criada por seu irmão Josef a partir da palavra checa robota 'corvée', ou em
+                                eslovaco ' trabalho' ou 'trabalho braçal '. (Karel Čapek trabalhava em sua peça durante sua estadia em Trenčianske
+                                Teplice, na Eslováquia, onde seu pai trabalhava como médico. ) A peça R.U.R. substituiu o uso popular da palavra
+                                "autômato".
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Em 1939, Konrad Zuse const ruiu o primeiro computador eletromecânico programável, lançando as bases para a construção
+                                de uma máquina humanoide e interativa que hoje consideramos ser um robô.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Em 1941 e 1942, Isaac Asimov formulou as Três Leis da Robótica e, no processo, cunhou a palavra " robótica". Em 1945,
+                                Vannevar Bush publicou Como Podemos Pensar, um ensaio que investigou o potencial do processamento eletrônico de dados.
+                                Ele previu o surgimento de computadores, processadores de texto digital, reconhecimento de voz e tradução automática.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                O primeiro robô móvel capaz de raciocinar sobre seu ambiente, Shakey, foi const ruído em 1970 pelo Stanford Research
+                                Institute (agora SRI International ). Shakey combinava várias entradas de sensores, incluindo câmeras de TV, medidores
+                                de distância a laser e "sensores de impacto" para navegar.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Em 1986, a Honda iniciou seu programa de pesquisa e desenvolvimento para criar robôs capazes de interagir com sucesso
+                                com humanos. Um robô hexapodal chamado Genghis foi revelado pelo MIT em 1989. Genghis era famoso por ser feito
+                                rapidamente e de forma barata devido a métodos de construção; Genghis usava 4 microprocessadores, 22 sensores e 12
+                                motores servo.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                O popular Roomba, um aspirador de pó robótico, foi lançado pela primeira vez em 2002 pela empresa iRobot. Robôs
+                                comerciais e industriais estão agora em uso generalizado, executando trabalhos mais baratos ou com maior precisão e
+                                confiabilidade do que os humanos. Eles também são empregados para tarefas que são muito sujas, perigosas ou monótonas
+                                para serem adequadas para os humanos.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Nos últimos anos, houve um aumento no interesse pelo desenvolvimento de robôs com capacidades mais avançadas, como
+                                inteligência artificial ( IA), aprendizado de máquina e processamento de linguagem natural.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Esses robôs são projetados para real izar tarefas que exigem habilidades cognitivas de nível mais elevado, como tomada
+                                de decisão, resolução de problemas e adaptação a novas situações.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                À medida que a tecnologia continua a evoluir, é certo que os robôs se tornarão cada vez mais sofisticados e capazes de
+                                executar uma ampla gama de tarefas complexas. No entanto, também há preocupações sobre o impacto que os robôs terão na
+                                força de trabalho e na economia.
+                            </p>
+                            <p className="Sobre_Description_Text">
+                                Conforme os robôs se tornam mais avançados, eles podem substituir trabalhadores humanos em certas indústrias, o que
+                                poder ia levar a perdas de emprego e agitação social . Será importante gerenciar cuidadosamente a integração de robôs
+                                na sociedade para garantir que os benefícios sejam maximizados enquanto as consequências negativas sejam minimizadas.
+                            </p>
+                            <p className="Sobre_Header_Text">Mas como podemos definir usos éticos e humanos da tecnologia?</p>
+                            <p className="Sobre_Description_Text">
+                                Uma das idealizações para a Quinta Revolução Industrial, ou 5RI, abrange a noção de colaborações harmoniosas entre
+                                humanos e máquinas, com um foco específico no bem-estar dos múltiplos atores de um ecossistema (ou seja, sociedade,
+                                empresas, pessoas, animais, vegetais, minerais, etc… ).
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Essa aceitação harmoniosa de colaborações entre humanos e máquinas distingue a 5IR da Quarta Revolução Industrial
+                                (4IR), que se concentrou predominantemente em alcançar apenas eficiência, e por consequência lucro, usando tecnologia.
+                            </p>
+                            <p className="Sobre_Header_Text">
+                                Dessa forma, a 5RI abre caminho para uma (r)evolução no pensamento e na alavancagem de colaborações entre humanos e
+                                máquinas para um maior bem-estar da sociedade.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

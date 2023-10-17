@@ -31,13 +31,13 @@ export default function Footer() {
         <div className="Footer" key={"Footer"}>
             <div className="Footer_Info_Links Desktop_Only">
                 <a href="#Privacidade" className="Footer_Info" onClick={togglePrivacyButton}>
-                    Privacidade
+                    <span className="material-icons">privacy_tip</span> Privacidade
                 </a>
                 <a href="#Termos" className="Footer_Info Middle_Info" onClick={toggleTermsButton}>
-                    Termos
+                    <span className="material-icons">assignment</span> Termos
                 </a>
                 <a href="#MapaSite" className="Footer_Info" onClick={toggleSiteMapButton}>
-                    Mapa do site
+                    <span className="material-icons">map</span> Mapa do site
                 </a>
             </div>
             <div className="Footer_Copyright">

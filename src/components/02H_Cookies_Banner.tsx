@@ -31,7 +31,10 @@ export default function Cookies_Banner() {
                 </p>
                 <p>Ao navegar neste site voce concorda com o uso destas tecnogias e com nosso termo de privacidade.</p>
                 <p>
-                    Para saber mais sobre como cuidamos da segurança de seus dados acesse a <a href="#Privacy">Aba de Privacidade.</a>
+                    Para saber mais sobre como cuidamos da segurança de seus dados acesse a{" "}
+                    <a className="CB_Link" href="#Privacy">
+                        Aba de Privacidade.
+                    </a>
                 </p>
             </div>
         </m.div>
