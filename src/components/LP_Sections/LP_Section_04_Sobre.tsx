@@ -653,30 +653,65 @@ const LP_Section_04_Sobre = forwardRef(function LP_Section_04_Sobre(props, ref: 
                         <h3 className="Sobre_Card_SubTitle">Sobre</h3>
                         <h2 className="Sobre_Card_Title">Nossos Parceiros</h2>
                     </div>
-                    <div className="Sobre_Text_Container">
-                        <p className="Sobre_Header_Text">
-                            <strong>
-                                Contamos com uma rede de parceiros que nos ajudam a levar tecnologia de ponta para você. Conheça um pouco mais sobre
-                                eles:
-                            </strong>
-                        </p>
-                        <p className="Sobre_Description_Text">
-                            <strong>Parceiros de produção:</strong> Nossos parceiros de produção são laboratórios de eletrônica e robótica localizadas
+                    <p className="Sobre_Header_Text Partners_Text_Container">
+                        <strong>
+                            Contamos com uma rede de parceiros que nos ajudam a levar tecnologia de ponta para você. Conheça um pouco mais sobre eles:
+                        </strong>
+                    </p>
+                    <div className="Sobre_Partners_Container">
+                        <p className="Sobre_Partners_Description_Text">
+                            <span className="material-icons Partners_Icons">memory</span>
+                            <strong>Parceiros de Produção:</strong> Nossos parceiros de produção são laboratórios de eletrônica e robótica localizadas
                             nas cidades de Curitiba e São Paulo. Esses laboratórios são certificados pelo Instituto de Robótica do Brasil (IRB) e pelo
                             Conselho de Manejo Industrial (CMI), que garantem a sustentabilidade e qualidade da produção de hardwares.
+                            <div className="Partner_Description_Actions">
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">info</span>Saiba mais
+                                </button>
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">handshake</span>Quero ser um Parceiro
+                                </button>
+                            </div>
                         </p>
-                        <p className="Sobre_Description_Text">
-                            <strong>Parceiros de distribuição:</strong> Nossos parceiros de distribuição são empresas que nos ajudam a levar nossos
+                        <p className="Sobre_Partners_Description_Text">
+                            <span className="material-icons Partners_Icons">loyalty</span>
+                            <strong>Parceiros de Distribuição:</strong> Nossos parceiros de distribuição são empresas que nos ajudam a levar nossos
                             produtos para todo o Brasil. Eles são responsáveis pela logística de entrega e pela comercialização dos produtos da Human
                             Robotics em suas lojas físicas e virtuais.
+                            <div className="Partner_Description_Actions">
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">info</span>Saiba mais
+                                </button>
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">handshake</span>Quero ser um Parceiro
+                                </button>
+                            </div>
                         </p>
-                        <p className="Sobre_Description_Text">
+                        <p className="Sobre_Partners_Description_Text">
+                            <span className="material-icons Partners_Icons">handyman</span>
                             <strong>Parceiros de Assistência Técnica:</strong> Nossos parceiros de assistência técnica são capazes de oferecer
                             serviços de reparo, configuração e treinamento para o uso dos robôs.
+                            <div className="Partner_Description_Actions">
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">info</span>Saiba mais
+                                </button>
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">handshake</span>Quero ser um Parceiro
+                                </button>
+                            </div>
                         </p>
-                        <p className="Sobre_Description_Text">
-                            <strong>Parceiros de reciclagem:</strong> Nossos parceiros de reciclagem são empresas que nos ajudam a reciclar as partes
+                        <p className="Sobre_Partners_Description_Text">
+                            <span className="material-icons Partners_Icons">recycling</span>
+                            <strong>Parceiros de Reciclagem:</strong> Nossos parceiros de reciclagem são empresas que nos ajudam a reciclar as partes
                             eletrônicas e estruturais de nossos robôs, garantindo que nossos produtos causem menos danos ao meio ambiente.
+                            <div className="Partner_Description_Actions">
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">info</span>Saiba mais
+                                </button>
+                                <button className="Partner_Description_Action_Btn KnowMore_Button">
+                                    <span className="material-icons">handshake</span>Quero ser um Parceiro
+                                </button>
+                            </div>
                         </p>
                     </div>
                 </div>

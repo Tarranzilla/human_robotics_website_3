@@ -2486,9 +2486,12 @@ h1 {
     padding-right: 0.5rem;
 }
 
+.Partners_Text_Container,
 .Equipe_Text_Container {
     height: auto;
     flex-shrink: 0;
+    align-items: center;
+    max-width: 800px;
 }
 
 .Sobre_Member_Container {
@@ -2497,9 +2500,10 @@ h1 {
     justify-content: start;
     gap: var(--small_gap);
     width: 100%;
-    height: 100%;
     overflow-x: auto;
     padding-block: var(--small_gap);
+    margin-block: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .Sobre_Member_Card {
@@ -2516,6 +2520,7 @@ h1 {
     align-items: center;
     gap: var(--small_gap);
     position: relative;
+    scroll-snap-align: start;
 }
 
 .Sobre_Member_Image_Container {
@@ -2549,6 +2554,11 @@ h1 {
     font-size: 0.8rem;
 }
 
+.Sobre_Member_Description {
+    height: 1.5rem;
+    max-width: 200px;
+}
+
 .Sobre_Member_Interactions {
     display: flex;
     flex-direction: row;
@@ -2574,6 +2584,65 @@ h1 {
 
 .Sobre_Interaction_Icon:hover {
     scale: 1.1;
+}
+
+.Sobre_Partners_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: var(--small_gap);
+    gap: var(--small_gap);
+    overflow-y: auto;
+}
+
+.Partners_Icons {
+    font-size: calc(5vh + 2rem);
+    margin-bottom: 1vh;
+}
+
+.Sobre_Partners_Description_Text {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--small_gap);
+    border: 1px solid var(--text_color);
+    border-radius: var(--small_gap);
+}
+
+.Partner_Description_Actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-block: var(--small_gap);
+}
+
+.KnowMore_Button {
+    width: 100%;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: var(--small_gap);
+    background-color: var(--text_color);
+    color: var(--bg_color);
+    cursor: pointer;
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.KnowMore_Button:hover,
+.KnowMore_Button:focus {
+    scale: 1.05;
+    background-color: var(--anchor_hover_color);
 }
 
 .FAQ_Container {
